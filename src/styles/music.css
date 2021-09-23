@@ -1,0 +1,16 @@
+#music-select-container{
+    width: 95vw;
+    background-color: rgba(255, 255, 255, 0.301);
+    margin: 0 auto;
+}
+
+#subnav-links{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#subnav-links li{
+    font-size: 20px;
+}

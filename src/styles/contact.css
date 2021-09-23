@@ -1,0 +1,23 @@
+#contact-main-container{
+    margin: 120px auto;
+    width: 95vw;
+    background-color: rgba(0, 0, 0, 0.459);
+    border: 2px solid rgba(255, 255, 255, 0.137);
+}
+
+.form-title{
+    color: white;
+    text-align: right !important;
+    left: 20px !important;
+}
+
+.form-input{
+    width: 80vw;
+    height: 5vh;
+    border-radius: 8px;
+}
+
+#message{
+    width: 80vw;
+    height: 15vh;
+}

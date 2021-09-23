@@ -1,0 +1,36 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto !important;
+    text-align: center;
+    background-size: 100%;
+    background-image: url("https://res.cloudinary.com/acurunner79/image/upload/v1631939180/soltrix-02_opu5k4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Orbitron','Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a, ul, li, h1, h2, h3, h4, h5{
+  color: white !important;
+}
+
+img#mobile-logo{
+  width: 80vw;
+  height: 14vh;
+  position: fixed;
+  left: -12vw;
+  top: -1.4vh;
+  z-index: 30;
+}
+
+@media(min-width: 767px){
+  img#mobile-logo{
+    display: none;
+  }
+}
