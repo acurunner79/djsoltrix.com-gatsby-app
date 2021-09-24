@@ -6,3 +6,27 @@ h4.youtube-titles{
     border-radius: 8px;
     padding: 5px;
 }
+
+.center-con {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.round {
+    position: relative;
+    /* border: 3px solid #fff; */
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+div.round div {
+    /* z-index: 20; */
+    height: 3px;
+    margin:1px;
+    width: 30px;
+    background: #32bacc !important;
+    transition: 0.4s ease;
+}
