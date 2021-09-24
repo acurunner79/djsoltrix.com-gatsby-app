@@ -1,9 +1,14 @@
 import React from 'react'
+import Youtube from '../components/Youtube/Youtube'
 import TopNav from '../components/Nav/TopNav'
 import Hamburger from '../components/Nav/Hamburger'
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab'
+
 import '../styles/music.css'
 
-const Music = () => {
+const Music = (props) => {
+    // console.log('music props', props)
     return (
         <div>
             <TopNav />
@@ -11,16 +16,21 @@ const Music = () => {
             <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
             <h1>Music</h1>
             <div id="music-select-container">
-                <nav>
-                    <ul id="subnav-links">
-                        <li>All</li>
-                        <li>Remixes</li>
-                        <li>Live Sets</li>
-                    </ul>
-                </nav>
+                <Tabs defaultActiveKey="home" unmountOnExit='true' id="noanim-tab-example" className="mb-3">
+                    <Tab className="subnav-links" eventKey="home" title="All">
+                        <Youtube />
+                    </Tab>
+                    <Tab className="subnav-links" eventKey="profile" title="Remixes">
+                        <h4>Test 2</h4>
+                    </Tab>
+                    <Tab className="subnav-links" eventKey="contact" title="Live Sets">
+                        <h4>Test 3</h4>
+                    </Tab>
+                </Tabs>
             </div>
         </div>
     )
 }
 
 export default Music
+

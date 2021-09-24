@@ -1,13 +1,15 @@
 import * as React from "react"
 import {IoIosArrowForward} from 'react-icons/io'
 import Layout from "../Layout/index"
+import { graphql } from "gatsby"
 import TopNav from "../components/Nav/TopNav"
 import Hamburger from "../components/Nav/Hamburger"
 import '../styles/home.css'
 import '../Layout/layout.css'
 
 
-const IndexPage = () => {
+const IndexPage = (props) => {
+  // console.log('home page props', props)
   return (
     // <Layout>
     <>
@@ -46,20 +48,20 @@ const IndexPage = () => {
         </div><br/>
           <h2>Latest Music</h2>
         <div id="latest-music-container">
-          <div>
-              <img className="latest-music-cover" src="https://res.cloudinary.com/acurunner79/image/upload/v1632160646/hqdefault_ertjhp.webp" alt=""/>
-              <h5>Farruko - Pepas (DJ Soltrix Bachata Remix)</h5>
+          <div className="latest-music-card">
+              <img className="latest-music-cover" src={props.data.allYoutubeVideo.edges[0].node.thumbnail.url} alt=""/>
+              <h5>{props.data.allYoutubeVideo.edges[0].node.title}</h5>
           </div>
-          <div>
-              <img className="latest-music-cover" src="https://res.cloudinary.com/acurunner79/image/upload/v1632160659/hqdefault_1_oq1yxt.webp" alt=""/>
+          <div className="latest-music-card">
+              <img className="latest-music-cover" src={props.data.allYoutubeVideo.edges[1].node.thumbnail.url} alt=""/>
               <h5>DJ Soltrix - Bachata Mix Studio Sessions</h5>
           </div>
-          <div>
-              <img className="latest-music-cover" src="https://res.cloudinary.com/acurunner79/image/upload/v1632160672/hqdefault_2_pyeq28.webp" alt=""/>
+          <div className="latest-music-card">
+              <img className="latest-music-cover" src={props.data.allYoutubeVideo.edges[2].node.thumbnail.url} alt=""/>
               <h5>Niall Horan - This Town (DJ Soltrix Bachata Remix)</h5>
           </div>
-          <div>
-              <img className="latest-music-cover" src="https://res.cloudinary.com/acurunner79/image/upload/v1632160684/mqdefault_6s_uwabie.webp" alt=""/>
+          <div className="latest-music-card">
+              <img className="latest-music-cover" src={props.data.allYoutubeVideo.edges[3].node.thumbnail.url} alt=""/>
               <h5>Farruko - Pepas (DJ Soltrix Bachata Remix)</h5>
           </div>
         </div><br/>
@@ -75,3 +77,26 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const query = graphql`
+    query homeVideos {
+        allYoutubeVideo(filter: {channelId: {eq: "UCPXm1RVzUIRzfqnYb0eX1sg"}}) {
+            edges {
+                node {
+                    id
+                    title
+                    description
+                    videoId
+                    publishedAt
+                    privacyStatus
+                    channelTitle
+                    thumbnail {
+                        url
+                        height
+                        width
+                    }
+                }
+            }   
+        }
+    }
+`

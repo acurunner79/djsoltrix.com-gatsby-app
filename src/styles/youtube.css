@@ -1,0 +1,8 @@
+h4.youtube-titles{
+    text-align: left;
+    font-family: 'Play';
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 8px;
+    padding: 5px;
+}

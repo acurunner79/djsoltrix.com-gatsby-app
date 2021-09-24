@@ -9,15 +9,13 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Orbitron','Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-a, ul, li, h1, h2, h3, h4, h5{
-  color: white !important;
+  }
+  
+  a, ul, li, h1, h2, h3, h4, h5{
+  font-family: 'Orbitron',sans-serif;
+  color: white ;
 }
 
 img#mobile-logo{

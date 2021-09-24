@@ -1,16 +1,28 @@
 #music-select-container{
     width: 95vw;
+    margin: 0 auto;
+    border-bottom: 2px solid red;
+}
+
+.subnav-links{
+    display: flex;
+    /* text-decoration: underline; */
+}
+
+nav.mb-3.nav.nav-tabs{
     background-color: rgba(255, 255, 255, 0.301);
+    font-size: 24px;
+    justify-content: space-evenly;
+    transition: transform .4s;
+    width: 95vw;
     margin: 0 auto;
 }
 
-#subnav-links{
-    display: flex;
-    flex-direction: row !important;
-    justify-content: space-evenly;
-    list-style: none;
+.video-thumbnail{
+    width: 95vw;
 }
 
-#subnav-links li{
-    font-size: 20px;
+.mb-3{
+    display: flex;
+    margin: 0 10px;
 }
