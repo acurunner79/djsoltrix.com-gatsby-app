@@ -1,0 +1,26 @@
+#instagram-container{
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    /* max-height: 440px; */
+    overflow-x: auto;
+    width: auto;
+}
+
+.insta-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* text-align: left; */
+    width: 92vw !important;
+    /* max-height: 230px !important; */
+    margin: 0 auto !important;
+}
+
+.insta-image{
+    width: 92vw;
+    /* height: 20vh; */
+}

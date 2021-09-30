@@ -1,9 +1,11 @@
 import * as React from "react"
 import {IoIosArrowForward} from 'react-icons/io'
 import Layout from "../Layout/index"
-import { graphql } from "gatsby"
+import Instagram from "../components/Instagram/Instagram"
+import { graphql, Link } from "gatsby"
 import TopNav from "../components/Nav/TopNav"
 import Hamburger from "../components/Nav/Hamburger"
+import PaginatedBlogPage from "../templates/PaginatedBlogPage"
 import '../styles/home.css'
 import '../Layout/layout.css'
 
@@ -44,7 +46,9 @@ const IndexPage = (props) => {
               <p className="gig-details">Some Bachata Festival</p>
               <p className="gig-details">New York, NY</p>
           </div><br/>
+            <Link to="/events">
               <button className="button">More Events <IoIosArrowForward size="15"/></button>
+            </Link>
         </div><br/>
           <h2>Latest Music</h2>
         <div id="latest-music-container">
@@ -65,11 +69,18 @@ const IndexPage = (props) => {
               <h5>Farruko - Pepas (DJ Soltrix Bachata Remix)</h5>
           </div>
         </div><br/>
+        <Link to="/music">
           <button className="button">More music <IoIosArrowForward size="15"/></button>
-        <div id="gig-chart">
+        </Link>
+        <div id="news-chart">
             <h4 id="gig-header">Soltrix News</h4>
+            {/* <PaginatedBlogPage /> */}
+            <h4 id="gig-header">Instagram</h4>
+            <Instagram />
         </div>
+        <Link to="/blog-page">
             <button className="button">More News <IoIosArrowForward size="15"/></button>
+        </Link>
       </div>
       </>
     // </Layout>
@@ -99,4 +110,6 @@ export const query = graphql`
             }   
         }
     }
+
 `
+

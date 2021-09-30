@@ -4,7 +4,7 @@ import TopNav from '../components/Nav/TopNav'
 import Hamburger from '../components/Nav/Hamburger'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
-
+import Mixcloud from '../components/Mixcloud/Mixcloud'
 import '../styles/music.css'
 
 const Music = (props) => {
@@ -19,12 +19,13 @@ const Music = (props) => {
                 <Tabs defaultActiveKey="home" unmountOnExit='true' id="noanim-tab-example" className="mb-3">
                     <Tab className="subnav-links" eventKey="home" title="All">
                         <Youtube />
+                        {/* <Mixcloud /> */}
                     </Tab>
                     <Tab className="subnav-links" eventKey="profile" title="Remixes">
                         <h4>Test 2</h4>
                     </Tab>
                     <Tab className="subnav-links" eventKey="contact" title="Live Sets">
-                        <h4>Test 3</h4>
+                        <Mixcloud />
                     </Tab>
                 </Tabs>
             </div>

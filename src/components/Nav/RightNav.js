@@ -22,7 +22,7 @@ const RightNav = () => {
                     Music
                     </li>
                 </Link>
-                <Link to="/news" className="links" activeclassname="active" iscurrent="true">
+                <Link to="/blog-page" className="links" activeclassname="active" iscurrent="true">
                     <li>
                     News
                     </li>

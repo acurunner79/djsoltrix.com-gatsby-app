@@ -12,6 +12,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token: "IGQVJValNVWGZApSHF5bDQ5WkxsLU1iT2RGSkptM1I4Mnh6SEJTVmVKY0hoZAExuWjVPVndOajNHYjc3b1ljeEQ5NE80ZAjdUTUhicU1GaDdPTFl3SmYtUWRyR3FjYUgwRS1pMXZAGSWRCcUZAUUGk5dzNncAZDZD"
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
@@ -32,15 +38,17 @@ module.exports = {
         maxVideos: 50 // Defaults to 50
       },
     },
-    // {
-    //   resolve: 'gatsby-source-rest-api',
-    //   options: {
-    //     endpoints: [
-    //       'https://www.mixcloud.com/oauth/access_token?client_id=9S8q55srmPpWCuJEjg&redirect_uri=djsoltrix&client_secret=LhMxxNT5sceNq3ZZaCUXUusPyGjKx4nm&code=OAUTH_CODE'
-    //     ],
-    //   },
-    // },
+    {
+      resolve: 'gatsby-source-rest-api',
+      options: {
+        endpoints: [
+          'https://api.mixcloud.com/djsoltrix/cloudcasts/'
+        ],
+      },
+    },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
   ],
 };

@@ -1,0 +1,15 @@
+#mixcloud-container{
+    width: 95vw;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.301);
+}
+
+.cloudcast-player{
+    width: 95vw !important;
+    height: 22vh !important;
+    margin: 0 auto;
+}
+
+.widget-cloudcast-image:after{
+    display: none !important;
+}
