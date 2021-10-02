@@ -38,14 +38,14 @@ module.exports = {
         maxVideos: 50 // Defaults to 50
       },
     },
-    {
-      resolve: `gatsby-source-youtube-playlist`,
-      options: {
-          apiKey: 'AIzaSyC_Nk5v8pQlCJEXhXi-Qe7zy6Qt8mqBPJs' ,
-          channelId: 'UCPXm1RVzUIRzfqnYb0eX1sg',
-          maxResults: 20 // default is 5
-      },
-  },
+  //   {
+  //     resolve: `gatsby-source-youtube-playlist`,
+  //     options: {
+  //         apiKey: 'AIzaSyC_Nk5v8pQlCJEXhXi-Qe7zy6Qt8mqBPJs' ,
+  //         channelId: 'UCPXm1RVzUIRzfqnYb0eX1sg',
+  //         maxResults: 20 
+  //     },
+  // },
     {
       resolve: 'gatsby-source-rest-api',
       options: {
@@ -54,12 +54,12 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-transformer-playlists`,
-      options: {
-        apiKey: 'AIzaSyC_Nk5v8pQlCJEXhXi-Qe7zy6Qt8mqBPJs'
-      }
-    },
+    // {
+    //   resolve: `gatsby-transformer-playlists`,
+    //   options: {
+    //     apiKey: 'AIzaSyC_Nk5v8pQlCJEXhXi-Qe7zy6Qt8mqBPJs'
+    //   }
+    // },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
     `gatsby-transformer-sharp`,

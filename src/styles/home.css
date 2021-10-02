@@ -49,15 +49,15 @@
     /* margin: 700px 0 0 0; */
 }
 
-.gig-content{
+/* .gig-content{
     display: flex;
     justify-content: space-around;
     border-bottom: 2px solid rgba(128, 128, 128, 0.267);
     margin: 0 auto;
-    /* padding: 5px 0; */
-}
+    padding: 5px 0;
+} */
 
-.gig-date{
+/* .gig-date{
     text-align: left !important;
     font-family: 'Play';
     font-size: 15px;
@@ -67,7 +67,7 @@
     font-family: 'Play';
     font-size: 15px;
     color: black;
-}
+} */
 
 #latest-music-container{
     width: 95vw;
@@ -81,6 +81,7 @@
 .latest-music-card{
     background-color: rgba(37, 37, 37, 0.534);
     margin: 5px auto;
+    width: 95vw;
 }
 
 .latest-music-cover{

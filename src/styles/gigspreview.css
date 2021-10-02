@@ -1,0 +1,22 @@
+#gig-preview-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#gig-dates{
+    text-align: left;
+}
+
+#event-name{
+    text-align: center;
+}
+
+.dates{
+    color: black;
+    font-family: 'Play';
+}
+
+.name{
+    color: black;
+    font-family: 'Play';
+}

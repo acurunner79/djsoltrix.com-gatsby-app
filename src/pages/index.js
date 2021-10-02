@@ -5,7 +5,8 @@ import Instagram from "../components/Instagram/Instagram"
 import { graphql, Link } from "gatsby"
 import TopNav from "../components/Nav/TopNav"
 import Hamburger from "../components/Nav/Hamburger"
-import PaginatedBlogPage from "../templates/PaginatedBlogPage"
+import NewsBlog from "../components/NewsBlog/NewsBlog"
+import GigsPreview from "../components/GigsPreview/GigsPreview"
 import '../styles/home.css'
 // import '../components/Layout/layout.css'
 
@@ -21,31 +22,7 @@ const IndexPage = (props) => {
       <div id="home-upper-container">
         <div id="gig-chart">
           <h4 id="gig-header">UPCOMING GIGS</h4><br/>
-          <div id="gig-labels">
-              <h4 className="labels">DATE</h4>
-              <h4 className="labels">EVENT</h4>
-              <h4 className="labels">LOCATION</h4>
-          </div>
-          <div className="gig-content">
-              <p className="gig-date">SEP 24th</p>
-              <p className="gig-details">Some Bachata Festival</p>
-              <p className="gig-details">Washington</p>
-          </div>
-          <div className="gig-content">
-              <p className="gig-date">OCT 24th</p>
-              <p className="gig-details">Some Bachata Festival</p>
-              <p className="gig-details">Chicago, IL</p>
-          </div>
-          <div className="gig-content">
-              <p className="gig-date">NOV 24th</p>
-              <p className="gig-details">Some Bachata Festival</p>
-              <p className="gig-details">Tampa, FL</p>
-          </div>
-          <div className="gig-content">
-              <p className="gig-date">DEC 24th</p>
-              <p className="gig-details">Some Bachata Festival</p>
-              <p className="gig-details">New York, NY</p>
-          </div><br/>
+          <GigsPreview />
             <Link to="/events">
               <button className="button">More Events <IoIosArrowForward size="15"/></button>
             </Link>
@@ -74,13 +51,13 @@ const IndexPage = (props) => {
         </Link>
         <div id="news-chart">
             <h4 id="gig-header">Soltrix News</h4>
-            {/* <PaginatedBlogPage /> */}
+            <NewsBlog />
+            <Link to="/blog-page">
+                <button className="button">More News <IoIosArrowForward size="15"/></button>
+            </Link>
             <h4 id="gig-header">Instagram</h4>
             <Instagram />
         </div>
-        <Link to="/blog-page">
-            <button className="button">More News <IoIosArrowForward size="15"/></button>
-        </Link>
       </div>
       </>
     // </Layout>
