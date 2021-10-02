@@ -1,3 +1,5 @@
+
+
 #upper-logo{
     width: 95vw;
     margin-top: 130px;
@@ -45,7 +47,7 @@
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.561);
     width: 95vw;
-    height: 390px;
+    /* height: 390px; */
     /* margin: 700px 0 0 0; */
 }
 
@@ -108,4 +110,19 @@
     border-radius: 8px;
     width: 95vw;
     /* height: 40vh; */
+}
+
+@media(min-width: 767px){
+    .latest-music-card{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 46vw;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 1023px){
+    .latest-music-card{
+        width: 34vw;
+    }
 }

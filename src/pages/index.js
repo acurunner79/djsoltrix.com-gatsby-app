@@ -56,7 +56,7 @@ const IndexPage = (props) => {
                 <button className="button">More News <IoIosArrowForward size="15"/></button>
             </Link>
             <h4 id="gig-header">Instagram</h4>
-            <Instagram />
+            {/* <Instagram /> */}
         </div>
       </div>
       </>
