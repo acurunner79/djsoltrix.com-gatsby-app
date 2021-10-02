@@ -1,7 +1,7 @@
 
 
 #upper-logo{
-    width: 95vw;
+    max-width: 95vw;
     margin-top: 130px;
     
 }
@@ -119,10 +119,18 @@
         width: 46vw;
         margin: 0 auto;
     }
+
+    #upper-logo{
+        width: 730px;
+    }
 }
 
 @media(min-width: 1023px){
     .latest-music-card{
         width: 34vw;
+    }
+
+    #gig-chart{
+        width: 80vw;
     }
 }

@@ -1,21 +1,22 @@
 #music-select-container{
     width: 95vw;
-    margin: 0 auto;
+    margin: 0 auto !important;
     border-bottom: 2px solid red;
 }
 
 .subnav-links{
     display: flex;
+    flex-direction: column;
     /* text-decoration: underline; */
 }
 
 nav.mb-3.nav.nav-tabs{
-    background-color: rgba(255, 255, 255, 0.301);
+    background-color: rgba(12, 12, 12, 0.794);
     font-size: 24px;
     justify-content: space-evenly;
     transition: transform .4s;
     width: 95vw;
-    margin: 0 auto;
+    margin: 0 auto !important
 }
 
 .video-thumbnail{
@@ -25,4 +26,11 @@ nav.mb-3.nav.nav-tabs{
 .mb-3{
     display: flex;
     margin: 0 10px;
+}
+
+@media(min-width: 1023px){
+    nav.mb-3.nav.nav-tabs{
+        width: 80vw;
+        /* margin: 0 80px !important; */
+    }
 }
