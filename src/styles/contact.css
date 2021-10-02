@@ -6,25 +6,39 @@
 }
 
 form{
-    margin: 0 auto;
+    /* margin: 0 auto !important; */
     align-items: center !important;
 }
 
-label.form-title{
+.form-title{
     color: white;
     text-align: left !important;
-    display: block;
+    /* display: block; */
     margin: 0 auto !important;
 }
 
 .form-input{
-    width: 80vw;
+    width: 92vw;
     height: 5vh;
     border-radius: 8px;
     margin: 0 auto !important;
 }
 
 #message{
-    width: 80vw;
+    width: 92vw;
     height: 15vh;
+}
+
+@media(min-width: 767px){
+    #contact-main-container{
+        width: 80vw;
+    }
+
+    .form-input{
+        width: 78vw;
+    }
+
+    #message{
+        width: 78vw;
+    }
 }
