@@ -1,5 +1,5 @@
 export * from '../components/Nav'
-export * from '../Layout'
+export * from '../components/Layout'
 export * from '../components/Youtube'
 export * from '../components/Instagram'
 export * from '../components/Mixcloud'

@@ -1,6 +1,6 @@
 import React from 'react'
-import TopNav from '../components/Nav/TopNav'
-import Hamburger from '../components/Nav/Hamburger'
+import TopNav from '../Nav/TopNav'
+import Hamburger from '../Nav/Hamburger'
 import './layout.css'
 
 

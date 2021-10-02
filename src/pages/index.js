@@ -1,13 +1,13 @@
 import * as React from "react"
 import {IoIosArrowForward} from 'react-icons/io'
-import Layout from "../Layout/index"
+// import Layout from "../Layout/index"
 import Instagram from "../components/Instagram/Instagram"
 import { graphql, Link } from "gatsby"
 import TopNav from "../components/Nav/TopNav"
 import Hamburger from "../components/Nav/Hamburger"
 import PaginatedBlogPage from "../templates/PaginatedBlogPage"
 import '../styles/home.css'
-import '../Layout/layout.css'
+// import '../components/Layout/layout.css'
 
 
 const IndexPage = (props) => {

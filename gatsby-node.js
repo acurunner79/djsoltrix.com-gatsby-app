@@ -11,7 +11,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;
     const {
-        data: { contentfulBlog, allContentfulBlogPost, allContentfulUpcomingGigs },
+        data: { contentfulBlog, allContentfulBlogPost },
     } = await graphql(`
     {
         contentfulBlog {
@@ -32,29 +32,8 @@ exports.createPages = async ({ actions, graphql }) => {
             }
           }
         }
-        allContentfulUpcomingGigs {
-          edges {
-            node {
-              contentful_id
-              gigDate(formatString: "MMM DD YYYY")
-              eventName
-              eventLocation
-              eventPage
-            }
-          }
-        }
       }
     `)
-
-    allContentfulUpcomingGigs.edges.map((gig) => {
-        createGig({
-            path: "/events",
-            context: {
-                gigId: gig.node.contentful_id,
-            },
-            component: path.resolve("./src/pages/events.js")
-        })
-    })
 
     allContentfulBlogPost.edges.forEach((blogPost) => {
         createPage({

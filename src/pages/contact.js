@@ -1,13 +1,12 @@
 import React from 'react'
-import Layout from "../Layout/index"
+import Layout from "../components/Layout/index"
 import TopNav from '../components/Nav/TopNav'
 import Hamburger from '../components/Nav/Hamburger'
 import '../styles/contact.css'
 
 const Contact = () => {
     return (
-        // <Layout>
-        <>
+        <Layout>
         <TopNav />
         <Hamburger />
         <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
@@ -49,8 +48,7 @@ const Contact = () => {
                 <button className="button">Submit</button><br/>
             </form>
         </div>
-        </>
-        // </Layout>
+        </Layout>
     )
 }
 
