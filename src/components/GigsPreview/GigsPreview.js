@@ -43,9 +43,9 @@ const GigsPreview = () => {
             </div>
             <div id="event-link">
             <h4 className="labels">DETAILS</h4>
-                <h4><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[0].node.eventPage}>Event Page</a></h4>
-                <h4><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[1].node.eventPage}>Event Page</a></h4>
-                <h4><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[2].node.eventPage}>Event Page</a></h4>
+                <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[0].node.eventPage}>View</a></h4>
+                <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[1].node.eventPage}>View</a></h4>
+                <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[2].node.eventPage}>View</a></h4>
                 {/* <h4><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[3].node.eventPage}>Event Page</a></h4> */}
             </div>
         </div>

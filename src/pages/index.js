@@ -1,6 +1,6 @@
 import * as React from "react"
 import {IoIosArrowForward} from 'react-icons/io'
-// import Layout from "../Layout/index"
+import Layout from "../components/Layout"
 import Instagram from "../components/Instagram/Instagram"
 import { graphql, Link } from "gatsby"
 import TopNav from "../components/Nav/TopNav"
@@ -12,7 +12,7 @@ import '../styles/home.css'
 
 
 const IndexPage = (props) => {
-  // console.log('home page props', props)
+  console.log('home page prop', props)
   return (
     // <Layout>
     <>
@@ -35,15 +35,15 @@ const IndexPage = (props) => {
           </div>
           <div className="latest-music-card">
               <img className="latest-music-cover" src={props.data.allYoutubeVideo.edges[1].node.thumbnail.url} alt=""/>
-              <h5>DJ Soltrix - Bachata Mix Studio Sessions</h5>
+              <h5>{props.data.allYoutubeVideo.edges[1].node.title}</h5>
           </div>
           <div className="latest-music-card">
               <img className="latest-music-cover" src={props.data.allYoutubeVideo.edges[2].node.thumbnail.url} alt=""/>
-              <h5>Niall Horan - This Town (DJ Soltrix Bachata Remix)</h5>
+              <h5>{props.data.allYoutubeVideo.edges[2].node.title}</h5>
           </div>
           <div className="latest-music-card">
               <img className="latest-music-cover" src={props.data.allYoutubeVideo.edges[3].node.thumbnail.url} alt=""/>
-              <h5>Farruko - Pepas (DJ Soltrix Bachata Remix)</h5>
+              <h5>{props.data.allYoutubeVideo.edges[3].node.title}</h5>
           </div>
         </div><br/>
         <Link to="/music">

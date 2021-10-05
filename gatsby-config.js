@@ -11,12 +11,12 @@ module.exports = {
         spaceId: "23el1479899l",
       },
     },
-    {
-      resolve: `gatsby-source-instagram-all`,
-      options: {
-        access_token: "IGQVJValNVWGZApSHF5bDQ5WkxsLU1iT2RGSkptM1I4Mnh6SEJTVmVKY0hoZAExuWjVPVndOajNHYjc3b1ljeEQ5NE80ZAjdUTUhicU1GaDdPTFl3SmYtUWRyR3FjYUgwRS1pMXZAGSWRCcUZAUUGk5dzNncAZDZD"
-      }
-    },
+    // {
+    //   resolve: `gatsby-source-instagram-all`,
+    //   options: {
+    //     access_token: "IGQVJValNVWGZApSHF5bDQ5WkxsLU1iT2RGSkptM1I4Mnh6SEJTVmVKY0hoZAExuWjVPVndOajNHYjc3b1ljeEQ5NE80ZAjdUTUhicU1GaDdPTFl3SmYtUWRyR3FjYUgwRS1pMXZAGSWRCcUZAUUGk5dzNncAZDZD"
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -38,14 +38,6 @@ module.exports = {
         maxVideos: 50 // Defaults to 50
       },
     },
-  //   {
-  //     resolve: `gatsby-source-youtube-playlist`,
-  //     options: {
-  //         apiKey: 'AIzaSyC_Nk5v8pQlCJEXhXi-Qe7zy6Qt8mqBPJs' ,
-  //         channelId: 'UCPXm1RVzUIRzfqnYb0eX1sg',
-  //         maxResults: 20 
-  //     },
-  // },
     {
       resolve: 'gatsby-source-rest-api',
       options: {
@@ -54,6 +46,17 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: "gatsby-source-graphql",
+    //   options: {
+    //     // Arbitrary name for the remote schema Query type
+    //     typeName: "Singles",
+    //     // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+    //     fieldName: "singles",
+    //     // Url to query from
+    //     url: "https://www.googleapis.com/youtube/v3/playlistItems",
+    //   },
+    // },
     // {
     //   resolve: `gatsby-transformer-playlists`,
     //   options: {

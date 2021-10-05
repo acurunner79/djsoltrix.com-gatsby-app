@@ -24,6 +24,7 @@
     "gatsby-plugin-styled-components": "^4.14.0",
     "gatsby-source-contentful": "^5.14.0",
     "gatsby-source-filesystem": "^3.14.0",
+    "gatsby-source-graphql": "^3.14.0",
     "gatsby-source-instagram-all": "^4.2.0",
     "gatsby-source-rest-api": "^0.2.3",
     "gatsby-source-youtube-playlist": "^1.0.2",

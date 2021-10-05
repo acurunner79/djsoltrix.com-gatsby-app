@@ -1,10 +1,11 @@
 import React from 'react'
-import Youtube from '../components/Youtube/Youtube'
+import Youtube from '../components/Remixes/Remixes'
 import TopNav from '../components/Nav/TopNav'
 import Hamburger from '../components/Nav/Hamburger'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import Mixcloud from '../components/Mixcloud/Mixcloud'
+import Singles from '../components/Singles/Singles'
 import '../styles/music.css'
 
 const Music = (props) => {
@@ -17,12 +18,11 @@ const Music = (props) => {
             <h1>Music</h1>
             <div id="music-select-container">
                 <Tabs defaultActiveKey="home" unmountOnExit='true' id="noanim-tab-example" className="mb-3">
-                    <Tab className="subnav-links" eventKey="home" title="All">
-                        <Youtube />
-                        {/* <Mixcloud /> */}
+                    <Tab className="subnav-links" eventKey="home" title="Singles">
+                        <Singles />
                     </Tab>
                     <Tab className="subnav-links" eventKey="profile" title="Remixes">
-                        <h4>Test 2</h4>
+                        {/* <Youtube /> */}
                     </Tab>
                     <Tab className="subnav-links" eventKey="contact" title="Live Sets">
                         <Mixcloud />
