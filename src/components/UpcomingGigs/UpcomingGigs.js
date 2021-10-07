@@ -1,33 +1,48 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
+import '../../styles/gigspreview.css'
 
 const UpcomingGigs = () => {
     const query = useStaticQuery(graphql`
         query gigs {
             allContentfulUpcomingGigs {
                 nodes {
-                    id
-                    eventLocation
+                    gigMonth
+                    gigDay
+                    gigYear(formatString: "YYYY")
                     eventName
+                    eventLocation
                     eventPage
-                    gigDate
                 }
             }
         }
     `)
-    console.log('gigs query', query)
+    console.log('gigs querys', query)
 
     return (
         query.allContentfulUpcomingGigs.nodes.map(gig => {
-            console.log('gigs', gig)
+            // console.log('gigs', gig)
+                    
 
             return (
-                <div>
-                    <h4>{gig.gigDate}</h4>
-                    <h4>{gig.eventLocation}</h4>
-                    <h4>{gig.eventName}</h4>
-                    <h4><a target="_blank" rel="noreferrer" href={gig.eventPage}>Event Page</a></h4>
-                </div>
+                <>
+                    <div id="event-container">
+                        {/* <div id="gig-label-border"></div> */}
+                        <div id="gig-preview-card">
+                            <div className="dates">
+                                <h4>{gig.gigMonth}</h4>
+                                <h4>{gig.gigDay}</h4>
+                                <h4>{gig.gigYear}</h4>
+                            </div>
+                            <div className="event-details">
+                                <h4>{gig.eventName}</h4>
+                                <h4>{gig.eventLocation}</h4>
+                                <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={gig.eventPage}>View</a></h4>
+                            </div>
+                        </div>
+                        <div className="gig-preview-border"></div>
+                    </div>
+                </>
             )
         })
     )

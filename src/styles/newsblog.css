@@ -10,3 +10,12 @@ div.news-card{
     background-color: rgba(0, 0, 0, 0.582);
     border-radius: 8px;
 }
+
+div.slider{
+    position: relative;
+    margin: 40px auto;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    display: center !important;
+  }

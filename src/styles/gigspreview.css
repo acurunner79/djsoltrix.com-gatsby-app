@@ -1,26 +1,75 @@
-#gig-preview-container{
+#event-container{
+    background-color: rgba(255, 255, 255, 0.561);
+    /* border-radius: 8px; */
+    width: 95vw;
+    margin: 0 auto;
+}
+
+h4.event-label{
+    color: white !important;
+}
+
+#gig-preview-card{
     display: flex;
     justify-content: space-evenly;
+    margin: 10px auto;
 }
 
-#gig-dates{
+#gig-label-border{
+    border: 1PX solid black;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.gig-preview-border{
+    border: 1PX solid rgba(0, 0, 0, 0.164);
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#labels{
+    display: flex;
+    justify-content: space-evenly !important;
+    /* margin-right: 60px; */
+}
+
+#labels h4{
+    color: black;
+    font-size: 20px;
+}
+
+.event-details h4{
+    text-align: left !important;
+    font-family: 'Play';
+    color: black;
+    font-size: 18px;
+}
+
+.dates h4{
     text-align: left;
-}
-
-#event-name{
-    text-align: center;
-}
-
-.dates{
     color: black;
     font-family: 'Play';
-}
-
-.name{
-    color: black;
-    font-family: 'Play';
+    font-size: 18px;
 }
 
 .eventpage-link{
     color: red !important;
+}
+
+@media(min-width: 767px){
+    #labels{
+        margin-right: 90px;
+    }
+
+    #gig-preview-card{
+        justify-content: space-around;
+    }
+
+    #gig-label-border{
+        max-width: 650px;
+    }
+    
+    .gig-preview-border{
+        max-width: 650px;
+    }
 }

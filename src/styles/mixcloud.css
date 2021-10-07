@@ -13,3 +13,23 @@
 .widget-cloudcast-image:after{
     display: none !important;
 }
+
+@media(min-width: 1023px){
+    #mixcloud-container{
+        width: 80vw;
+    }
+
+    .cloudcast-player{
+        width: 80vw !important;
+    }
+}
+
+@media(min-width: 1439px){
+    #mixcloud-container{
+        max-width: 1140px;
+    }
+
+    .cloudcast-player{
+        max-width: 1140px !important;
+    }
+}

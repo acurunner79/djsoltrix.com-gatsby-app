@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaYoutube } from 'react-icons/fa'
 import ReactPlayer from 'react-player'
 import '../../styles/youtube.css'
@@ -22,7 +22,7 @@ const Remixes = () => {
             const response =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=${playlistId}&maxResults=50&key=${apiKey}`)
             const data = await response.json()
             setRemixData(data)
-            console.log('test data-', remixData)
+            console.log('test data', remixData)
         }
      
         useEffect(() => {
@@ -34,21 +34,29 @@ const Remixes = () => {
         return (
 
             remixData.items.map(item => {
+                console.log('remix item', item)
 
                 return (
                     <div id="youtube-container">
                         <div className="youtube-card">
                             <ReactPlayer className="videoplayer"
-                                url={`"https://www.youtube.com/embed/playlist?list=PL3b1uuA7D4VvWBKgVDCCF0n0l7PLHdzJ6${videoId}"`}
-                                light={}
+                                url={`"https://www.youtube.com/embed/${item.snippet.resourceId.videoId}"`}
+                                // light={}
                                 controls="true"/>
-                            <h4 className="youtube-titles"><FaYoutube color="red" size="25"/> {}</h4>
+                            <h4 className="youtube-titles"><FaYoutube color="red" size="25"/> {item.snippet.title}</h4>
                         </div>
                     </div>
                 )
             })
         )
     }
+    const loading = () => {
+        return(
+            <h1>Loading</h1>
+        )
+    }
+
+    return remixData ? loaded() : loading()
 }
 
 export default Remixes

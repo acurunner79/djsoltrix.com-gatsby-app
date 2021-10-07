@@ -2,13 +2,14 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0 auto !important;
-    text-align: center;
+    text-align: center !important;
+    align-content: center !important;
     background-size: 100%;
     background-image: url("https://res.cloudinary.com/acurunner79/image/upload/v1631939180/soltrix-02_opu5k4.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-color: black;
+    background-color: black !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -17,6 +18,7 @@ body {
   font-family: 'Orbitron',sans-serif;
   color: white ;
   margin: 0;
+  text-align: center;
 }
 
 img#mobile-logo{

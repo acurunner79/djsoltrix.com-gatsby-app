@@ -1,3 +1,7 @@
+#page-header{
+    margin: 40px auto;
+}
+
 #music-select-container{
     width: 95vw;
     margin: 0 auto !important;
@@ -10,14 +14,28 @@
     /* text-decoration: underline; */
 }
 
-nav.mb-3.nav.nav-tabs{
+#singles-display{
+    background-color: rgba(255, 255, 255, 0.301);
+    width: 95vw !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+}
+
+/* nav.mb-3.nav.nav-tabs{
     background-color: rgba(12, 12, 12, 0.794);
-    font-size: 24px;
+    font-size: 20px;
     justify-content: space-evenly;
     transition: transform .4s;
-    width: 95vw;
-    margin: 0 auto !important
-}
+    max-width: 1140px;
+    max-height: 40px;
+    margin: 0 auto !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 0 4px;
+} */
 
 .video-thumbnail{
     width: 95vw;
@@ -25,12 +43,35 @@ nav.mb-3.nav.nav-tabs{
 
 .mb-3{
     display: flex;
+    margin: 0 20px;
+    justify-content: center;
+    font-size: 16.5px;
+}
+
+.nav-link{
+    color: white;
+    background-color: black !important;
+}
+
+.nav-tabs{
+    border-bottom: none;
     margin: 0 10px;
+}
+
+@media(min-width: 767px){
+    nav.mb-3.nav.nav-tabs{
+        font-size: 30px;
+        width: 80vw !important;
+    }
+
+    .mb-3{
+        font-size: 25px;
+    }
 }
 
 @media(min-width: 1023px){
     nav.mb-3.nav.nav-tabs{
-        width: 80vw;
-        /* margin: 0 80px !important; */
+        width: 80vw !important;
+        font-size: 30px;
     }
 }

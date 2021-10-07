@@ -3,7 +3,8 @@
 #upper-logo{
     max-width: 95vw;
     margin-top: 130px;
-    
+    /* margin: 100px auto !important; */
+    align-content: center;
 }
 
 #home-upper-container{
@@ -87,9 +88,10 @@
 }
 
 .latest-music-cover{
-    width: 320px;
-    height: 180px;
-    margin: 20px;
+    max-width: 540px !important;
+    max-height: 260px !important;
+    width: 340px !important;
+    margin: 0 auto !important;
 }
 
 .button{
@@ -122,6 +124,10 @@
 
     #upper-logo{
         width: 730px;
+    }
+
+    #gig-chart{
+        max-width: 730px;
     }
 }
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ReactPlayer from 'react-player'
-
+import { FaYoutube } from 'react-icons/fa'
+import '../../styles/youtube.css'
 
 const Singles = () => {
 
@@ -20,36 +21,33 @@ const Singles = () => {
             const response =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=${playlistId}&maxResults=50&key=${apiKey}`)
             const data = await response.json()
             setYoutubeData(data)
-            console.log('test data-', youtubeData)
+            // console.log('test data-', youtubeData)
         }
      
         useEffect(() => {
             getYoutubeData()
         }, [])
 
-       const loaded = () => {
-
-           return(
-               youtubeData.items.map(item => {
-                   console.log('item', item)
+        
+        const loaded = () => {
+            
+            return(
+                youtubeData.items.map(item => {
+                    //    console.log('item', item)
+                    
+                        if (item.snippet.title === 'Private video')
+                            return false
+            
+                    
     
                    return(
-                        <div>
-                            <ReactPlayer 
-                            url={`"https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`}/>
-                           <h4>{item.snippet.description}</h4>
-                           {/* <h4>{youtubeData.items[1].snippet.resourceId.videoId}</h4>
-                           <h4>{youtubeData.items[2].snippet.resourceId.videoId}</h4>
-                           <h4>{youtubeData.items[3].snippet.resourceId.videoId}</h4>
-                           <h4>{youtubeData.items[4].snippet.resourceId.videoId}</h4>
-                           <h4>{youtubeData.items[5].snippet.resourceId.videoId}</h4>
-                           <h4>{youtubeData.items[6].snippet.resourceId.videoId}</h4>
-                           <h4>{youtubeData.items[7].snippet.resourceId.videoId}</h4>
-                           <h4>{youtubeData.items[8].snippet.resourceId.videoId}</h4>
-                           <h4>{youtubeData.items[9].snippet.resourceId.videoId}</h4>
-                           <h4>{youtubeData.items[10].snippet.resourceId.videoId}</h4>
-                           <h4>{youtubeData.items[11].snippet.resourceId.videoId}</h4>
-                           <h4>{youtubeData.items[12].snippet.resourceId.videoId}</h4>  */}
+                        <div id="youtube-container">
+                            <div className="youtube-card">
+                                <ReactPlayer className="videoplayer"
+                                url={`"https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`}
+                                controls="true"/>
+                                <h4 className="youtube-titles"><FaYoutube color="red" size="25"/> {item.snippet.title}</h4>
+                            </div>
                         </div>
                     )
                 })

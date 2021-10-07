@@ -8,10 +8,12 @@ const GigsPreview = () => {
             allContentfulUpcomingGigs {
                 edges {
                     node {
-                        gigDate(formatString: "MMM DD ")
-                        eventLocation
-                        eventName
-                        eventPage
+                    gigMonth
+                    gigDay
+                    gigYear(formatString: "YYYY")
+                    eventName
+                    eventLocation
+                    eventPage
                     }
                 }
             }
@@ -19,36 +21,92 @@ const GigsPreview = () => {
     `)
     console.log('gigs query', query)
     return (
-        <div id="gig-preview-container">
-            <div id="gig-dates">
+        <>
+        <div id="labels">
+            <h4>DATE</h4>
+            <h4>EVENT</h4>
+        </div>
+        <div id="gig-label-border"></div>
+        <div id="gig-preview-card">
+            <div className="dates">
+                <h4>{query.allContentfulUpcomingGigs.edges[0].node.gigMonth}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[0].node.gigDay}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[0].node.gigYear}</h4>
+            </div>
+            <div className="event-details">
+                <h4>{query.allContentfulUpcomingGigs.edges[0].node.eventName}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[0].node.eventLocation}</h4>
+                <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[0].node.eventPage}>View</a></h4>
+            </div>
+        </div>
+        <div className="gig-preview-border"></div>
+        <div id="gig-preview-card">
+            <div className="dates">
+                <h4>{query.allContentfulUpcomingGigs.edges[1].node.gigMonth}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[1].node.gigDay}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[1].node.gigYear}</h4>
+            </div>
+            <div className="event-details">
+                <h4>{query.allContentfulUpcomingGigs.edges[1].node.eventName}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[1].node.eventLocation}</h4>
+                <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[1].node.eventPage}>View</a></h4>
+            </div>
+        </div>
+        <div className="gig-preview-border"></div>
+        <div id="gig-preview-card">
+            <div className="dates">
+                <h4>{query.allContentfulUpcomingGigs.edges[2].node.gigMonth}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[2].node.gigDay}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[2].node.gigYear}</h4>
+            </div>
+            <div className="event-details">
+                <h4>{query.allContentfulUpcomingGigs.edges[2].node.eventName}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[2].node.eventLocation}</h4>
+                <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[2].node.eventPage}>View</a></h4>
+            </div>
+        </div>
+        <div className="gig-preview-border"></div>
+        <div id="gig-preview-card">
+            <div className="dates">
+                <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigMonth}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigDay}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigYear}</h4>
+            </div>
+            <div className="event-details">
+                <h4>{query.allContentfulUpcomingGigs.edges[3].node.eventName}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[3].node.eventLocation}</h4>
+                <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[3].node.eventPage}>View</a></h4>
+            </div>
+        </div>
+        </>
+            /* <div id="gig-dates">
             <h4 className="labels">DATE</h4>
                 <h4 className="dates">{query.allContentfulUpcomingGigs.edges[0].node.gigDate}</h4>
                 <h4 className="dates">{query.allContentfulUpcomingGigs.edges[1].node.gigDate}</h4>
                 <h4 className="dates">{query.allContentfulUpcomingGigs.edges[2].node.gigDate}</h4>
-                {/* <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigDate}</h4> */}
+                <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigDate}</h4>
             </div>
             <div id="event-name">
             <h4 className="labels">EVENT</h4>
                 <h4 className="dates">{query.allContentfulUpcomingGigs.edges[0].node.eventName}</h4>
                 <h4 className="dates">{query.allContentfulUpcomingGigs.edges[1].node.eventName}</h4>
                 <h4 className="dates">{query.allContentfulUpcomingGigs.edges[2].node.eventName}</h4>
-                {/* <h4>{query.allContentfulUpcomingGigs.edges[3].node.eventName}</h4> */}
+                <h4>{query.allContentfulUpcomingGigs.edges[3].node.eventName}</h4>
             </div>
             <div id="event-location">
             <h4 className="labels">LOCATION</h4>
                 <h4 className="dates">{query.allContentfulUpcomingGigs.edges[0].node.eventLocation}</h4>
                 <h4 className="dates">{query.allContentfulUpcomingGigs.edges[1].node.eventLocation}</h4>
                 <h4 className="dates">{query.allContentfulUpcomingGigs.edges[2].node.eventLocation}</h4>
-                {/* <h4>{query.allContentfulUpcomingGigs.edges[3].node.eventLocation}</h4> */}
+                <h4>{query.allContentfulUpcomingGigs.edges[3].node.eventLocation}</h4>
             </div>
             <div id="event-link">
             <h4 className="labels">DETAILS</h4>
                 <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[0].node.eventPage}>View</a></h4>
                 <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[1].node.eventPage}>View</a></h4>
                 <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[2].node.eventPage}>View</a></h4>
-                {/* <h4><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[3].node.eventPage}>Event Page</a></h4> */}
-            </div>
-        </div>
+                <h4><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[3].node.eventPage}>Event Page</a></h4>
+            </div> */
     )
 }
 
