@@ -48,41 +48,37 @@
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.561);
     width: 95vw;
-    /* height: 390px; */
-    /* margin: 700px 0 0 0; */
-}
-
-/* .gig-content{
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.267);
     margin: 0 auto;
-    padding: 5px 0;
-} */
-
-/* .gig-date{
-    text-align: left !important;
-    font-family: 'Play';
-    font-size: 15px;
-    color: black;
 }
-.gig-details{
-    font-family: 'Play';
-    font-size: 15px;
-    color: black;
-} */
 
 #latest-music-container{
     width: 95vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
     margin: 0 auto !important;
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 8PX;
+}
+
+#latest-music-header{
+    margin: 0 auto;
+    color: red;
+    background-color: black;
+}
+
+.latest-music-title{
+    font-size: 15px;
+    font-weight: 550;
+    width: 340px;
+    margin:  0 auto;
+    border: 2px solid black;
+    background-color: black;
 }
 
 .latest-music-card{
-    background-color: rgba(37, 37, 37, 0.534);
     margin: 5px auto;
     width: 95vw;
 }
@@ -104,7 +100,8 @@
     /* padding: 5px; */
     color: red;
     font-family: 'Orbitron';
-    margin-bottom: 10px;
+    margin: 10px auto !important;
+    align-content: center !important;
 }
 
 #news-chart{
@@ -114,12 +111,22 @@
     /* height: 40vh; */
 }
 
+#lower-container{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+}
+
 @media(min-width: 767px){
+    #latest-music-container{
+        width: 730px;
+    }
     .latest-music-card{
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between !important;
         width: 46vw;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
     #upper-logo{
@@ -132,11 +139,42 @@
 }
 
 @media(min-width: 1023px){
+    #latest-music-container{
+        width: 1000px;
+    }
     .latest-music-card{
         width: 34vw;
     }
 
     #gig-chart{
+        width: 80vw;
+    }
+
+    #lower-container{
+
+    }
+}
+
+@media(min-width: 1439px){
+    #latest-music-container{
+        width: 1400px;
+    }
+
+    .latest-music-card{
+        width: 360px;
+    }
+}
+
+@media(min-width: 2559px){
+    #latest-music-container{
+        width: 65vw;
+    }
+
+    .latest-music-card{
+        width: 530px;
+    }
+
+    #news-chart{
         width: 80vw;
     }
 }

@@ -7,8 +7,22 @@ div.news-card{
     width: 90vw !important;
     margin: 10px auto;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgb(0, 0, 0);
     border-radius: 8px;
+}
+
+.newsblog-title{
+    color: red;
+    font-family: 'Play';
+}
+
+.newsblog-descr{
+    font-family: 'Play';
+}
+
+.newsblog-date{
+    font-size: 15px;
+    font-family: 'Play';
 }
 
 div.slider{
@@ -16,6 +30,10 @@ div.slider{
     margin: 40px auto;
 }
 
-.carousel-control-next, .carousel-control-prev{
-    display: center !important;
+.carousel-control-next, .carousel-control-prev, div.carousel-indicators{
+    display: none !important;
   }
+
+@media(min-width: 767px){
+    
+}

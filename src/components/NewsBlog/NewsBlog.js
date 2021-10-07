@@ -25,9 +25,9 @@ const NewsBlog = () => {
         <Carousel className="rounded">
           <Carousel.Item >
             <div className="news-card">
-                <h4>{query.allContentfulBlogPost.edges[0].node.publishedDate}</h4>
-                <h2>{query.allContentfulBlogPost.edges[0].node.title}</h2>
+                <h2 className="newsblog-title">{query.allContentfulBlogPost.edges[0].node.title}</h2>
                 <h4>{query.allContentfulBlogPost.edges[0].node.description}</h4>
+                <h4 className="newsblog-date">{query.allContentfulBlogPost.edges[0].node.publishedDate}</h4>
             </div>
             <Carousel.Caption>
 
@@ -35,9 +35,9 @@ const NewsBlog = () => {
           </Carousel.Item>
           <Carousel.Item>
             <div className="news-card">
-                <h2>{query.allContentfulBlogPost.edges[1].node.title}</h2>
-                <h4>{query.allContentfulBlogPost.edges[1].node.description}</h4>
-                <h4>{query.allContentfulBlogPost.edges[1].node.publishedDate}</h4>
+                <h2 className="newsblog-title">{query.allContentfulBlogPost.edges[1].node.title}</h2>
+                <h4 className="newsblog-descr">{query.allContentfulBlogPost.edges[1].node.description}</h4>
+                <h4 className="newsblog-date">{query.allContentfulBlogPost.edges[1].node.publishedDate}</h4>
             </div>
             <Carousel.Caption>
 
@@ -45,9 +45,9 @@ const NewsBlog = () => {
           </Carousel.Item>
           <Carousel.Item>
             <div className="news-card">
-                <h2>{query.allContentfulBlogPost.edges[2].node.title}</h2>
-                <h4>{query.allContentfulBlogPost.edges[2].node.description}</h4>
-                <h4>{query.allContentfulBlogPost.edges[2].node.publishedDate}</h4>
+                <h2 className="newsblog-title">{query.allContentfulBlogPost.edges[2].node.title}</h2>
+                <h4 className="newsblog-descr">{query.allContentfulBlogPost.edges[2].node.description}</h4>
+                <h4 className="newsblog-date">{query.allContentfulBlogPost.edges[2].node.publishedDate}</h4>
             </div>
             <Carousel.Caption>
 
@@ -55,9 +55,9 @@ const NewsBlog = () => {
           </Carousel.Item>
           <Carousel.Item>
             <div className="news-card">
-                <h2>{query.allContentfulBlogPost.edges[3].node.title}</h2>
-                <h4>{query.allContentfulBlogPost.edges[3].node.description}</h4>
-                <h4>{query.allContentfulBlogPost.edges[3].node.publishedDate}</h4>
+                <h2 className="newsblog-title">{query.allContentfulBlogPost.edges[3].node.title}</h2>
+                <h4 className="newsblog-descr">{query.allContentfulBlogPost.edges[3].node.description}</h4>
+                <h4 className="newsblog-date">{query.allContentfulBlogPost.edges[3].node.publishedDate}</h4>
             </div>
               <Carousel.Caption>
               </Carousel.Caption>
