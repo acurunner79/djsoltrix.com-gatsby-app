@@ -105,7 +105,7 @@
 }
 
 #news-chart{
-    background-color: rgba(255, 255, 255, 0.561);
+    /* background-color: rgba(255, 255, 255, 0.561); */
     border-radius: 8px;
     width: 95vw;
     /* height: 40vh; */
@@ -114,7 +114,10 @@
 #lower-container{
     display: flex;
     flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.561);
+    border-radius: 8px;
     width: 95vw;
+    /* width: 95vw; */
 }
 
 @media(min-width: 767px){
@@ -139,6 +142,10 @@
 }
 
 @media(min-width: 1023px){
+    #lower-container{
+        flex-direction: row;
+    }
+
     #latest-music-container{
         width: 1000px;
     }
@@ -150,9 +157,6 @@
         width: 80vw;
     }
 
-    #lower-container{
-
-    }
 }
 
 @media(min-width: 1439px){

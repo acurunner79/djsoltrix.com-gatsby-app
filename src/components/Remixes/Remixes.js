@@ -19,10 +19,10 @@ const Remixes = () => {
         // const getremixData = React.useRef()
      
         const getremixData = async () => {
-            const response =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=${playlistId}&maxResults=50&key=${apiKey}`)
+            const response =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=${playlistId}&maxResults=20&key=${apiKey}`)
             const data = await response.json()
             setRemixData(data)
-            console.log('test data', remixData)
+            console.log('test dataa', remixData)
         }
      
         useEffect(() => {
@@ -34,7 +34,25 @@ const Remixes = () => {
         return (
 
             remixData.items.map(item => {
-                console.log('remix item', item)
+                // console.log('remix item', item)
+
+                function skipVid(str){
+                    if (item.snippet.title === 'Private video')
+                        return 'null'
+                }
+                skipVid()
+                // var privateVid = item.snippet.title
+
+                // var removeVid = ''
+                        // console.log('private vids', privateVid)
+                        // return privateVid()
+
+                    // removeVid.push(privateVid)
+                    // console.log('removed vid', removeVid)
+                    
+                   
+
+
 
                 return (
                     <div id="youtube-container">

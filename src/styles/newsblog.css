@@ -35,5 +35,24 @@ div.slider{
   }
 
 @media(min-width: 767px){
-    
+
+}
+
+@media(min-width: 1023px){
+    div#news-chart{
+        width: 45vw !important;
+        padding: 10px;
+    }
+
+    div.news-card{
+        width: 43vw !important;
+    }
+
+    #instagram-home-card{
+        width: 45vw;
+    }
+
+    /* div.slider{
+        width: 45vw !important;
+    } */
 }

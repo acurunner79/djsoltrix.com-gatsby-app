@@ -75,10 +75,11 @@ const IndexPage = (props) => {
                   <button className="button">More News <IoIosArrowForward size="15"/></button>
               </Link>
           </div>
-          <div id="instagram-home-card">
+          {/* <div className="gig-preview-border"></div> */}
+          {/* <div id="instagram-home-card">
               <h4 id="gig-header">Instagram</h4>
               <Instagram />
-          </div>
+          </div> */}
         </div>
         <Footer />
       </div>

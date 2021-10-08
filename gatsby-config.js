@@ -11,12 +11,12 @@ module.exports = {
         spaceId: "23el1479899l",
       },
     },
-    // {
-    //   resolve: `gatsby-source-instagram-all`,
-    //   options: {
-    //     access_token: "IGQVJValNVWGZApSHF5bDQ5WkxsLU1iT2RGSkptM1I4Mnh6SEJTVmVKY0hoZAExuWjVPVndOajNHYjc3b1ljeEQ5NE80ZAjdUTUhicU1GaDdPTFl3SmYtUWRyR3FjYUgwRS1pMXZAGSWRCcUZAUUGk5dzNncAZDZD"
-    //   }
-    // },
+    {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token: "IGQVJValNVWGZApSHF5bDQ5WkxsLU1iT2RGSkptM1I4Mnh6SEJTVmVKY0hoZAExuWjVPVndOajNHYjc3b1ljeEQ5NE80ZAjdUTUhicU1GaDdPTFl3SmYtUWRyR3FjYUgwRS1pMXZAGSWRCcUZAUUGk5dzNncAZDZD"
+      }
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

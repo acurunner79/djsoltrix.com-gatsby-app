@@ -1,7 +1,7 @@
 #instagram-container{
     display: flex;
     flex-direction: row;
-    margin: 40px auto;
+    margin: 40px auto !important;
     display: flex;
     gap: 0.5rem;
     flex-wrap: nowrap;
@@ -18,9 +18,25 @@
     width: 92vw !important;
     /* max-height: 230px !important; */
     margin: 0 auto !important;
+    align-items: center !important;
 }
 
 .insta-image{
     width: 92vw;
+    /* margin: 5px ; */
     /* height: 20vh; */
+}
+
+@media(min-width: 767px){
+
+}
+
+@media(min-width: 1023px){
+    .insta-card{
+        width: 45vw !important;
+    }
+
+    .insta-image{
+        width: 43vw;
+    }
 }
