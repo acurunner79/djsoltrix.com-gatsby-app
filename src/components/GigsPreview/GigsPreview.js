@@ -29,12 +29,12 @@ const GigsPreview = () => {
         <div id="gig-label-border"></div>
         <div id="gig-preview-card">
             <div className="dates">
-                <h4>{query.allContentfulUpcomingGigs.edges[0].node.gigMonth}</h4>
-                <h4>{query.allContentfulUpcomingGigs.edges[0].node.gigDay}</h4>
-                <h4>{query.allContentfulUpcomingGigs.edges[0].node.gigYear}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[0].node.gigMonth}/{query.allContentfulUpcomingGigs.edges[0].node.gigDay}/{query.allContentfulUpcomingGigs.edges[0].node.gigYear}</h4>
+                <h4></h4>
+                <h4></h4>
             </div>
             <div className="event-details">
-                <h4>{query.allContentfulUpcomingGigs.edges[0].node.eventName}</h4>
+                <h4 className="event-name">{query.allContentfulUpcomingGigs.edges[0].node.eventName}</h4>
                 <h4>{query.allContentfulUpcomingGigs.edges[0].node.eventLocation}</h4>
                 <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[0].node.eventPage}>View</a></h4>
             </div>
@@ -42,9 +42,10 @@ const GigsPreview = () => {
         <div className="gig-preview-border"></div>
         <div id="gig-preview-card">
             <div className="dates">
-                <h4>{query.allContentfulUpcomingGigs.edges[1].node.gigMonth}</h4>
+            <h4>{query.allContentfulUpcomingGigs.edges[1].node.gigMonth}/{query.allContentfulUpcomingGigs.edges[1].node.gigDay}/{query.allContentfulUpcomingGigs.edges[1].node.gigYear}</h4>
+                {/* <h4>{query.allContentfulUpcomingGigs.edges[1].node.gigMonth}</h4>
                 <h4>{query.allContentfulUpcomingGigs.edges[1].node.gigDay}</h4>
-                <h4>{query.allContentfulUpcomingGigs.edges[1].node.gigYear}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[1].node.gigYear}</h4> */}
             </div>
             <div className="event-details">
                 <h4>{query.allContentfulUpcomingGigs.edges[1].node.eventName}</h4>
@@ -55,9 +56,10 @@ const GigsPreview = () => {
         <div className="gig-preview-border"></div>
         <div id="gig-preview-card">
             <div className="dates">
-                <h4>{query.allContentfulUpcomingGigs.edges[2].node.gigMonth}</h4>
+            <h4>{query.allContentfulUpcomingGigs.edges[2].node.gigMonth}/{query.allContentfulUpcomingGigs.edges[2].node.gigDay}/{query.allContentfulUpcomingGigs.edges[2].node.gigYear}</h4>
+                {/* <h4>{query.allContentfulUpcomingGigs.edges[2].node.gigMonth}</h4>
                 <h4>{query.allContentfulUpcomingGigs.edges[2].node.gigDay}</h4>
-                <h4>{query.allContentfulUpcomingGigs.edges[2].node.gigYear}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[2].node.gigYear}</h4> */}
             </div>
             <div className="event-details">
                 <h4>{query.allContentfulUpcomingGigs.edges[2].node.eventName}</h4>
@@ -68,9 +70,10 @@ const GigsPreview = () => {
         <div className="gig-preview-border"></div>
         <div id="gig-preview-card">
             <div className="dates">
-                <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigMonth}</h4>
+            <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigMonth}/{query.allContentfulUpcomingGigs.edges[3].node.gigDay}/{query.allContentfulUpcomingGigs.edges[3].node.gigYear}</h4>
+                {/* <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigMonth}</h4>
                 <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigDay}</h4>
-                <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigYear}</h4>
+                <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigYear}</h4> */}
             </div>
             <div className="event-details">
                 <h4>{query.allContentfulUpcomingGigs.edges[3].node.eventName}</h4>

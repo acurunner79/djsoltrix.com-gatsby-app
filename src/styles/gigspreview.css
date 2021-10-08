@@ -38,11 +38,22 @@ h4.event-label{
     font-size: 20px;
 }
 
+.event-details{
+    display: flex;
+    flex-direction: column;
+}
+
 .event-details h4{
     text-align: left !important;
     font-family: 'Play';
     color: black;
     font-size: 18px;
+    width: 40vw;
+    font-weight: 600;
+}
+
+.event-name{
+    text-overflow: wrap;
 }
 
 .dates h4{
@@ -50,6 +61,7 @@ h4.event-label{
     color: black;
     font-family: 'Play';
     font-size: 18px;
+    font-weight: 600;
 }
 
 .eventpage-link{
@@ -62,7 +74,7 @@ h4.event-label{
     }
 
     #gig-preview-card{
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     #gig-label-border{
@@ -71,5 +83,11 @@ h4.event-label{
     
     .gig-preview-border{
         max-width: 650px;
+    }
+
+    .event-details{
+        /* width: 300px; */
+        height: 65px;
+        flex-wrap: wrap;
     }
 }
