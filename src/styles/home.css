@@ -151,12 +151,13 @@
         transform: scale(1.2);
     }
 
-    /* #latest-music-container{
-        width: 1000px;
+    #latest-music-container{
+        margin: 0 auto;
+        width: 90vw;
     }
     .latest-music-card{
         width: 34vw;
-    } */
+    }
 
     #gig-chart{
         width: 80vw;
