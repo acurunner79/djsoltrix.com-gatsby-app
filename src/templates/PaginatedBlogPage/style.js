@@ -11,11 +11,18 @@ export const Content = styled.div`
     @media(min-width: 767px){
         width: 70vw;
     }
+
+    @media(min-width: 1023px){
+        max-width: 716px;
+    }
     `
 export const Post = styled.div`
     padding: 0 10px;
     margin: 20px 0;
     text-align: left;
+    box-shadow: 2px 2px 25px rgba(109, 108, 108, 0.438);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.859);;
     a{
         font-weight: bold;
         font-size: 20px;
@@ -25,7 +32,28 @@ export const Post = styled.div`
         color: red !important;
     }
     p#blog-title{
-        color: red ;
+        text-align: center;
+        color: red;
+    }
+    div#news-bottom-partition{
+        width: 80vw;
+        border: 1px solid rgba(255, 255, 255, 0.137);
+        margin: 10px auto;
+    }
+    small{
+        color: gray;
+    }
+
+    @media(min-width: 767px){
+        div#news-bottom-partition{
+            width: 500px;
+        }
+    }
+
+    @media(min-width: 1023px){
+        div#news-bottom-partition{
+            width: 650px !important;
+        }
     }
 `
 export const Pagination = styled.div`

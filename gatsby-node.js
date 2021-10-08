@@ -9,49 +9,6 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         },
     });
 };
-// import React, { useState, useEffect} from 'react'
-
-// const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/playlistItems'
-   
-//    const playlistId = 'PL3b1uuA7D4VtxzhUrWqyhxr2339uJ2cSV'
-
-//    const apiKey = 'AIzaSyC_Nk5v8pQlCJEXhXi-Qe7zy6Qt8mqBPJs'
-// //    console.log('apiKey', apiKey)
-   
-//    const [youtubeData, setYoutubeData] = useState(null)
-
-//    const getYoutubeData = useRef()
-
-//    getYoutubeData.current = async () => {
-//        const response =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=${playlistId}&key=${apiKey}`)
-//        const data = await response.json()
-//        setYoutubeData(data)
-//        console.log('test data', youtubeData)
-//    }
-
-//    useEffect(() => {
-//        getYoutubeData.current()
-//    }, [])
-// const fetch = require(`node-fetch`)
-
-// exports.sourceNodes = async ({
-//     actions: { createNode },
-//     createContentDigest,
-// }) => {
-//     const result = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL3b1uuA7D4VtxzhUrWqyhxr2339uJ2cSV&key=AIzaSyC_Nk5v8pQlCJEXhXi-Qe7zy6Qt8mqBPJs`)
-    
-//     const resultData = await result.json()
-//     console.log('result datas', resultData.resourceId)
-
-//     createNode({
-//         description: resultData.description,
-//         id: resultData.id,
-//         internal: {
-//             type: `YoutubePlaylistTest`,
-//             contentDigest: createContentDigest(resultData)
-//         }
-//     })
-// }
 
 exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;
@@ -67,7 +24,7 @@ exports.createPages = async ({ actions, graphql }) => {
           edges {
             node {
               slug
-              publishedDate(formatString: "DD MMM YYYY")
+              publishedDate(formatString: "MMM DD YYYY")
               pageContent {
                 raw
               }

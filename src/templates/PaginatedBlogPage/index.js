@@ -14,8 +14,9 @@ const PaginatedBlogPage = ({pageContext}) => {
             <>
             <Hamburger />
             <TopNav />
+            <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
+                <h1 id="blog-header">News</h1>
             <Content>
-                <h1 id="blog-header">Soltrix News</h1>
                 {pageContext.posts.map((post) => (
                     <Post key={post.contentful_id}>
                         <div>
@@ -27,6 +28,7 @@ const PaginatedBlogPage = ({pageContext}) => {
                                 {post.publishedDate}
                             </small>
                         </div>
+                        {/* <div id="news-bottom-partition"></div> */}
                     </Post>
                 ))}
             </Content>
