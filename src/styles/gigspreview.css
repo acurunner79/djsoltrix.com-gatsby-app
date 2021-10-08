@@ -5,9 +5,9 @@
     margin: 0 auto;
 }
 
-h4.event-label{
+/* h4.event-label{
     color: white !important;
-}
+} */
 
 #gig-preview-card{
     display: flex;
@@ -48,7 +48,7 @@ h4.event-label{
     font-family: 'Play';
     color: black;
     font-size: 18px;
-    width: 40vw;
+    /* width: 40vw; */
     font-weight: 600;
 }
 
@@ -74,6 +74,7 @@ h4.event-label{
     }
 
     #gig-preview-card{
+        width: 730px;
         justify-content: space-evenly;
     }
 
@@ -86,8 +87,22 @@ h4.event-label{
     }
 
     .event-details{
-        /* width: 300px; */
+        width: 400px ;
         height: 65px;
         flex-wrap: wrap;
+    }
+}
+
+@media(min-width: 1023px){
+    #gig-preview-card{
+        /* justify-content: space-between; */
+    }
+
+    .event-details h4{
+        width: 250px !important;
+    }
+
+    #labels{
+        justify-content: space-around !important;
     }
 }

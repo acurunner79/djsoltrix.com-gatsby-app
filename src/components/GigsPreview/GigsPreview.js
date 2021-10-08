@@ -25,13 +25,12 @@ const GigsPreview = () => {
         <div id="labels">
             <h4>DATE</h4>
             <h4>EVENT</h4>
+            <h4>PAGE</h4>
         </div>
         <div id="gig-label-border"></div>
         <div id="gig-preview-card">
             <div className="dates">
                 <h4>{query.allContentfulUpcomingGigs.edges[0].node.gigMonth}/{query.allContentfulUpcomingGigs.edges[0].node.gigDay}/{query.allContentfulUpcomingGigs.edges[0].node.gigYear}</h4>
-                <h4></h4>
-                <h4></h4>
             </div>
             <div className="event-details">
                 <h4 className="event-name">{query.allContentfulUpcomingGigs.edges[0].node.eventName}</h4>
