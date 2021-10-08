@@ -1,8 +1,12 @@
 #event-container{
     background-color: rgba(255, 255, 255, 0.561);
     /* border-radius: 8px; */
-    width: 95vw;
+    width: 95vw !important;
     margin: 0 auto;
+}
+
+#page-label-hide{
+    display: none;
 }
 
 /* h4.event-label{
@@ -12,7 +16,9 @@
 #gig-preview-card{
     display: flex;
     justify-content: space-evenly;
-    margin: 10px auto;
+    align-items: center;
+    margin: 10px auto !important;
+    width: 90vw;
 }
 
 #gig-label-border{
@@ -41,14 +47,15 @@
 .event-details{
     display: flex;
     flex-direction: column;
+    padding: 0 !important;
+    margin: 0 auto;
 }
 
 .event-details h4{
     text-align: left !important;
     font-family: 'Play';
     color: black;
-    font-size: 18px;
-    /* width: 40vw; */
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -57,20 +64,26 @@
 }
 
 .dates h4{
+    /* width: 30px; */
     text-align: left;
     color: black;
     font-family: 'Play';
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
 }
 
 .eventpage-link{
     color: red !important;
+    width: 30px !important;
 }
 
 @media(min-width: 767px){
     #labels{
-        margin-right: 90px;
+        /* margin-right: 90px; */
+    }
+
+    #page-label-hide{
+        display: inline;
     }
 
     #gig-preview-card{
@@ -91,6 +104,14 @@
         height: 65px;
         flex-wrap: wrap;
     }
+
+    .event-details h4{
+        width: 290px;
+    }
+
+    .eventpage-link{
+        width: 30px !important;
+    }
 }
 
 @media(min-width: 1023px){
@@ -99,7 +120,7 @@
     }
 
     .event-details h4{
-        width: 250px !important;
+        width: 330px !important;
     }
 
     #labels{

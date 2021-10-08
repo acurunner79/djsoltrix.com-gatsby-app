@@ -1,11 +1,12 @@
 #news-container{
     /* text-align: left; */
+    width: 95vw;
 }
 
 div.news-card{
     text-align: left;
     width: 90vw !important;
-    margin: 10px auto;
+    /* margin: 10px auto; */
     padding: 5px;
     background-color: rgb(0, 0, 0);
     box-shadow: 2px 2px 25px rgba(109, 108, 108, 0.438);
