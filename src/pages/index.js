@@ -31,6 +31,13 @@ const IndexPage = (props) => {
                   <button className="button">More News <IoIosArrowForward size="15"/></button>
               </Link>
           </div>
+          <div id="gig-chart">
+            <h4 id="gig-header">UPCOMING GIGS</h4><br/>
+            <GigsPreview />
+              <Link to="/events">
+                <button className="button">More Events <IoIosArrowForward size="15"/></button>
+              </Link>
+          </div><br/>
           <h2 id="latest-music-header">Latest Music</h2>
         <div id="latest-music-container">
           <div className="latest-music-card">
@@ -68,13 +75,6 @@ const IndexPage = (props) => {
             <button className="button">More music <IoIosArrowForward size="15"/></button>
           </Link>
         <div id="lower-container">
-          <div id="gig-chart">
-            <h4 id="gig-header">UPCOMING GIGS</h4><br/>
-            <GigsPreview />
-              <Link to="/events">
-                <button className="button">More Events <IoIosArrowForward size="15"/></button>
-              </Link>
-          </div><br/>
           {/* <div className="gig-preview-border"></div> */}
           {/* <div id="instagram-home-card">
               <h4 id="gig-header">Instagram</h4>
