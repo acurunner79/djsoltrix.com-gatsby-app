@@ -8,7 +8,7 @@ div.hamburger {
     flex-flow: column nowrap;
     z-index: 100;
 }
- /* #one { 
+ #one { 
     width: 2.5rem;
     height: 0.22rem;
     padding: 2px 0 2px 0;
@@ -28,7 +28,7 @@ div.hamburger {
     padding: 2px 0 2px 0;
     margin: 2px 0 2px 0;
     background: white;
-} */
+}
 
 @media (min-width: 767px){
     div.hamburger{

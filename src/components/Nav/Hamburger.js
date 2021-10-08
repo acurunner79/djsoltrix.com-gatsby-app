@@ -14,10 +14,10 @@ const Hamburger = () => {
     return (
         <>
           <div className="hamburger open" open={open} onClick={handleClick}>
-            {/* <div id="one"></div>
+            <div id="one"></div>
             <div id="two"></div>
-            <div id="three"></div> */}
-            <img src="https://res.cloudinary.com/acurunner79/image/upload/v1632186391/disc-svgrepo-com_iubn4n.png" alt=""/>
+            <div id="three"></div>
+            {/* <img src="https://res.cloudinary.com/acurunner79/image/upload/v1632186391/disc-svgrepo-com_iubn4n.png" alt=""/> */}
           </div>
           <div className="outside open" onClick={handleClick}></div>
           <div className="right-nav open">
@@ -30,10 +30,10 @@ const Hamburger = () => {
         return (
           <>
             <div className="hamburger" open={open} onClick={handleClick}>
-                {/* <div id="one"></div>
+                <div id="one"></div>
                 <div id="two"></div>
-                <div id="three"></div> */}
-                  <img src="https://res.cloudinary.com/acurunner79/image/upload/v1632186391/disc-svgrepo-com_iubn4n.png" alt=""/>
+                <div id="three"></div>
+                  {/* <img src="https://res.cloudinary.com/acurunner79/image/upload/v1632186391/disc-svgrepo-com_iubn4n.png" alt=""/> */}
             </div>
             <div className="outside"></div>
             <div className="right-nav">
