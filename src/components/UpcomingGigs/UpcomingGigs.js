@@ -30,9 +30,7 @@ const UpcomingGigs = () => {
                         {/* <div id="gig-label-border"></div> */}
                         <div id="gig-preview-card">
                             <div className="dates">
-                                <h4>{gig.gigMonth}</h4>
-                                <h4>{gig.gigDay}</h4>
-                                <h4>{gig.gigYear}</h4>
+                                <h4>{gig.gigMonth} {gig.gigDay} {gig.gigYear}</h4>
                             </div>
                             <div className="event-details">
                                 <h4>{gig.eventName}</h4>
