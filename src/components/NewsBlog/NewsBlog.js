@@ -21,6 +21,7 @@ const NewsBlog = () => {
     // console.log('newsblog', query.allContentfulBlogPost.edges[0].node.title)
     return (
         <div id="news-container">
+            <h1 id="gig-header">Soltrix News</h1>
             <div className="slider">
         <Carousel className="rounded">
           <Carousel.Item >

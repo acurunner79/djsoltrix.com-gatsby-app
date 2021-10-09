@@ -27,10 +27,12 @@ a{
         height: 5vh;
         align-items: center;
         background-color: black;
+        margin: 0 auto !important;
+        padding-top: 25px;
     }
     
     img#navlogo-2{
-        width: 20vw;
+        width: 150px;
         padding: 0 !important;
     }
 
@@ -71,6 +73,7 @@ a{
 @media(min-width: 1439px){
     nav#navbar{
         height: 19vh;
+        padding: 0;
     }
 
     img#navlogo-2{
@@ -100,6 +103,6 @@ a{
 
 @media(min-width: 2559px){
     nav#navbar{
-        height: 24vh;
+        height: 15vh;
     }
 }

@@ -22,10 +22,10 @@ const IndexPage = (props) => {
     <TopNav />
     <Hamburger />
     <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
-    {/* <h1>REMIXER & PRODUCER</h1> */}
+    <h1>REMIXER & PRODUCER</h1>
       <div id="home-upper-container">
           <div id="news-chart">
-              <h1 id="gig-header">Soltrix News</h1>
+              {/* <h1 id="gig-header">Soltrix News</h1> */}
               <NewsBlog />
               <Link to="/blog-page">
                   <button className="button">More News <IoIosArrowForward size="15"/></button>
@@ -42,45 +42,51 @@ const IndexPage = (props) => {
         <div id="latest-music-container">
           <div className="latest-music-card">
             <ReactPlayer className="latest-music-cover"
-            url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[0].node.videoId}"`}/>
+            url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[0].node.videoId}"`}
+            controls="true"/>
             <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[0].node.videoTitle}</h5>
           </div>
           <div className="latest-music-card">
             <ReactPlayer className="latest-music-cover"
-              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[0].node.videoId}"`}/>
+              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[1].node.videoId}"`}
+              controls="true"/>
+              <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[1].node.videoTitle}</h5>
+          </div>
+          <div className="latest-music-card">
+            <ReactPlayer className="latest-music-cover"
+              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[1].node.videoId}"`}
+              controls="true"/>
+              <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[1].node.videoTitle}</h5>
+          </div>
+          <div className="latest-music-card">
+            <ReactPlayer className="latest-music-cover"
+              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[0].node.videoId}"`}
+              controls="true"/>
               <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[0].node.videoTitle}</h5>
           </div>
           <div className="latest-music-card">
             <ReactPlayer className="latest-music-cover"
-              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[0].node.videoId}"`}/>
+              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[0].node.videoId}"`}
+              controls="true"/>
               <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[0].node.videoTitle}</h5>
           </div>
           <div className="latest-music-card">
             <ReactPlayer className="latest-music-cover"
-              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[0].node.videoId}"`}/>
-              <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[0].node.videoTitle}</h5>
-          </div>
-          <div className="latest-music-card">
-            <ReactPlayer className="latest-music-cover"
-              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[0].node.videoId}"`}/>
-              <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[0].node.videoTitle}</h5>
-          </div>
-          <div className="latest-music-card">
-            <ReactPlayer className="latest-music-cover"
-              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[0].node.videoId}"`}/>
+              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[0].node.videoId}"`}
+              controls="true"/>
               <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[0].node.videoTitle}</h5>
           </div>
         </div>
           <Link to="/music">
             <button className="button">More music <IoIosArrowForward size="15"/></button>
           </Link>
-        <div id="lower-container">
-          {/* <div className="gig-preview-border"></div> */}
-          {/* <div id="instagram-home-card">
+        {/* <div id="lower-container">
+          <div className="gig-preview-border"></div>
+          <div id="instagram-home-card">
               <h4 id="gig-header">Instagram</h4>
               <Instagram />
-          </div> */}
-        </div>
+          </div>
+        </div> */}
         <Footer />
       </div>
       </>

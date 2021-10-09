@@ -24,7 +24,7 @@ const TopNav = () => {
                     </li>
                 </Link>
                 <Link to="/">
-                <img id="navlogo-2" src="https://res.cloudinary.com/acurunner79/image/upload/v1632262566/Soltrix_Logo_2018_White_zozzvb.png" alt="soltrix-logo"/>
+                <img id="navlogo-2" src="https://res.cloudinary.com/acurunner79/image/upload/v1633740784/cropped-soltrix-logo_uu5wpm.png" alt="soltrix-logo"/>
                 </Link>
                 <Link to="/blog-page" className="topnav-link" activeclassname="active" iscurrent="true">
                     <li>
