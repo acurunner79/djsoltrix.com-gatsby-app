@@ -6,7 +6,7 @@
 }
 
 form{
-    /* margin: 0 auto !important; */
+    margin: 0 auto !important;
     align-items: center !important;
 }
 
@@ -31,14 +31,14 @@ form{
 
 @media(min-width: 767px){
     #contact-main-container{
-        width: 80vw;
+        max-width: 610px;
     }
 
     .form-input{
-        width: 78vw;
+        max-width: 600px;
     }
 
     #message{
-        width: 78vw;
+        max-width: 600px;
     }
 }
