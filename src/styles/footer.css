@@ -1,0 +1,19 @@
+div#footer-container{
+    border-top: 1px solid gray;
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding-top: 10px;
+}
+
+#footer-logo{
+    width: 82px;
+    height: 29px;
+}
+
+.footer-icon{
+    margin: 0 5px;
+
+}
