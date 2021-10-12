@@ -29,6 +29,11 @@ form{
     height: 15vh;
 }
 
+.message-submit{
+    margin: 340px auto;
+    width: 90vw;
+}
+
 @media(min-width: 767px){
     #contact-main-container{
         max-width: 610px;
@@ -39,6 +44,10 @@ form{
     }
 
     #message{
+        max-width: 600px;
+    }
+
+    .message-submit{
         max-width: 600px;
     }
 }

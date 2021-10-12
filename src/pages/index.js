@@ -87,8 +87,8 @@ const IndexPage = (props) => {
               <Instagram />
           </div>
         </div> */}
-        <Footer />
       </div>
+        <Footer />
       </>
     // </Layout>
   )

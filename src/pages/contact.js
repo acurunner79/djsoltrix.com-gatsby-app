@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Layout from "../components/Layout/index"
 import TopNav from '../components/Nav/TopNav'
 import Hamburger from '../components/Nav/Hamburger'
+import Footer from '../components/Footer/Footer'
 import { ValidationError, useForm } from '@formspree/react'
 import '../styles/contact.css'
 
@@ -13,9 +14,11 @@ const Contact = () => {
         return (
             <div className="message-submit">
                <h1>Thank you!</h1>
+               <h2>Someone will be in contact with you soon</h2>
                <Link to="/">
-                  <button className="button"><h3>Back to home page</h3></button>   
+                  <button className="button">Back to home</button>   
                </Link>
+               <Footer />
             </div>
          )
       }
