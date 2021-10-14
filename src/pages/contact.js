@@ -4,6 +4,7 @@ import Layout from "../components/Layout/index"
 import TopNav from '../components/Nav/TopNav'
 import Hamburger from '../components/Nav/Hamburger'
 import Footer from '../components/Footer/Footer'
+import ScrollButton from '../components/ScrollButton/ScrollButton'
 import { ValidationError, useForm } from '@formspree/react'
 import '../styles/contact.css'
 
@@ -27,6 +28,7 @@ const Contact = () => {
         <>
         <TopNav />
         <Hamburger />
+        <ScrollButton />
         <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
         <div id="contact-main-container">
             <h1>Contact</h1>

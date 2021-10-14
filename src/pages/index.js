@@ -9,6 +9,7 @@ import Hamburger from "../components/Nav/Hamburger"
 import Footer from "../components/Footer/Footer"
 import NewsBlog from "../components/NewsBlog/NewsBlog"
 import GigsPreview from "../components/GigsPreview/GigsPreview"
+import ScrollButton from "../components/ScrollButton/ScrollButton";
 import ReactPlayer from "react-player";
 import '../styles/home.css'
 import '../components/Layout/layout.css'
@@ -23,6 +24,7 @@ const IndexPage = (props) => {
     <Hamburger />
     <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
     <h1>REMIXER & PRODUCER</h1>
+    <ScrollButton />
       <div id="home-upper-container">
           <div id="news-chart">
               {/* <h1 id="gig-header">Soltrix News</h1> */}

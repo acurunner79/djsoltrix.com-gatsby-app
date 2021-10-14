@@ -7,6 +7,7 @@ import Tab from 'react-bootstrap/Tab'
 import Mixcloud from '../components/Mixcloud/Mixcloud'
 import Singles from '../components/Singles/Singles'
 import Footer from '../components/Footer/Footer'
+import ScrollButton from '../components/ScrollButton/ScrollButton'
 import '../styles/music.css'
 
 const Music = (props) => {
@@ -15,6 +16,7 @@ const Music = (props) => {
         <div>
             <TopNav />
             <Hamburger />
+            <ScrollButton />
             <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
             <h1 id="page-header">Music</h1>
             <div id="music-select-container">

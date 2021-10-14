@@ -31,7 +31,7 @@
 .mb-3{
     display: flex;
     margin: 0 20px;
-    justify-content: center;
+    justify-content: center !important;
     font-size: 13px;
 }
 
@@ -42,9 +42,14 @@
 
 .nav-tabs{
     border-bottom: none;
-    margin: 0 auto !important;
+    /* margin: 0 auto !important; */
     padding: 5px !important;
-    justify-content: center;
+    justify-content: flex-start !important;
+}
+
+ul.mb-3.nav.nav-tabs{
+    display: flex;
+    justify-content: center !important;
 }
 
 @media(min-width: 767px){
@@ -53,8 +58,15 @@
         width: 80vw !important;
     }
 
+    .nav-tabs{
+        justify-content: flex-start !important;
+        align-items: center !important;
+        align-content: center;
+    }
+
     .mb-3{
         font-size: 25px;
+        justify-content: flex-start !important;
     }
 }
 

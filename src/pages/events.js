@@ -3,6 +3,7 @@ import TopNav from '../components/Nav/TopNav'
 import Hamburger from '../components/Nav/Hamburger'
 import UpcomingGigs from '../components/UpcomingGigs/UpcomingGigs'
 import Footer from '../components/Footer/Footer'
+import ScrollButton from '../components/ScrollButton/ScrollButton'
 import '../styles/gigspreview.css'
 
 
@@ -12,6 +13,7 @@ const Events = () => {
         <div>
             <TopNav />
             <Hamburger />
+            <ScrollButton />
             <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
             <h1>Upcoming Events</h1>
             <div id="gig-chart">

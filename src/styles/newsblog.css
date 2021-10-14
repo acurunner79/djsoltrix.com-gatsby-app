@@ -52,5 +52,10 @@ div.slider{
     div.news-card{
         max-width: 1000px !important;
     }
+
+    div#news-container{
+        margin: 0 auto !important;
+        max-width: 1200px;
+    }
     
 }
