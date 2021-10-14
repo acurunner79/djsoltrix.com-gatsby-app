@@ -76,3 +76,18 @@ ul.mb-3.nav.nav-tabs{
         font-size: 30px;
     }
 }
+
+@media(min-width: 2559px){
+    #singles-display{
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    nav.mb-3.nav.nav-tabs{
+        max-width: 1400px !important;
+    }
+
+    #music-select-container{
+        max-width: 1400px;
+    }
+}
