@@ -6,6 +6,7 @@ import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import Mixcloud from '../components/Mixcloud/Mixcloud'
 import Singles from '../components/Singles/Singles'
+import Footer from '../components/Footer/Footer'
 import '../styles/music.css'
 
 const Music = (props) => {
@@ -33,6 +34,7 @@ const Music = (props) => {
                     </Tab>
                 </Tabs>
             </div>
+            <Footer />
         </div>
     )
 }

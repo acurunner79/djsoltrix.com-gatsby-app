@@ -26,10 +26,30 @@ div#footer-container{
 #footer-text-container{
     display: flex;
     width: 95vw;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly !important;
     margin: 0 auto;
 }
 
 .footer-text{
+    /* display: flex; */
     margin: 0 auto;
+    /* flex-direction: row; */
+}
+
+@media(min-width: 767px){
+    div#footer-container{
+        flex-direction: column;
+        /* justify-content: flex-end; */
+    }
+
+    #footer-text-container{
+        flex-direction: column;
+        /* justify-content: flex-end !important; */
+    }
+    
+    #footer-logo{
+        width: 120px;
+        height: 43px;
+    }
 }

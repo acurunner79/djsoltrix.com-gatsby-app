@@ -28,8 +28,6 @@ div.links-container{
     text-align: left !important;
 }
 
-#rightnav-main{
-}
 
 .links{
     text-decoration: none;
@@ -40,4 +38,14 @@ div.links-container{
 
 .active{
     color: red !important;
+}
+
+@media(min-width: 767px){
+    #rightnav-main{
+        display: none;
+    }
+
+    .right-nav{
+        display: none;
+    }
 }

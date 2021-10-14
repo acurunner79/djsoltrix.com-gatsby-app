@@ -67,6 +67,7 @@ const Contact = () => {
                 <button className="button" type="submit" disabled={state.submitting}>Submit</button><br/>
             </form>
         </div>
+        <Footer />
         </>
     )
 }

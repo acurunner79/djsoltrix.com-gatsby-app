@@ -2,6 +2,7 @@ import React from 'react'
 import TopNav from '../components/Nav/TopNav'
 import Hamburger from '../components/Nav/Hamburger'
 import UpcomingGigs from '../components/UpcomingGigs/UpcomingGigs'
+import Footer from '../components/Footer/Footer'
 import '../styles/gigspreview.css'
 
 
@@ -22,6 +23,7 @@ const Events = () => {
                     <div id="gig-label-border"></div>
             <UpcomingGigs />
             </div>
+            <Footer />
         </div>
     )
 

@@ -1,7 +1,8 @@
 body {
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    margin: 0;
+    margin: 0 auto !important;
+    padding: 0;
     text-align: center !important;
     align-content: center !important;
     background-size: 90%;
@@ -17,7 +18,7 @@ body {
   a, ul, li, h1, h2, h3, h4, h5{
   font-family: 'Orbitron',sans-serif;
   color: white ;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
 }
 
