@@ -1,10 +1,15 @@
 #page-header{
-    margin: 40px auto;
+    backdrop-filter: blur(3px);
+    width: max-content;
+    font-size: 40px;
+    color: white !important;
+    margin: 120px auto 0 auto;
+    font-weight: 600;
 }
 
 #music-select-container{
     width: 95vw;
-    margin: 0 auto !important;
+    margin: 120px auto !important;
     border-bottom: 2px solid red;
 }
 
@@ -67,6 +72,10 @@ ul.mb-3.nav.nav-tabs{
     .mb-3{
         font-size: 25px;
         justify-content: flex-start !important;
+    }
+
+    #music-select-container{
+        margin: 360px auto 0 auto !important;
     }
 }
 

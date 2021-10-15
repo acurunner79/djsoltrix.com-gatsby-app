@@ -18,10 +18,10 @@ const Singles = () => {
         // const getYoutubeData = React.useRef()
      
         const getYoutubeData = async () => {
-            const response =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=${playlistId}&maxResults=50&key=${apiKey}`)
+            const response =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?order=videoCount&part=snippet&playlistId=${playlistId}&maxResults=50&key=${apiKey}`)
             const data = await response.json()
             setYoutubeData(data)
-            // console.log('test data-', youtubeData)
+            console.log('test data-', youtubeData)
         }
      
         useEffect(() => {
@@ -32,7 +32,7 @@ const Singles = () => {
         const loaded = () => {
             
             return(
-                youtubeData.items.map(item => {
+                youtubeData.items.reverse().map(item => {
                     //    console.log('item', item)
                     
                         if (item.snippet.title === 'Private video')

@@ -26,10 +26,22 @@
     align-content: center;
 }
 
+#home-header{
+    backdrop-filter: blur(3px);
+    width: max-content;
+    font-size: 40px;
+    color: white !important;
+    margin: 120px auto 0 auto;
+    font-weight: 600; 
+}
+
 #gig-header{
-    font-size: 35px;
+    backdrop-filter: blur(3px);
+    width: max-content;
+    font-size: 40px;
     color: red !important;
     margin: 0 auto;
+    font-weight: 600;
 }
 
 #gig-labels{
@@ -56,17 +68,18 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
     margin: 0 auto !important;
     background-color: rgba(255, 255, 255, 0.534);
     border-radius: 8PX;
 }
 
 #latest-music-header{
+    backdrop-filter: blur(3px);
+    width: max-content;
+    font-size: 40px;
+    color: red !important;
     margin: 0 auto;
-    color: red;
-    background-color: black;
+    font-weight: 600;
 }
 
 .latest-music-title{
@@ -134,6 +147,7 @@
     }
 
     #upper-logo{
+        display: none;
         width: 730px;
     }
 

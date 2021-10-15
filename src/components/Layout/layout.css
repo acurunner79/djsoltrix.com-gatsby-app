@@ -5,6 +5,7 @@ body {
     padding: 0;
     text-align: center !important;
     align-content: center !important;
+    position: relative;
     background-size: 90%;
     background-image: url("https://res.cloudinary.com/acurunner79/image/upload/v1631939180/soltrix-02_opu5k4.jpg");
     background-repeat: no-repeat;

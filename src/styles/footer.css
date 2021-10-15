@@ -32,6 +32,7 @@ div#footer-container{
 }
 
 .footer-text{
+    color: white;
     /* display: flex; */
     margin: 0 auto;
     /* flex-direction: row; */

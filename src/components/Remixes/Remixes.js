@@ -33,7 +33,7 @@ const Remixes = () => {
 
         return (
 
-            remixData.items.map(item => {
+            remixData.items.reverse().map(item => {
                 // console.log('remix item', item)
 
                 function skipVid(str){

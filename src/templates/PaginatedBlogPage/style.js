@@ -8,6 +8,14 @@ export const Content = styled.div`
     background-color: rgba(0, 0, 0, 0.459);
     border: 2px solid rgba(255, 255, 255, 0.137);
     
+    #blog-header{
+        backdrop-filter: blur(3px);
+        width: max-content;
+        font-size: 40px;
+        /* color: red; */
+        margin: 0 auto;
+        font-weight: 600;
+    }
     @media(min-width: 767px){
         width: 70vw;
     }
@@ -26,10 +34,6 @@ export const Post = styled.div`
     a{
         font-weight: bold;
         font-size: 20px;
-    }
-    h1#blog-header{
-        margin: 40px auto;
-        color: red !important;
     }
     p#blog-title{
         text-align: center;

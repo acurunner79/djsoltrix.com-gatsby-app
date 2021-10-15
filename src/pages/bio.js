@@ -10,7 +10,7 @@ const Bio = () => {
             <Hamburger />
             <ScrollButton />
             <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
-            <h1>Bio</h1>
+            <h1 id="gig-header">Bio</h1>
         </div>
     )
 }

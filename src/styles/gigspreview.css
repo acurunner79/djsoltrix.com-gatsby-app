@@ -9,9 +9,14 @@
     display: none;
 }
 
-/* h4.event-label{
+#event-header{
+    backdrop-filter: blur(3px);
+    width: max-content;
+    font-size: 40px;
     color: white !important;
-} */
+    margin: 120px auto 0 auto;
+    font-weight: 600;
+}
 
 #gig-preview-card{
     display: flex;

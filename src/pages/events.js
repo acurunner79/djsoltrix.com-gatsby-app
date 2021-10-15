@@ -15,7 +15,7 @@ const Events = () => {
             <Hamburger />
             <ScrollButton />
             <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
-            <h1>Upcoming Events</h1>
+            <h1 id="event-header">UPCOMING EVENTS</h1>
             <div id="gig-chart">
                 <div id="labels">
                     <h4>DATE</h4>

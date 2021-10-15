@@ -23,7 +23,7 @@ const IndexPage = (props) => {
     <TopNav />
     <Hamburger />
     <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
-    <h1>REMIXER & PRODUCER</h1>
+    <h1 id="home-header">REMIXER & PRODUCER</h1>
     <ScrollButton />
       <div id="home-upper-container">
           <div id="news-chart">
@@ -34,7 +34,7 @@ const IndexPage = (props) => {
               </Link>
           </div>
           <div id="gig-chart">
-            <h4 id="gig-header">UPCOMING GIGS</h4><br/>
+            <h4 id="gig-header">UPCOMING EVENTS</h4><br/>
             <GigsPreview />
               <Link to="/events">
                 <button className="button">More Events <IoIosArrowForward size="15"/></button>
