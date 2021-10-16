@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Content = styled.div`
     width: 95vw;
-    margin: 120px auto;
+    margin: 240px auto 20px auto;
     color: white;
     background-color: rgba(0, 0, 0, 0.459);
     border: 2px solid rgba(255, 255, 255, 0.137);
@@ -22,6 +22,10 @@ export const Content = styled.div`
 
     @media(min-width: 1023px){
         max-width: 716px;
+    }
+
+    @media(min-width: 2559px){
+        margin: 320px auto 20px auto;
     }
     `
 export const Post = styled.div`

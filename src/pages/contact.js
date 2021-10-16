@@ -13,14 +13,18 @@ const Contact = () => {
     const [state, handleSubmit] = useForm("mpzknrwl");
       if (state.succeeded) {
         return (
+            <>
+            <TopNav />
+            <Hamburger />
             <div className="message-submit">
                <h1>Thank you!</h1>
-               <h2>Someone will be in contact with you soon</h2>
+               <h2>Someone will be in contact with you soon.</h2>
                <Link to="/">
                   <button className="button">Back to home</button>   
                </Link>
-               <Footer />
             </div>
+            <Footer />
+            </>
          )
       }
 
@@ -31,7 +35,7 @@ const Contact = () => {
         <ScrollButton />
         <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
         <div id="contact-main-container">
-            <h1>Contact</h1>
+            <h1 id="contact-header">Contact</h1>
             <form onSubmit={handleSubmit} method="POST">
             <ValidationError field="email" prefix="Email" errors={state.errors} />
                 <label className ="form-title">Name<br/>

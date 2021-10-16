@@ -1,12 +1,12 @@
 body {
     width: 100vw;
-    height: 100%;
+    /* height: 20vh !important; */
     margin: 0 auto !important;
     padding: 0;
     text-align: center !important;
     align-content: center !important;
     position: relative;
-    background-size: 90%;
+    background-size: 100vw;
     background-image: url("https://res.cloudinary.com/acurunner79/image/upload/v1631939180/soltrix-02_opu5k4.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -39,5 +39,13 @@ img#mobile-logo{
 }
 
 @media(min-width: 1439px){
-  
+  body{
+    background-size: 65vw;
+  }
+}
+
+@media(min-width: 2559px){
+  body{
+    background-size: 55vw;
+  }
 }

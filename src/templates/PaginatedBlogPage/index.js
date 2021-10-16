@@ -3,6 +3,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Hamburger from '../../components/Nav/Hamburger'
 import TopNav from '../../components/Nav/TopNav'
+import Footer from '../../components/Footer/Footer'
 import { Content, Post, Pagination } from './style'
 
 
@@ -41,6 +42,7 @@ const PaginatedBlogPage = ({pageContext}) => {
                     )
                 })}
             </Pagination>
+            <Footer />
             </>
         // </Layout>
     )

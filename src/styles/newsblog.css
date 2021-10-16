@@ -59,3 +59,9 @@ div.slider{
     }
     
 }
+
+@media(min-width: 2559px){
+    div#news-container{
+        margin: 100px auto 0 auto !important;
+    }
+}

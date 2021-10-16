@@ -32,7 +32,7 @@ a{
     }
     
     img#navlogo-2{
-        width: 150px;
+        width: 180px;
         padding: 0 !important;
     }
 
@@ -67,6 +67,10 @@ a{
 @media(min-width: 1023px){
     nav#navbar{
         height: 15vh;
+    }
+
+    img#navlogo-2{
+        width: 220px;
     }
 }
 
@@ -104,5 +108,13 @@ a{
 @media(min-width: 2559px){
     nav#navbar{
         height: 15vh;
+    }
+
+    img#navlogo-2{
+        width: 290px;
+    }
+
+    ul#nav-links{
+        width: 60vw;
     }
 }

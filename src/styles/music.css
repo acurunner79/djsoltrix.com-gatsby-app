@@ -3,7 +3,7 @@
     width: max-content;
     font-size: 40px;
     color: white !important;
-    margin: 120px auto 0 auto;
+    margin: 40px auto 0 auto;
     font-weight: 600;
 }
 
@@ -74,6 +74,10 @@ ul.mb-3.nav.nav-tabs{
         justify-content: flex-start !important;
     }
 
+    #page-header{
+        margin: 70px auto 0 auto; 
+    }
+
     #music-select-container{
         margin: 360px auto 0 auto !important;
     }
@@ -83,6 +87,24 @@ ul.mb-3.nav.nav-tabs{
     nav.mb-3.nav.nav-tabs{
         width: 80vw !important;
         font-size: 30px;
+    }
+
+    #page-header{
+        margin: 180px auto 0 auto; 
+    }
+
+    #music-select-container{
+        margin: 260px auto 0 auto !important;
+    }
+}
+
+@media(min-width: 1439px){
+    #music-select-container{
+        margin: 350px auto 0 auto !important;
+    }
+
+    #page-header{
+        margin: 230px auto 0 auto; 
     }
 }
 
@@ -98,5 +120,10 @@ ul.mb-3.nav.nav-tabs{
 
     #music-select-container{
         max-width: 1400px;
+        margin: 450px auto 0 auto !important;
+    }
+
+    #page-header{
+        margin: 230px auto 0 auto; 
     }
 }

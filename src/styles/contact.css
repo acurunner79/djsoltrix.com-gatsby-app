@@ -1,8 +1,17 @@
 #contact-main-container{
-    margin: 120px auto;
+    margin: 160px auto;
     width: 95vw;
     background-color: rgba(0, 0, 0, 0.459);
     border: 2px solid rgba(255, 255, 255, 0.137);
+}
+
+#contact-header{
+    backdrop-filter: blur(3px);
+    /* width: max-content; */
+    font-size: 40px;
+    color: white !important;
+    margin: 40px auto;
+    font-weight: 600; 
 }
 
 form{
@@ -30,6 +39,7 @@ form{
 }
 
 .message-submit{
+    backdrop-filter: blur(3px);
     margin: 340px auto;
     width: 90vw;
 }
@@ -37,6 +47,7 @@ form{
 @media(min-width: 767px){
     #contact-main-container{
         max-width: 610px;
+        margin: 360px auto 60px auto;
     }
 
     .form-input{
@@ -49,5 +60,12 @@ form{
 
     .message-submit{
         max-width: 600px;
+        margin: 440px auto 340px auto;
+    }
+}
+
+@media(min-width: 2559px){
+    .message-submit{
+        margin: 540px auto 400px auto;
     }
 }
