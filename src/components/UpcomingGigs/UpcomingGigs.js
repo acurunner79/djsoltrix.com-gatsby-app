@@ -5,11 +5,9 @@ import '../../styles/gigspreview.css'
 const UpcomingGigs = () => {
     const query = useStaticQuery(graphql`
         query gigs {
-            allContentfulUpcomingGigs {
+            allContentfulUpcomingGigs(sort: {order: ASC, fields: gigDate}) {
                 nodes {
-                    gigMonth
-                    gigDay
-                    gigYear(formatString: "YYYY")
+                    gigDate(formatString: "MMM DD YYYY")
                     eventName
                     eventLocation
                     eventPage
@@ -30,7 +28,7 @@ const UpcomingGigs = () => {
                         {/* <div id="gig-label-border"></div> */}
                         <div id="gig-preview-card">
                             <div className="dates">
-                                <h4>{gig.gigMonth} {gig.gigDay} {gig.gigYear}</h4>
+                                <h4>{gig.gigDate}</h4>
                             </div>
                             <div className="event-details">
                                 <h4>{gig.eventName}</h4>
