@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
 
     #asset-image{
         width: 95vw;
+        margin: 0 auto;
     }
 
     #blog-logo{
@@ -24,5 +25,26 @@ export const Wrapper = styled.div`
         color: white !important;
         margin: 40px auto;
         font-weight: 600;
+    }
+
+    @media(min-width: 767px){
+
+        /* width: 1000px; */
+        #blog-header{
+            margin: 40px auto 180px auto;
+        }
+
+    }
+    
+    @media(min-width: 1023px){
+        #asset-image{
+            width: 800px;
+            margin: 0 auto !important;
+        }
+
+        p{
+            width: 800px;
+        }
+
     }
 `
