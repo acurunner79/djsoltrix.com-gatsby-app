@@ -47,4 +47,10 @@ export const Wrapper = styled.div`
         }
 
     }
+
+    @media(min-width: 1439px){
+        #blog-header{
+            margin: 180px auto 180px auto;
+        }
+    }
 `

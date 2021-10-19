@@ -1,8 +1,8 @@
 import React from 'react' 
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { BLOCKS } from '@contentful/rich-text-types'
-// import { renderRichText } from 'gatsby-source-contentful/rich-text'
+import { IoIosArrowForward } from 'react-icons/io'
 import { Wrapper } from './style'
 
 
@@ -30,7 +30,9 @@ const RichText = ({ assetRef, raw }) => {
             {/* <img id="blog-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/> */}
             <h1 id="blog-header">SOLTRIX NEWS</h1>
             {documentToReactComponents(JSON.parse(raw), renderOptions)}
-            <link></link>
+            <Link to="/blog-page">
+                  <button className="button">Go Back <IoIosArrowForward size="15"/></button>
+              </Link>
         </Wrapper>
     )
 }
