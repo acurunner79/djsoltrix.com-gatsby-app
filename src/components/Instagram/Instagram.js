@@ -1,31 +1,31 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import Carousel from 'react-bootstrap/Carousel'
-import ReactPlayer from 'react-player'
+// import { graphql, useStaticQuery } from 'gatsby'
+// import Carousel from 'react-bootstrap/Carousel'
+// import ReactPlayer from 'react-player'
 import '../../styles/instagram.css'
 
 const Instagram = () => {
-    const query = useStaticQuery(graphql`
-         query instagram {
-            allInstagramContent {
-                edges {
-                    node {
-                    caption
-                    media_type
-                    media_url
-                    timestamp(formatString: "MMM DD YYYY")
-                    username
-                    }
-                }
-            }
-        }
-    `)
-    console.log('instagr props', query)
+    // const query = useStaticQuery(graphql`
+    //      query instagram {
+    //         allInstagramContent {
+    //             edges {
+    //                 node {
+    //                 caption
+    //                 media_type
+    //                 media_url
+    //                 timestamp(formatString: "MMM DD YYYY")
+    //                 username
+    //                 }
+    //             }
+    //         }
+    //     }
+    // `)
+    // console.log('instagr props', query)
     return (
         
 
         <div id="instagram-container">
-            <Carousel className="rounded">
+            {/* <Carousel className="rounded">
                 <Carousel.Item>
                     <div className="insta-card">
                         <h4>{query.allInstagramContent.edges[0].node.username}</h4>
@@ -85,7 +85,7 @@ const Instagram = () => {
                 </Carousel.Item>
             </Carousel>
             <div className="insta-card"></div>
-            <div className="insta-card"></div>
+            <div className="insta-card"></div> */}
         </div>
     )
 }

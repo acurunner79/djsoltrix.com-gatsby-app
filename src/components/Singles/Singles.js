@@ -10,8 +10,8 @@ const Singles = () => {
    
         const playlistId = 'PL3b1uuA7D4VtxzhUrWqyhxr2339uJ2cSV'
      
-        const apiKey = 'AIzaSyC_Nk5v8pQlCJEXhXi-Qe7zy6Qt8mqBPJs'
-        // console.log('apiKey', apiKey)
+        const apiKey = process.env.GATSBY_YOUTUBE_APIKEY
+        console.log('apiKey', apiKey)
         
         const [youtubeData, setYoutubeData] = useState(null)
      
@@ -35,8 +35,8 @@ const Singles = () => {
                 youtubeData.items.reverse().map(item => {
                     //    console.log('item', item)
                     
-                        if (item.snippet.title === 'Private video')
-                            return false
+                        // if (item.snippet.title === 'Private video')
+                        //     return false
             
                     
     

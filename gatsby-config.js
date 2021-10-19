@@ -1,3 +1,13 @@
+const path = require(`path`)
+
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// })
+
+require("dotenv").config({
+  path: `.env`,
+});
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -7,16 +17,16 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "bsIx7a42gJhFDv_eovFDemZbtzmrv_01Bins4-jUSOs",
-        spaceId: "23el1479899l",
+        accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
       },
     },
-    {
-      resolve: `gatsby-source-instagram-all`,
-      options: {
-        access_token: "IGQVJValNVWGZApSHF5bDQ5WkxsLU1iT2RGSkptM1I4Mnh6SEJTVmVKY0hoZAExuWjVPVndOajNHYjc3b1ljeEQ5NE80ZAjdUTUhicU1GaDdPTFl3SmYtUWRyR3FjYUgwRS1pMXZAGSWRCcUZAUUGk5dzNncAZDZD"
-      }
-    },
+    // {
+    //   resolve: `gatsby-source-instagram-all`,
+    //   options: {
+    //     access_token: ""
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -34,7 +44,7 @@ module.exports = {
       resolve: `gatsby-source-youtube-v3`,
       options: {
         channelId: ['UCPXm1RVzUIRzfqnYb0eX1sg'],
-        apiKey: 'AIzaSyC_Nk5v8pQlCJEXhXi-Qe7zy6Qt8mqBPJs', // Optional for public requests
+        apiKey: process.env.REACT_APP_YOUTUBE_APIKEY, // Optional for public requests
         maxVideos: 50 // Defaults to 50
       },
     },
