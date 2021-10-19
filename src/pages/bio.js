@@ -3,7 +3,9 @@ import TopNav from '../components/Nav/TopNav'
 import Hamburger from '../components/Nav/Hamburger'
 import ScrollButton from '../components/ScrollButton/ScrollButton'
 
+
 const Bio = () => {
+
     return (
         <div>
             <TopNav />

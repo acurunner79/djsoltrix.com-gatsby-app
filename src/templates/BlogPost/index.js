@@ -9,7 +9,7 @@ import { BlogContent } from '../BlogPost/style'
 
 
 const BlogPost = (props) => {
-    console.log("blog post prop", props)
+
     return (
         // <Layout>
         <>
@@ -20,12 +20,15 @@ const BlogPost = (props) => {
                 <TopNav />
                 <Hamburger />
             <BlogContent>
-                <RichText raw={props.data.contentfulBlogPost.pageContent.raw}/>
+                <RichText raw={props.data.contentfulBlogPost.pageContent.raw} 
+                assetRef={props.data.contentfulBlogPost.pageContent.references[0]}
+                />
             </BlogContent>
         </>
         // </Layout>
     )
 }
+export default BlogPost
 
 export const query = graphql`
     query BlogPostQuery($postId: String) {
@@ -33,14 +36,41 @@ export const query = graphql`
         publishedDate(formatString: "MMM DD YYYY")
             pageContent {
                 raw
+                references {
+                    ... on ContentfulAsset{
+                        __typename
+                        contentful_id
+                        fixed (width: 1600) {
+                            width
+                            height
+                            src
+                            srcSet
+                        }
+                    }
+                    description
+                    title
+                }
             }
             description
             title
             contentful_id
             slug
+            pageContent {
+                raw
+                    references {
+                    ... on ContentfulAsset{
+                        __typename
+                        contentful_id
+                        fixed (width: 1600) {
+                            width
+                        height
+                            src
+                            srcSet
+                        }
+                    }
+                }
+            }
         }
     }
 `
 
-
-export default BlogPost

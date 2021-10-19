@@ -1,44 +1,23 @@
-import React from 'react' 
+import React from 'react'
+import { RichText } from '../components/RichText'
 import { graphql } from 'gatsby'
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import { BLOCKS } from '@contentful/rich-text-types'
-// import { renderRichText } from 'gatsby-source-contentful/rich-text'
-import { Wrapper } from './style'
 
-
-
-const RichText = ({ assetRef, raw }) => {
-    console.log('richtext props', assetRef)
-    
-    const renderOptions = { 
-        renderNode: {  
-            [BLOCKS.EMBEDDED_ASSET]: (node) => {
-                console.log('node', node)
-              const asset = assetRef.fixed;
-              return (
-                <img id="asset-image" src={asset.src} alt={asset.title} />
-              );
-            },
-        },
-    }
-      
- 
-    const post = assetRef
-    
+const ContentfulPage = (props) => {
+    console.log('slug props', props)
     return (
-        <Wrapper>
-            {/* <img id="blog-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/> */}
-            <h1 id="blog-header">SOLTRIX NEWS</h1>
-            {documentToReactComponents(JSON.parse(raw), renderOptions)}
-            <link></link>
-        </Wrapper>
+        <div>
+            {!!props.data.contentfulPage.pageContent && (
+                <RichText 
+                    references={props.data.contentfulPage.pageContent.references} 
+                    raw={props.data.contentfulPage.pageContent.raw}
+                />
+            )}
+        </div>
     )
 }
 
-export default RichText
-
 export const query = graphql`
-    query blogData {
+    query Data {
         allContentfulBlogPost {
             edges {
                 node {
@@ -81,4 +60,6 @@ export const query = graphql`
             }
         }
     } 
-`
+ `
+
+export default ContentfulPage

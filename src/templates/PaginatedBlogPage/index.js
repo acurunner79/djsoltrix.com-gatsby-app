@@ -18,9 +18,9 @@ const PaginatedBlogPage = ({pageContext}) => {
             <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
             <Content>
                 <h2 id="blog-header">SOLTRIX NEWS</h2>
-                {pageContext.posts.map((post) => (
+                {pageContext.posts.map((post, index) => (
                     <Post key={post.contentful_id}>
-                        <div>
+                        <div key={index}>
                             <Link to={`/${pageContext.blogSlug}/${post.slug}`}><p id="blog-title">{post.title}</p></Link>
                         </div>
                         <div>{post.description}</div>
@@ -29,7 +29,6 @@ const PaginatedBlogPage = ({pageContext}) => {
                                 {post.publishedDate}
                             </small>
                         </div>
-                        {/* <div id="news-bottom-partition"></div> */}
                     </Post>
                 ))}
             </Content>

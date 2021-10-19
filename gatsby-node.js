@@ -27,14 +27,41 @@ exports.createPages = async ({ actions, graphql }) => {
               publishedDate(formatString: "MMM DD YYYY")
               pageContent {
                 raw
-              }
-              description
-              title
-              contentful_id
+                references {
+                    ... on ContentfulAsset{
+                        __typename
+                        contentful_id
+                        fixed (width: 1600) {
+                            width
+                            height
+                            src
+                            srcSet
+                            }
+                        }
+                    }
+                }
+                description
+                title
+                contentful_id
+                pageContent {
+                    raw
+                        references {
+                            ... on ContentfulAsset{
+                                __typename
+                                contentful_id
+                                fixed (width: 1600) {
+                                    width
+                                    height
+                                    src
+                                    srcSet
+                                }
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
+    }
     `)
 
     allContentfulBlogPost.edges.forEach((blogPost) => {
