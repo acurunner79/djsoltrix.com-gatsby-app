@@ -17,7 +17,7 @@ const Music = (props) => {
             <TopNav />
             <Hamburger />
             <ScrollButton />
-            <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
+            <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png" alt="soltrix"/>
             <h1 id="page-header">Music</h1>
             <div id="music-select-container">
                 <Tabs defaultActiveKey="home" unmountOnExit='true' id="noanim-tab-example" className="mb-3">

@@ -15,7 +15,7 @@ const UpcomingGigs = () => {
             }
         }
     `)
-    console.log('gigs querys', query)
+    // console.log('gigs querys', query)
 
     return (
         query.allContentfulUpcomingGigs.nodes.map(gig => {

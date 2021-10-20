@@ -11,7 +11,7 @@ const Singles = () => {
         const playlistId = 'PL3b1uuA7D4VtxzhUrWqyhxr2339uJ2cSV'
      
         const apiKey = process.env.GATSBY_YOUTUBE_APIKEY
-        console.log('apiKey', apiKey)
+        // console.log('apiKey', apiKey)
         
         const [youtubeData, setYoutubeData] = useState(null)
      
@@ -21,7 +21,7 @@ const Singles = () => {
             const response =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?order=videoCount&part=snippet&playlistId=${playlistId}&maxResults=50&key=${apiKey}`)
             const data = await response.json()
             setYoutubeData(data)
-            console.log('test data-', youtubeData)
+            // console.log('test data-', youtubeData)
         }
      
         useEffect(() => {

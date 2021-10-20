@@ -22,7 +22,7 @@ const Mixcloud = () => {
             }
         }
     `)
-    console.log('mixcloud querys', query.allRestApiDjsoltrixCloudcasts.nodes[0].data[0])
+    // console.log('mixcloud querys', query.allRestApiDjsoltrixCloudcasts.nodes[0].data[0])
     return (
         <div id="mixcloud-container">
             

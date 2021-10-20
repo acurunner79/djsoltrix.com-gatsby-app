@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery, Link } from 'gatsby'
+import { graphql, useStaticQuery} from 'gatsby'
 import Carousel from 'react-bootstrap/Carousel'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/newsblog.css'

@@ -1,7 +1,7 @@
 import * as React from "react"
 import {IoIosArrowForward} from 'react-icons/io'
 import Layout from "../components/Layout"
-import Instagram from "../components/Instagram/Instagram"
+// import Instagram from "../components/Instagram/Instagram"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { graphql, Link } from "gatsby"
 import TopNav from "../components/Nav/TopNav"
@@ -16,13 +16,13 @@ import '../components/Layout/layout.css'
 
 
 const IndexPage = (props) => {
-  console.log('home page prop', props)
+  // console.log('home page prop', props)
   return (
     // <Layout>
     <>
     <TopNav />
     <Hamburger />
-    <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
+    <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png" alt="soltrix"/>
     <h1 id="home-header">REMIXER & PRODUCER</h1>
     <ScrollButton />
       <div id="home-upper-container">

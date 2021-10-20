@@ -4,9 +4,12 @@ const path = require(`path`)
 //   path: `.env.${process.env.NODE_ENV}`,
 // })
 
+
 require("dotenv").config({
-  path: `.env`,
-});
+    path: `.env`,
+  });
+
+  // const config = require('gatsby-plugin-config');
 
 module.exports = {
   siteMetadata: {
@@ -17,8 +20,9 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN,
-        spaceId: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
+        accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
+        host: process.env.GATSBY_HOST,
       },
     },
     // {
@@ -44,7 +48,7 @@ module.exports = {
       resolve: `gatsby-source-youtube-v3`,
       options: {
         channelId: ['UCPXm1RVzUIRzfqnYb0eX1sg'],
-        apiKey: process.env.REACT_APP_YOUTUBE_APIKEY, // Optional for public requests
+        apiKey: process.env.GATSBY_YOUTUBE_APIKEY, // Optional for public requests
         maxVideos: 50 // Defaults to 50
       },
     },
@@ -56,25 +60,9 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: "gatsby-source-graphql",
-    //   options: {
-    //     // Arbitrary name for the remote schema Query type
-    //     typeName: "Singles",
-    //     // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
-    //     fieldName: "singles",
-    //     // Url to query from
-    //     url: "https://www.googleapis.com/youtube/v3/playlistItems",
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-transformer-playlists`,
-    //   options: {
-    //     apiKey: 'AIzaSyC_Nk5v8pQlCJEXhXi-Qe7zy6Qt8mqBPJs'
-    //   }
-    // },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
+    'gatsby-plugin-config',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,

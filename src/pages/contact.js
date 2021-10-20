@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Layout from "../components/Layout/index"
+// import Layout from "../components/Layout/index"
 import TopNav from '../components/Nav/TopNav'
 import Hamburger from '../components/Nav/Hamburger'
 import Footer from '../components/Footer/Footer'
@@ -33,7 +33,7 @@ const Contact = () => {
         <TopNav />
         <Hamburger />
         <ScrollButton />
-        <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
+        <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png" alt="soltrix"/>
         <div id="contact-main-container">
             <h1 id="contact-header">Contact</h1>
             <form onSubmit={handleSubmit} method="POST">

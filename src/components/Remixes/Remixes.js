@@ -22,7 +22,7 @@ const Remixes = () => {
             const response =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=${playlistId}&maxResults=20&key=${apiKey}`)
             const data = await response.json()
             setRemixData(data)
-            console.log('test dataa', remixData)
+            // console.log('test dataa', remixData)
         }
      
         useEffect(() => {

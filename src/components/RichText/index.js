@@ -8,12 +8,12 @@ import { Wrapper } from './style'
 
 
 const RichText = ({ assetRef, raw }) => {
-    console.log('richtext props', assetRef)
+    // console.log('richtext props', assetRef)
     
     const renderOptions = { 
         renderNode: {  
             [BLOCKS.EMBEDDED_ASSET]: (node) => {
-                console.log('node', node)
+                // console.log('node', node)
               const asset = assetRef.fixed;
               return (
                 <img id="asset-image" src={asset.src} alt={asset.title} />
@@ -23,7 +23,7 @@ const RichText = ({ assetRef, raw }) => {
     }
       
  
-    const post = assetRef
+    // const post = assetRef
     
     return (
         <Wrapper>

@@ -9,13 +9,13 @@ import { Content, Post, Pagination } from './style'
 
 
 const PaginatedBlogPage = ({pageContext}) => {
-    console.log('paginated',pageContext)
+    // console.log('paginated',pageContext)
     return (
         // <Layout>
             <>
             <Hamburger />
             <TopNav />
-            <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/>
+            <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png" alt="soltrix"/>
             <Content>
                 <h2 id="blog-header">SOLTRIX NEWS</h2>
                 {pageContext.posts.map((post, index) => (
