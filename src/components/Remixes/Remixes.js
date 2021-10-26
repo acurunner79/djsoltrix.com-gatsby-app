@@ -10,8 +10,9 @@ const Remixes = () => {
     const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/playlistItems'
    
         const playlistId = 'PL3b1uuA7D4VvWBKgVDCCF0n0l7PLHdzJ6'
+
+        const apiKey = process.env.GATSBY_YOUTUBE_APIKEY
      
-        const apiKey = 'AIzaSyC_Nk5v8pQlCJEXhXi-Qe7zy6Qt8mqBPJs'
         // console.log('apiKey', apiKey)
         
         const [remixData, setRemixData] = useState(null)
@@ -22,7 +23,7 @@ const Remixes = () => {
             const response =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=${playlistId}&maxResults=20&key=${apiKey}`)
             const data = await response.json()
             setRemixData(data)
-            // console.log('test dataa', remixData)
+            console.log('test dataa', remixData)
         }
      
         useEffect(() => {
@@ -33,30 +34,32 @@ const Remixes = () => {
 
         return (
 
-            remixData.items.reverse().map(item => {
-                // console.log('remix item', item)
+            remixData.items.reverse().map((item, index )=> {
+                // console.log('remix items', item)
 
-                function skipVid(str){
-                    if (item.snippet.title === 'Private video')
-                        return 'null'
-                }
-                skipVid()
-                // var privateVid = item.snippet.title
+                // const skipVid = item.filter() => {
+                //     if (skipVid === 'Private video'){
+                //         return false
+                //     }
 
-                // var removeVid = ''
-                        // console.log('private vids', privateVid)
-                        // return privateVid()
-
-                    // removeVid.push(privateVid)
-                    // console.log('removed vid', removeVid)
-                    
-                   
-
+                // }
+                  
+                    // var privateVid = item.snippet.title
+                    // var removedVid = ''
+                    // if (privateVid === 'Private video')
+                    // console.log('private indexs',privateVid)
+                    // console.log(privateVid.pop())
+                    // privateVid.nextVideo()
+                    // console.log('privateVid removed', removedVid)
+                        // return privateVid
+                
+                // skipVid()
+               
 
 
                 return (
                     <div id="youtube-container">
-                        <div className="youtube-card">
+                        <div className="youtube-card" key={index}>
                             <ReactPlayer className="videoplayer"
                                 url={`"https://www.youtube.com/embed/${item.snippet.resourceId.videoId}"`}
                                 // light={}

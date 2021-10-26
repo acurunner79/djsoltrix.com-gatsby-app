@@ -18,6 +18,7 @@ export const Content = styled.div`
     }
     @media(min-width: 767px){
         width: 70vw;
+        margin: 380px auto 20px auto;;
     }
 
     @media(min-width: 1023px){

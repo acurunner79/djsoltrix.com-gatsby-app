@@ -28,7 +28,7 @@ div#footer-container{
     width: 95vw;
     flex-direction: row;
     justify-content: space-evenly !important;
-    margin: 0 auto;
+    margin: 0 auto !important;
 }
 
 .footer-text{

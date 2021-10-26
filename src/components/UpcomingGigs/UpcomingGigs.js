@@ -18,7 +18,7 @@ const UpcomingGigs = () => {
     // console.log('gigs querys', query)
 
     return (
-        query.allContentfulUpcomingGigs.nodes.map(gig => {
+        query.allContentfulUpcomingGigs.nodes.map((gig, index)=> {
             // console.log('gigs', gig)
                     
 
@@ -26,7 +26,7 @@ const UpcomingGigs = () => {
                 <>
                     <div id="event-container">
                         {/* <div id="gig-label-border"></div> */}
-                        <div id="gig-preview-card">
+                        <div id="gig-preview-card" key={index}>
                             <div className="dates">
                                 <h4>{gig.gigDate}</h4>
                             </div>

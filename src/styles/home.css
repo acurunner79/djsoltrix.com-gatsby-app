@@ -164,7 +164,7 @@
 
 @media(min-width: 1023px){
     #home-header{
-        margin: 450px auto -100px auto;
+        margin: 450px auto -200px auto;
     }
 
     #lower-container{
@@ -219,5 +219,9 @@
 
     #gig-chart{
         margin: 240px auto 120px auto;
+    }
+
+    #home-header{
+        margin: 600px auto -150px auto;
     }
 }

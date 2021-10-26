@@ -32,7 +32,7 @@ const Singles = () => {
         const loaded = () => {
             
             return(
-                youtubeData.items.reverse().map(item => {
+                youtubeData.items.reverse().map((item, index )=> {
                     //    console.log('item', item)
                     
                         // if (item.snippet.title === 'Private video')
@@ -42,7 +42,7 @@ const Singles = () => {
     
                    return(
                         <div id="youtube-container">
-                            <div className="youtube-card">
+                            <div className="youtube-card" key={index}>
                                 <ReactPlayer className="videoplayer"
                                 url={`"https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`}
                                 controls="true"/>

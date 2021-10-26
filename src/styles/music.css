@@ -47,12 +47,12 @@
 
 .nav-tabs{
     border-bottom: none;
-    /* margin: 0 auto !important; */
     padding: 5px !important;
     justify-content: flex-start !important;
 }
 
 ul.mb-3.nav.nav-tabs{
+    /* margin: 0 auto !important; */
     display: flex;
     justify-content: center !important;
 }
@@ -75,7 +75,7 @@ ul.mb-3.nav.nav-tabs{
     }
 
     #page-header{
-        margin: 70px auto 0 auto; 
+        margin: 420px auto -200px auto; 
     }
 
     #music-select-container{
@@ -90,7 +90,7 @@ ul.mb-3.nav.nav-tabs{
     }
 
     #page-header{
-        margin: 180px auto 0 auto; 
+        margin: 420px auto -200px auto; 
     }
 
     #music-select-container{
@@ -104,7 +104,7 @@ ul.mb-3.nav.nav-tabs{
     }
 
     #page-header{
-        margin: 230px auto 0 auto; 
+        margin: 480px auto -300px auto; 
     }
 }
 
@@ -124,6 +124,7 @@ ul.mb-3.nav.nav-tabs{
     }
 
     #page-header{
-        margin: 230px auto 0 auto; 
+        margin: 640px auto -370px auto; 
+        font-size: 50px;
     }
 }
