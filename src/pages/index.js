@@ -23,7 +23,7 @@ const IndexPage = (props) => {
     <TopNav />
     <Hamburger />
     <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png" alt="soltrix"/>
-    <h1 id="home-header">REMIXER & PRODUCER</h1>
+    <h1 id="home-header">Latin DJ  &  Producer</h1>
     <ScrollButton />
       <div id="home-upper-container">
           <div id="news-chart">

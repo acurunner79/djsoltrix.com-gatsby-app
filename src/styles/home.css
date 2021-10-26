@@ -31,8 +31,9 @@
     /* width: max-content; */
     font-size: 40px;
     color: white !important;
-    margin: 40px auto 0 auto;
-    font-weight: 600; 
+    margin: 130px auto -140px auto;
+    font-weight: 600;
+    /* padding-top: 80px;  */
 }
 
 #gig-header{
@@ -163,7 +164,7 @@
 
 @media(min-width: 1023px){
     #home-header{
-        margin: 140px auto 0 auto;
+        margin: 450px auto -100px auto;
     }
 
     #lower-container{
@@ -190,7 +191,8 @@
 
 @media(min-width: 1439px){
     #home-header{
-        margin: 200px auto 0 auto;
+        margin: 450px auto -100px auto;
+        font-size: 50px;
     }
 
     #latest-music-container{
