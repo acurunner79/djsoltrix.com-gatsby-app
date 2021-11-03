@@ -35,7 +35,7 @@ const Contact = () => {
         <ScrollButton />
         <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png" alt="soltrix"/>
         <div id="contact-main-container">
-            <h1 id="contact-header">Contact</h1>
+            <h1 id="contact-header">CONTACT</h1>
             <form onSubmit={handleSubmit} method="POST">
             <ValidationError field="email" prefix="Email" errors={state.errors} />
                 <label className ="form-title">Name<br/>

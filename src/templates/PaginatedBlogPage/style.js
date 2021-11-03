@@ -9,7 +9,7 @@ export const Content = styled.div`
     border: 2px solid rgba(255, 255, 255, 0.137);
     
     #blog-header{
-        backdrop-filter: blur(3px);
+        /* backdrop-filter: blur(3px); */
         width: max-content;
         font-size: 40px;
         /* color: red; */

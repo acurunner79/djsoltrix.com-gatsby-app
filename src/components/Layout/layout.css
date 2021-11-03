@@ -1,13 +1,14 @@
 body {
     width: 100vw;
-    /* height: 20vh !important; */
+    /* backdrop-filter: blur(3px); */
+    /* height: 100vh !important; */
     margin: 0 auto !important;
     padding: 0;
     text-align: center !important;
     align-content: center !important;
     position: relative;
     background-size: 100vw;
-    background-image: url("https://res.cloudinary.com/acurunner79/image/upload/v1631939180/soltrix-02_opu5k4.jpg");
+    background-image: url("https://res.cloudinary.com/acurunner79/image/upload/v1635962385/soltrix_img-blur_jemhk5.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed !important;

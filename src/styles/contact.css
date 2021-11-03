@@ -6,7 +6,7 @@
 }
 
 #contact-header{
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */
     /* width: max-content; */
     font-size: 40px;
     color: white !important;
@@ -39,7 +39,7 @@ form{
 }
 
 .message-submit{
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */
     margin: 340px auto;
     width: 90vw;
 }

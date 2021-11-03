@@ -40,7 +40,7 @@ const IndexPage = (props) => {
                 <button className="button">More Events <IoIosArrowForward size="15"/></button>
               </Link>
           </div><br/>
-          <h2 id="latest-music-header">Latest Music</h2>
+          <h2 id="latest-music-header">LATEST MUSIC</h2>
         <div id="latest-music-container">
           <div className="latest-music-card">
             <ReactPlayer className="latest-music-cover"

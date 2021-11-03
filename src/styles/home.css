@@ -8,6 +8,7 @@
 }
 
 #home-upper-container{
+    /* backdrop-filter: blur(3px); */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -27,7 +28,7 @@
 }
 
 #home-header{
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */
     /* width: max-content; */
     font-size: 40px;
     color: white !important;
@@ -37,7 +38,7 @@
 }
 
 #gig-header{
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */
     /* width: max-content; */
     font-size: 40px;
     color: red !important;
@@ -75,7 +76,7 @@
 }
 
 #latest-music-header{
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */
     width: max-content;
     font-size: 40px;
     color: red !important;
@@ -160,6 +161,10 @@
         max-width: 730px;
         margin: 220px auto 0 auto;
     }
+
+    #latest-music-header{
+        margin: 140px auto 0 auto;
+    }
 }
 
 @media(min-width: 1023px){
@@ -201,6 +206,10 @@
 
     .latest-music-card{
         width: 360px;
+    }
+
+    #latest-music-header{
+        margin: 200px auto 0 auto;
     }
 }
 
