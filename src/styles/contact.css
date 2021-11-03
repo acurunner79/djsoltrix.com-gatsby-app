@@ -39,9 +39,13 @@ form{
 }
 
 .message-submit{
-    /* backdrop-filter: blur(3px); */
+    backdrop-filter: blur(3px);
     margin: 340px auto;
     width: 90vw;
+}
+
+.message-submit h1, h2{
+    margin-bottom: 40px;
 }
 
 @media(min-width: 767px){

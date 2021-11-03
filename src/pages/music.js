@@ -31,7 +31,7 @@ const Music = (props) => {
                             <Remixes />
                         </div>
                     </Tab>
-                    <Tab className="subnav-links" eventKey="contact" title="Live Sets">
+                    <Tab className="subnav-links" eventKey="contact" title="DJ Mixes">
                         <Mixcloud />
                     </Tab>
                 </Tabs>
