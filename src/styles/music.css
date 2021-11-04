@@ -58,6 +58,11 @@ ul.mb-3.nav.nav-tabs{
     justify-content: center !important;
 }
 
+#remix-accordion{
+    width: 95vw;
+    margin: 0 auto !important;
+}
+
 @media(min-width: 767px){
     nav.mb-3.nav.nav-tabs{
         font-size: 30px;
@@ -106,6 +111,16 @@ ul.mb-3.nav.nav-tabs{
 
     #page-header{
         margin: 480px auto -300px auto; 
+    }
+
+    button.accordion-button{
+        width: 200px;
+        align-self: center !important;
+        margin: 0 auto;
+    }
+
+    #remix-tab{
+        width: 80vw !important;
     }
 }
 

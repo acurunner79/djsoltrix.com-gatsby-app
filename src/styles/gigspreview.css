@@ -18,10 +18,11 @@
 
 #gig-preview-card{
     display: flex;
-    justify-content: space-evenly !important;
+    justify-content: space-between !important;
     align-items: center;
-    margin: 10px 45px !important;
-    width: 80vw;
+    /* margin: 10px 45px !important; */
+    margin: 0 auto;
+    width: 72vw;
 }
 
 #gig-label-border{
@@ -46,14 +47,16 @@
 #labels h4{
     color: black;
     font-size: 20px;
+    font-weight: 600;
 }
 
 .event-details{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     padding: 0 !important;
-    margin: 0 auto;
-    width: 110px;
+    /* margin: 0 auto; */
+    width: 150px;
 }
 
 .event-details h4{
@@ -84,17 +87,18 @@
 }
 
 @media(min-width: 767px){
-    /* #event-container{
+    #event-container{
         width: 700px;
-    } */
+    }
 
     #page-label-hide{
         display: inline;
     }
 
     #gig-preview-card{
-        width: 700px;
-        justify-content: space-evenly;
+        width: 470px;
+        /* justify-content: space-evenly !important; */
+        /* margin: 0 auto !important; */
     }
 
     #gig-label-border{
@@ -110,13 +114,18 @@
     }
 
     .event-details{
-        width: 380px ;
-        height: 65px;
-        flex-wrap: wrap;
+        /* width: 380px ; */
+        /* height: 65px; */
+        /* flex-wrap: wrap; */
     }
 
     .event-details h4{
-        width: 290px;
+        width: 250px;
+        font-size: 18px;
+    }
+
+    .dates h4{
+        font-size: 20px;
     }
 
     .eventpage-link{

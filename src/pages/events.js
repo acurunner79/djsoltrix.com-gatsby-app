@@ -20,7 +20,7 @@ const Events = () => {
                 <div id="labels">
                     <h4>DATE</h4>
                     <h4>EVENT</h4>
-                    <h4 id="page-label-hide">PAGE</h4>
+                    {/* <h4 id="page-label-hide">PAGE</h4> */}
                 </div>
                     <div id="gig-label-border"></div>
             <UpcomingGigs />

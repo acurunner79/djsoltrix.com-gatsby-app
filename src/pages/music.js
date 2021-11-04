@@ -4,6 +4,7 @@ import TopNav from '../components/Nav/TopNav'
 import Hamburger from '../components/Nav/Hamburger'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
+import Accordion from 'react-bootstrap/Accordion'
 import Mixcloud from '../components/Mixcloud/Mixcloud'
 import Singles from '../components/Singles/Singles'
 import Footer from '../components/Footer/Footer'
@@ -27,9 +28,34 @@ const Music = (props) => {
                         </div>
                     </Tab>
                     <Tab className="subnav-links" eventKey="profile" title="Remixes">
-                        <div id="singles-display">
-                            <Remixes />
-                        </div>
+                            <Accordion id="remix-accordion"defaultActiveKey="3">
+                                <Accordion.Item eventKey="0">
+                                    <Accordion.Header>Test</Accordion.Header>
+                                    <Accordion.Body>
+                                        <div id="singles-display">
+                                            <Remixes />
+                                        </div>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                            
+                                <Accordion.Item eventKey="1">
+                                    <Accordion.Header>Test 2</Accordion.Header>
+                                    <Accordion.Body>
+                                        <div id="singles-display">
+                                            <Remixes id="remix-tab"/>
+                                        </div>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+
+                                <Accordion.Item eventKey="2">
+                                    <Accordion.Header>Test 3</Accordion.Header>
+                                    <Accordion.Body>
+                                        <div id="singles-display">
+                                            <Remixes />
+                                        </div>
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                            </Accordion>
                     </Tab>
                     <Tab className="subnav-links" eventKey="contact" title="DJ Mixes">
                         <Mixcloud />

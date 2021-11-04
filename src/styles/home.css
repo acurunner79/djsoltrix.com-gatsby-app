@@ -196,7 +196,7 @@
 
 @media(min-width: 1439px){
     #home-header{
-        margin: 450px auto -100px auto;
+        /* margin: 450px auto -100px auto; */
         font-size: 50px;
     }
 
