@@ -22,9 +22,11 @@ const RichText = ({ assetRef, raw }) => {
             },
             [INLINES.HYPERLINK]: (node) => {
                 console.log(node)
-                return(
-                    <iframe />
-                )
+                if ((node.data.uri).includes('youtube.com/embed')){
+                    return(
+                        <iframe src={node.data.uri}></iframe>
+                    )
+                }
             }
         },
     }
