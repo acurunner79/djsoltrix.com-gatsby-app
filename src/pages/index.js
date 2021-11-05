@@ -56,27 +56,27 @@ const IndexPage = (props) => {
           </div>
           <div className="latest-music-card">
             <ReactPlayer className="latest-music-cover"
-              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[1].node.videoId}"`}
+              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[2].node.videoId}"`}
               controls="true"/>
-              <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[1].node.videoTitle}</h5>
+              <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[2].node.videoTitle}</h5>
           </div>
           <div className="latest-music-card">
             <ReactPlayer className="latest-music-cover"
-              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[0].node.videoId}"`}
+              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[3].node.videoId}"`}
               controls="true"/>
-              <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[0].node.videoTitle}</h5>
+              <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[3].node.videoTitle}</h5>
           </div>
           <div className="latest-music-card">
             <ReactPlayer className="latest-music-cover"
-              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[0].node.videoId}"`}
+              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[4].node.videoId}"`}
               controls="true"/>
-              <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[0].node.videoTitle}</h5>
+              <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[4].node.videoTitle}</h5>
           </div>
           <div className="latest-music-card">
             <ReactPlayer className="latest-music-cover"
-              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[0].node.videoId}"`}
+              url={`"https://www.youtube.com/embed/${props.data.allContentfulLatestVideo.edges[5].node.videoId}"`}
               controls="true"/>
-              <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[0].node.videoTitle}</h5>
+              <h5 className="latest-music-title">{props.data.allContentfulLatestVideo.edges[5].node.videoTitle}</h5>
           </div>
         </div>
           <Link to="/music">

@@ -18,8 +18,8 @@ const Events = () => {
             <h1 id="event-header">UPCOMING EVENTS</h1>
             <div id="gig-chart">
                 <div id="labels">
-                    <h4>DATE</h4>
-                    <h4>EVENT</h4>
+                    <h4 id="date-column">DATE</h4>
+                    <h4 id="event-column">EVENT</h4>
                     {/* <h4 id="page-label-hide">PAGE</h4> */}
                 </div>
                     <div id="gig-label-border"></div>

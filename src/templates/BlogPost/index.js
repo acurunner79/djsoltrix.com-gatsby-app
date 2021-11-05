@@ -9,6 +9,7 @@ import { BlogContent } from '../BlogPost/style'
 
 
 const BlogPost = (props) => {
+    console.log('blogpost props', props)
 
     return (
         // <Layout>

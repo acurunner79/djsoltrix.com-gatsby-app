@@ -39,6 +39,8 @@ module.exports = {
           `Play`,
           `Roboto`,
           `Ubuntu`,
+          `Karla`,
+          `Josefin Sans`,
           `cursive\:300,400,400i,700` // you can also specify font weights and styles
         ],
         display: 'swap'

@@ -1,17 +1,18 @@
 import React from 'react' 
 import { graphql, Link } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import { BLOCKS } from '@contentful/rich-text-types'
+import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 import { IoIosArrowForward } from 'react-icons/io'
 import { Wrapper } from './style'
 
 
 
 const RichText = ({ assetRef, raw }) => {
-    // console.log('richtext props', assetRef)
+    // console.log('richtext prop', assetRef)
+    // console.log('raw', raw)
     
     const renderOptions = { 
-        renderNode: {  
+        renderNode: { 
             [BLOCKS.EMBEDDED_ASSET]: (node) => {
                 // console.log('node', node)
               const asset = assetRef.fixed;
@@ -19,6 +20,12 @@ const RichText = ({ assetRef, raw }) => {
                 <img id="asset-image" src={asset.src} alt={asset.title} />
               );
             },
+            [INLINES.HYPERLINK]: (node) => {
+                console.log(node)
+                return(
+                    <iframe />
+                )
+            }
         },
     }
       

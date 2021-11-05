@@ -10,10 +10,10 @@ export const Content = styled.div`
     
     #blog-header{
         /* backdrop-filter: blur(3px); */
-        width: max-content;
-        font-size: 40px;
+        width: 96vw;
+        font-size: 38px;
         /* color: red; */
-        margin: 0 auto;
+        margin: 0 auto !important;
         font-weight: 600;
     }
     @media(min-width: 767px){
