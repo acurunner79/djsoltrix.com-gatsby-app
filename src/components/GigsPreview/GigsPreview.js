@@ -9,6 +9,9 @@ const GigsPreview = () => {
                 edges {
                     node {
                     gigDate(formatString: "MMM DD YYYY")
+                    gigMonth
+                    gigDay
+                    gigYear
                     eventName
                     eventLocation
                     eventPage
@@ -27,9 +30,16 @@ const GigsPreview = () => {
         </div>
         <div id="gig-label-border"></div>
         <div id="gig-preview-card">
-            <div className="dates">
-                <h4>{query.allContentfulUpcomingGigs.edges[0].node.gigDate}</h4>
+            <div id="calendar-container">
+                <div id="event-calendar-template">
+                    <h5 id="calendar-month">{query.allContentfulUpcomingGigs.edges[0].node.gigMonth}</h5>
+                    <h4 id="calendar-day">{query.allContentfulUpcomingGigs.edges[0].node.gigDay}</h4>
+                    <h4 id="calendar-year">{query.allContentfulUpcomingGigs.edges[0].node.gigYear}</h4>
+                </div>
             </div>
+            {/* <div className="dates">
+                <h4>{query.allContentfulUpcomingGigs.edges[0].node.gigDate}</h4>
+            </div> */}
             <div className="event-details">
                 <h4 className="event-name">{query.allContentfulUpcomingGigs.edges[0].node.eventName}</h4>
                 <h4>{query.allContentfulUpcomingGigs.edges[0].node.eventLocation}</h4>
@@ -38,9 +48,16 @@ const GigsPreview = () => {
         </div>
         <div className="gig-preview-border"></div>
         <div id="gig-preview-card">
-            <div className="dates">
-            <h4>{query.allContentfulUpcomingGigs.edges[1].node.gigDate}</h4>
+            <div id="calendar-container">
+                <div id="event-calendar-template">
+                    <h5 id="calendar-month">{query.allContentfulUpcomingGigs.edges[1].node.gigMonth}</h5>
+                    <h4 id="calendar-day">{query.allContentfulUpcomingGigs.edges[1].node.gigDay}</h4>
+                    <h4 id="calendar-year">{query.allContentfulUpcomingGigs.edges[1].node.gigYear}</h4>
+                </div>
             </div>
+            {/* <div className="dates">
+            <h4>{query.allContentfulUpcomingGigs.edges[1].node.gigDate}</h4>
+            </div> */}
             <div className="event-details">
                 <h4>{query.allContentfulUpcomingGigs.edges[1].node.eventName}</h4>
                 <h4>{query.allContentfulUpcomingGigs.edges[1].node.eventLocation}</h4>
@@ -49,9 +66,16 @@ const GigsPreview = () => {
         </div>
         <div className="gig-preview-border"></div>
         <div id="gig-preview-card">
-            <div className="dates">
-            <h4>{query.allContentfulUpcomingGigs.edges[2].node.gigDate}</h4>
+            <div id="calendar-container">
+                <div id="event-calendar-template">
+                    <h5 id="calendar-month">{query.allContentfulUpcomingGigs.edges[2].node.gigMonth}</h5>
+                    <h4 id="calendar-day">{query.allContentfulUpcomingGigs.edges[2].node.gigDay}</h4>
+                    <h4 id="calendar-year">{query.allContentfulUpcomingGigs.edges[2].node.gigYear}</h4>
+                </div>
             </div>
+            {/* <div className="dates">
+            <h4>{query.allContentfulUpcomingGigs.edges[2].node.gigDate}</h4>
+            </div> */}
             <div className="event-details">
                 <h4>{query.allContentfulUpcomingGigs.edges[2].node.eventName}</h4>
                 <h4>{query.allContentfulUpcomingGigs.edges[2].node.eventLocation}</h4>
@@ -60,9 +84,16 @@ const GigsPreview = () => {
         </div>
         <div className="gig-preview-border"></div>
         <div id="gig-preview-card">
-            <div className="dates">
-            <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigDate}</h4>
+        <div id="calendar-container">
+                <div id="event-calendar-template">
+                    <h5 id="calendar-month">{query.allContentfulUpcomingGigs.edges[3].node.gigMonth}</h5>
+                    <h4 id="calendar-day">{query.allContentfulUpcomingGigs.edges[3].node.gigDay}</h4>
+                    <h4 id="calendar-year">{query.allContentfulUpcomingGigs.edges[3].node.gigYear}</h4>
+                </div>
             </div>
+            {/* <div className="dates">
+            <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigDate}</h4>
+            </div> */}
             <div className="event-details">
                 <h4>{query.allContentfulUpcomingGigs.edges[3].node.eventName}</h4>
                 <h4>{query.allContentfulUpcomingGigs.edges[3].node.eventLocation}</h4>

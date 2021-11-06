@@ -21,7 +21,7 @@ const RichText = ({ assetRef, raw }) => {
               );
             },
             [INLINES.HYPERLINK]: (node) => {
-                console.log(node)
+                // console.log(node)
                 if ((node.data.uri).includes('youtube.com/embed')){
                     return(
                         <iframe src={node.data.uri}></iframe>

@@ -11,6 +11,9 @@ const UpcomingGigs = () => {
                     eventName
                     eventLocation
                     eventPage
+                    gigMonth
+                    gigDay
+                    gigYear
                 }
             }
         }
@@ -29,9 +32,9 @@ const UpcomingGigs = () => {
                         <div id="gig-preview-card" key={index}>
                             <div id="calendar-container">
                                 <div id="event-calendar-template">
-                                    <h5 id="calendar-month">OCT</h5>
-                                    <h4 id="calendar-day">20</h4>
-                                    <h4 id="calendar-year">2021</h4>
+                                    <h5 id="calendar-month">{gig.gigMonth}</h5>
+                                    <h4 id="calendar-day">{gig.gigDay}</h4>
+                                    <h4 id="calendar-year">{gig.gigYear}</h4>
                                 </div>
                             </div>
                             {/* <div className="dates">
