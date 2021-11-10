@@ -31,7 +31,7 @@ const Music = (props) => {
                             <Accordion id="remix-accordion"defaultActiveKey="3">
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>Test</Accordion.Header>
-                                    <Accordion.Body>
+                                    <Accordion.Body className="accordion-main-body">
                                         <div id="singles-display">
                                             <Remixes />
                                         </div>

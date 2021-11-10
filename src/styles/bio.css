@@ -54,8 +54,34 @@ h4#calendar-year{
     font-weight: 600;
 }
 
+.bio-images{
+    width: 95vw;
+    margin: 0 auto !important;
+}
+
+.bio-paragraph{
+    width: 95vw;
+    margin: 0 auto;
+    color: white;
+    text-align: left;
+    text-indent: 15px;
+}
+
+#carousel-container{
+    width: 95vw;
+    margin: 0 auto;
+}
+
 @media(min-width: 767px){
     div#calendar-container{
         width: 265px;   
+    }
+
+    .bio-images{
+        width: 50vw;
+    }
+
+    .bio-paragraph{
+        width: 70vw;
     }
 }
