@@ -85,3 +85,50 @@ h4#calendar-year{
         width: 70vw;
     }
 }
+
+@media(min-width: 1439px){
+
+    #bio-container{
+        margin: 0 auto 120px auto;
+        width: 80vw;
+        align-self: center;
+    }
+  
+    #bio-upper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center !important;
+        margin: 200px auto !important;
+
+    }
+
+    .bio-paragraph{
+        width: 40vw;
+        margin: 0 auto !important;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* #upper-paragraph{
+        width: 100px !important;
+        height: 30vw;
+    } */
+
+    .bio-images{
+        width: 500px;
+        margin: 0 !important;
+    }
+
+    #bio-lower{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        margin: 0 auto 0 40px !important;
+        align-items: center !important;
+    }
+
+    #lower-paragraph{
+        margin: 0 auto !important;
+        align-items: center !important;
+    }
+}
