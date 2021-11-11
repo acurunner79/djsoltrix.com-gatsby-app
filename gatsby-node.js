@@ -25,6 +25,12 @@ exports.createPages = async ({ actions, graphql }) => {
             node {
               slug
               publishedDate(formatString: "MMM DD YYYY")
+              blogPostThumbnail {
+                fixed {
+                  src
+                }
+                description
+              }
               pageContent {
                 raw
                 references {

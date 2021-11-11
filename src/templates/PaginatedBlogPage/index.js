@@ -9,7 +9,7 @@ import { Content, Post, Pagination } from './style'
 
 
 const PaginatedBlogPage = ({pageContext}) => {
-    // console.log('paginated',pageContext)
+    console.log('paginated post image',pageContext)
     return (
         // <Layout>
             <>
@@ -20,16 +20,24 @@ const PaginatedBlogPage = ({pageContext}) => {
                 <h2 id="blog-header">SOLTRIX NEWS</h2>
                 {pageContext.posts.map((post, index) => (
                     <Post key={post.contentful_id}>
-                        <div key={index}>
-                            <Link to={`/${pageContext.blogSlug}/${post.slug}`}><p id="blog-title">{post.title}</p></Link>
+                        <div id="single-post">
+                            <div>
+                                <div key={index}>
+                                    <Link to={`/${pageContext.blogSlug}/${post.slug}`}><p id="blog-title">{post.title}</p></Link>
+                                </div>
+                            </div>
+                            <div id="thumbnail-container">
+                                <img id ="blogpost-thumbnail" src={post?.blogPostThumbnail?.fixed?.src} alt={post?.blogPostThumbnail?.description}/>
+                            </div>
                         </div>
-                        <div>{post.description}</div>
-                        <div>
-                            <small>
-                                {post.publishedDate}
-                            </small>
-                        </div>
+                                <div>{post.description}</div>
+                                <div>
+                                    <small>
+                                        {post.publishedDate}
+                                    </small>
+                                </div>
                     </Post>
+                
                 ))}
             </Content>
             <Pagination>

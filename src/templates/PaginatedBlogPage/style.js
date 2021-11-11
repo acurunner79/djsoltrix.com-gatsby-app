@@ -57,15 +57,38 @@ export const Post = styled.div`
         color: gray;
     }
 
+    #blogpost-thumbnail{
+        width: 89vw;
+        margin: 5px auto !important;
+        border-radius: 4px;
+    }
+
     @media(min-width: 767px){
         div#news-bottom-partition{
             width: 500px;
+        }
+
+        #single-post{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #blogpost-thumbnail{
+            display: block;
+            width: 20vw;
+            /* height: 15vh; */
+            align-self: center;
         }
     }
 
     @media(min-width: 1023px){
         div#news-bottom-partition{
             width: 650px !important;
+        }
+
+        #blogpost-thumbnail{
+            width: 200px;
         }
     }
 `
