@@ -37,7 +37,7 @@ const Bio = (props) => {
                                 <Img className="bio-images" fluid={props.data.slideImage2.childImageSharp.fluid}/>
                             </Carousel.Item>
                             <Carousel.Item>
-                            <Img className="bio-images" fluid={props.data.slideImage3.childImageSharp.fluid}/>
+                                <Img className="bio-images" fluid={props.data.slideImage3.childImageSharp.fluid}/>
                             </Carousel.Item>
                         </Carousel>
                     </div>
@@ -80,7 +80,5 @@ export const query = graphql`
         }
       }
     }
-  },
-  
-  
+  }
 `
