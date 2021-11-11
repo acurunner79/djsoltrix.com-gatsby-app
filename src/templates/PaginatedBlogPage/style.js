@@ -18,7 +18,11 @@ export const Content = styled.div`
     }
     @media(min-width: 767px){
         width: 70vw;
-        margin: 380px auto 20px auto;;
+        margin: 380px auto 20px auto;
+        #blog-header{
+            width: auto;
+            text-align: center !important;
+        }
     }
 
     @media(min-width: 1023px){

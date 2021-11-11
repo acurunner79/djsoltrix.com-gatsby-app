@@ -18,6 +18,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: path.join(__dirname, `src`, `images`), 
+      },
+    },
+    {
       resolve: "gatsby-source-contentful",
       options: {
         accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
