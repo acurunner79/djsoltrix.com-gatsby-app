@@ -12,8 +12,6 @@ const Remixes = () => {
         const playlistId = 'PL3b1uuA7D4VvWBKgVDCCF0n0l7PLHdzJ6'
 
         const apiKey = process.env.GATSBY_YOUTUBE_APIKEY
-     
-        // console.log('apiKey', apiKey)
         
         const [remixData, setRemixData] = useState(null)
      
@@ -35,28 +33,7 @@ const Remixes = () => {
         return (
 
             remixData.items.reverse().map((item, index )=> {
-                // console.log('remix items', item)
-
-                // const skipVid = item.filter() => {
-                //     if (skipVid === 'Private video'){
-                //         return false
-                //     }
-
-                // }
-                  
-                    // var privateVid = item.snippet.title
-                    // var removedVid = ''
-                    // if (privateVid === 'Private video')
-                    // console.log('private indexs',privateVid)
-                    // console.log(privateVid.pop())
-                    // privateVid.nextVideo()
-                    // console.log('privateVid removed', removedVid)
-                        // return privateVid
-                
-                // skipVid()
-               
-
-
+    
                 return (
                     <div id="youtube-container">
                         <div className="youtube-card" key={index}>

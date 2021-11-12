@@ -5,13 +5,11 @@ import '../../styles/youtube.css'
 
 const Singles = () => {
 
-        // fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL3b1uuA7D4VtxzhUrWqyhxr2339uJ2cSV&maxResults=50&key=AIzaSyC_Nk5v8pQlCJEXhXi-Qe7zy6Qt8mqBPJs`)
         const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/playlistItems'
    
         const playlistId = 'PL3b1uuA7D4VtxzhUrWqyhxr2339uJ2cSV'
      
         const apiKey = process.env.GATSBY_YOUTUBE_APIKEY
-        // console.log('apiKey', apiKey)
         
         const [youtubeData, setYoutubeData] = useState(null)
      
