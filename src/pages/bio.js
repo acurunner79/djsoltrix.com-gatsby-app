@@ -14,7 +14,7 @@ const Bio = (props) => {
     console.log('imagess', props)
 
     return (
-        <div>
+        <div id="bio-body">
             <TopNav />
             <Hamburger />
             <ScrollButton />
