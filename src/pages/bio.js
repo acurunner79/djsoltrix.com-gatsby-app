@@ -39,6 +39,12 @@ const Bio = (props) => {
                             <Carousel.Item>
                                 <Img className="bio-images" fluid={props.data.slideImage3.childImageSharp.fluid}/>
                             </Carousel.Item>
+                            <Carousel.Item>
+                                <Img className="bio-images" fluid={props.data.slideImage4.childImageSharp.fluid}/>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <Img className="bio-images" fluid={props.data.slideImage5.childImageSharp.fluid}/>
+                            </Carousel.Item>
                         </Carousel>
                     </div>
                     <div id="lower-paragraph">
@@ -59,21 +65,35 @@ export default Bio
 
 export const query = graphql`
   query {
-    slideImage1: file(relativePath: {eq: "007.jpg"}) {
+    slideImage1: file(relativePath: {eq: "Sol02.png"}) {
       childImageSharp {
         fluid(maxWidth: 4000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    slideImage2: file(relativePath: {eq: "076.jpg"}) {
+    slideImage2: file(relativePath: {eq: "Sol03.jpeg"}) {
       childImageSharp {
         fluid(maxWidth: 4000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    slideImage3: file(relativePath: {eq: "097.jpg"}) {
+    slideImage3: file(relativePath: {eq: "Sol04.jpeg"}) {
+      childImageSharp {
+        fluid(maxWidth: 4000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    slideImage4: file(relativePath: {eq: "Sol05.jpeg"}) {
+      childImageSharp {
+        fluid(maxWidth: 4000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    slideImage5: file(relativePath: {eq: "Sol01.png"}) {
       childImageSharp {
         fluid(maxWidth: 4000) {
           ...GatsbyImageSharpFluid

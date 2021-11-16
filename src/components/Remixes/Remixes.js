@@ -15,18 +15,16 @@ const Remixes = () => {
         
         const [remixData, setRemixData] = useState(null)
      
-        // const getremixData = React.useRef()
      
         const getremixData = async () => {
             const response =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=${playlistId}&maxResults=50&key=${apiKey}`)
             const data = await response.json()
             setRemixData(data)
-            console.log('test dataa', remixData)
         }
      
         useEffect(() => {
             getremixData()
-        }, [])
+        })
     
     const loaded = () => {
 

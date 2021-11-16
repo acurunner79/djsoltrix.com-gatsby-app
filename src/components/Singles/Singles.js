@@ -24,7 +24,7 @@ const Singles = () => {
      
         useEffect(() => {
             getYoutubeData()
-        }, [])
+        })
 
         
         const loaded = () => {
