@@ -82,6 +82,11 @@ h4#calendar-year{
     margin: 0 auto;
 }
 
+#bottom-image-container{
+    display: flex;
+    justify-content: center;
+}
+
 @media(min-width: 767px){
     div#calendar-container{
         width: 265px;   

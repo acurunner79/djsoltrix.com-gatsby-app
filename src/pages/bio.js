@@ -32,7 +32,7 @@ const Bio = (props) => {
                 </div>
                 <div id="bio-lower">
                     <div id="carousel-container">
-                        <Carousel fade="true" pause="hover" variant="dark" controls="true">
+                        <Carousel fade="true" pause="false" variant="dark" controls="true">
                             <Carousel.Item >
                                 <Img className="bio-images" fluid={props.data.slideImage2.childImageSharp.fluid}/>
                             </Carousel.Item>
@@ -42,9 +42,9 @@ const Bio = (props) => {
                             <Carousel.Item>
                                 <Img className="bio-images" fluid={props.data.slideImage4.childImageSharp.fluid}/>
                             </Carousel.Item>
-                            <Carousel.Item>
+                            {/* <Carousel.Item>
                                 <Img className="bio-images" fluid={props.data.slideImage5.childImageSharp.fluid}/>
-                            </Carousel.Item>
+                            </Carousel.Item> */}
                         </Carousel>
                     </div>
                     <div id="lower-paragraph">
@@ -54,6 +54,9 @@ const Bio = (props) => {
                             <br/>
                         <p className="bio-paragraph">Throughout the years after and to this present day, DJ Soltrix is widely regarded as the "father of bachata remixes" amongst his peers. While he continues to travel the world to play at Latin dance music festivals and various special events, he can only hope that his crowd feels the passion and dedication he's given to the work he has provided to each dancer.</p>
                     </div>
+                </div>
+                <div id="bottom-image-container">
+                  <Img className="bio-images" fluid={props.data.slideImage5.childImageSharp.fluid} alt="soltrix-1"/>
                 </div>
             </div>
             <Footer />
