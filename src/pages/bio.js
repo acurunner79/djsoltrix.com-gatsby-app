@@ -72,28 +72,28 @@ export const query = graphql`
         }
       }
     }
-    slideImage2: file(relativePath: {eq: "Sol03.jpeg"}) {
+    slideImage2: file(relativePath: {eq: "Sol03.png"}) {
       childImageSharp {
         fluid(maxWidth: 4000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    slideImage3: file(relativePath: {eq: "Sol04.jpeg"}) {
+    slideImage3: file(relativePath: {eq: "Sol04.png"}) {
       childImageSharp {
         fluid(maxWidth: 4000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    slideImage4: file(relativePath: {eq: "Sol05.jpeg"}) {
+    slideImage4: file(relativePath: {eq: "Sol05.png"}) {
       childImageSharp {
         fluid(maxWidth: 4000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    slideImage5: file(relativePath: {eq: "Sol01.png"}) {
+    slideImage5: file(relativePath: {eq: "Sol06.png"}) {
       childImageSharp {
         fluid(maxWidth: 4000) {
           ...GatsbyImageSharpFluid

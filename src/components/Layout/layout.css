@@ -42,7 +42,8 @@ img#mobile-logo{
 
 @media(min-width: 1439px){
   body{
-    background-size: 65vw;
+    background-size: 50vw;
+    padding-bottom: -80px;
   }
 }
 
