@@ -98,7 +98,7 @@ h4#calendar-year{
 
     .bio-images{
         width: 50vw;
-        filter: saturate(190%);
+        /* filter: saturate(180%); */
     }
 
     .bio-paragraph{

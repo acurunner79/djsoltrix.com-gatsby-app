@@ -68,35 +68,35 @@ export default Bio
 
 export const query = graphql`
   query {
-    slideImage1: file(relativePath: {eq: "Sol02.png"}) {
+    slideImage1: file(relativePath: {eq: "Sol02 Black01.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 4000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    slideImage2: file(relativePath: {eq: "Sol03.png"}) {
+    slideImage2: file(relativePath: {eq: "Sol03 Black.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 4000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    slideImage3: file(relativePath: {eq: "Sol04.png"}) {
+    slideImage3: file(relativePath: {eq: "Sol04 Black 2.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 4000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    slideImage4: file(relativePath: {eq: "Sol05.png"}) {
+    slideImage4: file(relativePath: {eq: "Sol05 Black.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 4000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    slideImage5: file(relativePath: {eq: "Sol06.png"}) {
+    slideImage5: file(relativePath: {eq: "Sol06 Black.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 4000) {
           ...GatsbyImageSharpFluid
