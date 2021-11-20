@@ -49,9 +49,6 @@ h4#calendar-day{
 
 h4#calendar-year{
     border-top: 2px solid black;
-    /* background-color: black; */
-    /* padding: 5px; */
-    /* width: 100%; */
     color: black;
     margin: 0 auto;
     font-family: 'Karla';
