@@ -13,33 +13,33 @@ const Remixes2 = () => {
 
         const apiKey = process.env.GATSBY_YOUTUBE_APIKEY
         
-        const [remixData, setRemixData] = useState(null)
+        const [remixData2, setRemixData2] = useState(null)
      
      
-        const getremixData = async () => {
+        const getremixData2 = async () => {
             const response =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=${playlistId}&maxResults=50&key=${apiKey}`)
             const data = await response.json()
-            setRemixData(data)
+            setRemixData2(data)
         }
      
         useEffect(() => {
-            getremixData()
+            getremixData2()
         }, [])
     
     const loaded = () => {
 
         return (
 
-            remixData.items.map((item, index )=> {
+            remixData2.items.map((item2, index )=> {
     
                 return (
                     <div id="youtube-container">
                         <div className="youtube-card" key={index}>
                             <ReactPlayer className="videoplayer"
-                                url={`"https://www.youtube.com/embed/${item.snippet.resourceId.videoId}"`}
+                                url={`"https://www.youtube.com/embed/${item2.snippet.resourceId.videoId}"`}
                                 // light={}
                                 controls="true"/>
-                            <h4 className="youtube-titles"><FaYoutube color="red" size="25"/> {item.snippet.title}</h4>
+                            <h4 className="youtube-titles"><FaYoutube color="red" size="25"/> {item2.snippet.title}</h4>
                         </div>
                     </div>
                 )
@@ -52,7 +52,7 @@ const Remixes2 = () => {
         )
     }
 
-    return remixData ? loaded() : loading()
+    return remixData2 ? loaded() : loading()
 }
 
 export default Remixes2

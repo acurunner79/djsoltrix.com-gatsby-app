@@ -53,14 +53,14 @@ module.exports = {
         display: 'swap'
       }
     },
-    {
-      resolve: `gatsby-source-youtube-v3`,
-      options: {
-        channelId: ['UCPXm1RVzUIRzfqnYb0eX1sg'],
-        apiKey: process.env.GATSBY_YOUTUBE_APIKEY, // Optional for public requests
-        maxVideos: 50 // Defaults to 50
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-youtube-v3`,
+    //   options: {
+    //     channelId: ['UCPXm1RVzUIRzfqnYb0eX1sg'],
+    //     apiKey: process.env.GATSBY_YOUTUBE_APIKEY, // Optional for public requests
+    //     maxVideos: 50 // Defaults to 50
+    //   },
+    // },
     {
       resolve: 'gatsby-source-rest-api',
       options: {
