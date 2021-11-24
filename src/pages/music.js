@@ -25,7 +25,7 @@ const Music = (props) => {
             <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png" alt="soltrix"/>
             <h1 id="page-header">MUSIC</h1>
             <div id="music-select-container">
-                <Tabs activeKey={key} onSelect={(k) => setKey(k)} id="noanim-tab-example" className="mb-3">
+                <Tabs activeKey={key} onSelect={(k) => setKey(k)} unmountOnExit="false" id="noanim-tab-example" className="mb-3">
                     <Tab className="subnav-links" eventKey="home" title="Singles">
                         <div id="singles-display">
                             <Singles />

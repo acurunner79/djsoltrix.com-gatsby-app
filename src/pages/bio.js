@@ -52,11 +52,11 @@ const Bio = (props) => {
                             <br/>
                         <p className="bio-paragraph">In 2013, DJ Soltrix produced his first bachata remixes which included his versions to "Clocks" by Coldplay and "Young & Beautiful" by Lana Del Rey. Both projects accelerated his popularity on a worldwide scale and it wasn't until the next year, in 2014, where he discovered the Latin dance community. Upon noticing the recognition given to him from the dance world, DJ Soltrix dedicated the next couple years to doing bachata remixes only for that community. By 2015, he released his bachata remixes to "Chivalry Is Dead" by Trevor Wesley, "Invincible" by Borgeous, "Faded" by ZHU, and many more that have made him successful.</p>
                             <br/>
-                        <p className="bio-paragraph">Throughout the years after and to this present day, DJ Soltrix is widely regarded as the "father of bachata remixes" amongst his peers. While he continues to travel the world to play at Latin dance music festivals and various special events, he can only hope that his crowd feels the passion and dedication he's given to the work he has provided to each dancer.</p>
                     </div>
                 </div>
-                <div id="bottom-image-container">
+                <div id="bio-upper">
                   <Img className="bio-images" fluid={props.data.slideImage5.childImageSharp.fluid} alt="soltrix-1"/>
+                        <p className="bio-paragraph">Throughout the years after and to this present day, DJ Soltrix is widely regarded as the "father of bachata remixes" amongst his peers. While he continues to travel the world to play at Latin dance music festivals and various special events, he can only hope that his crowd feels the passion and dedication he's given to the work he has provided to each dancer.</p>
                 </div>
             </div>
             <Footer />
