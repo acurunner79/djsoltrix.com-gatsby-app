@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Remixes from '../components/Remixes/Remixes'
 import Remixes2 from '../components/Remixes2/Remixes2'
 import Remixes3 from '../components/Remixes3/Remixes3'
@@ -15,6 +15,8 @@ import '../styles/music.css'
 
 const Music = (props) => {
     // console.log('music props', props)
+    const [key, setKey] = useState('home');
+
     return (
         <div>
             <TopNav />
@@ -23,13 +25,13 @@ const Music = (props) => {
             <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png" alt="soltrix"/>
             <h1 id="page-header">MUSIC</h1>
             <div id="music-select-container">
-                <Tabs defaultActiveKey="0"  id="noanim-tab-example" className="mb-3">
+                <Tabs defaultActiveKey="home" activeKey={key} onSelect={(k) => setKey(k)} id="noanim-tab-example" className="mb-3">
                     <Tab className="subnav-links" eventKey="home" title="Singles">
                         <div id="singles-display">
                             <Singles />
                         </div>
                     </Tab>
-                    <Tab className="subnav-links" eventKey="profile" title="Remixes">
+                    <Tab className="subnav-links" eventKey="remixes" title="Remixes">
                             <Accordion id="remix-accordion"defaultActiveKey="3">
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>2020-Present</Accordion.Header>
@@ -59,7 +61,7 @@ const Music = (props) => {
                                 </Accordion.Item>
                             </Accordion>
                     </Tab>
-                    <Tab className="subnav-links" eventKey="contact" title="DJ Mixes">
+                    <Tab className="subnav-links" eventKey="dj mixes" title="DJ Mixes">
                         <Mixcloud />
                     </Tab>
                 </Tabs>
