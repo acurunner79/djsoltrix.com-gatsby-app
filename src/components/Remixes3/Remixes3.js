@@ -5,11 +5,11 @@ import '../../styles/youtube.css'
 
 
 
-const Remixes = () => {
+const Remixes3 = () => {
 
     const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/playlistItems'
    
-        const playlistId = 'PL3b1uuA7D4VuQEMqwjfn8UPVefAIydrWO'
+        const playlistId = 'PL3b1uuA7D4VvSAQJnRzyPbnOpndlKhx7E'
 
         const apiKey = process.env.GATSBY_YOUTUBE_APIKEY
         
@@ -24,7 +24,7 @@ const Remixes = () => {
      
         useEffect(() => {
             getremixData()
-        },[])
+        }, [])
     
     const loaded = () => {
 
@@ -55,4 +55,4 @@ const Remixes = () => {
     return remixData ? loaded() : loading()
 }
 
-export default Remixes
+export default Remixes3

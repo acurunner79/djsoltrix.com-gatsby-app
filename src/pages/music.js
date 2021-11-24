@@ -1,5 +1,7 @@
 import React from 'react'
 import Remixes from '../components/Remixes/Remixes'
+import Remixes2 from '../components/Remixes2/Remixes2'
+import Remixes3 from '../components/Remixes3/Remixes3'
 import TopNav from '../components/Nav/TopNav'
 import Hamburger from '../components/Nav/Hamburger'
 import Tabs from 'react-bootstrap/Tabs'
@@ -30,7 +32,7 @@ const Music = (props) => {
                     <Tab className="subnav-links" eventKey="profile" title="Remixes">
                             <Accordion id="remix-accordion"defaultActiveKey="3">
                                 <Accordion.Item eventKey="0">
-                                    <Accordion.Header>Test</Accordion.Header>
+                                    <Accordion.Header>2020-Present</Accordion.Header>
                                     <Accordion.Body className="accordion-main-body">
                                         <div id="singles-display">
                                             <Remixes />
@@ -39,19 +41,19 @@ const Music = (props) => {
                                 </Accordion.Item>
                             
                                 <Accordion.Item eventKey="1">
-                                    <Accordion.Header>Test 2</Accordion.Header>
+                                    <Accordion.Header>2018-2019</Accordion.Header>
                                     <Accordion.Body>
                                         <div id="singles-display">
-                                            <Remixes id="remix-tab"/>
+                                            <Remixes2 id="remix-tab"/>
                                         </div>
                                     </Accordion.Body>
                                 </Accordion.Item>
 
                                 <Accordion.Item eventKey="2">
-                                    <Accordion.Header>Test 3</Accordion.Header>
+                                    <Accordion.Header>2015-2017</Accordion.Header>
                                     <Accordion.Body>
                                         <div id="singles-display">
-                                            <Remixes />
+                                            <Remixes3 />
                                         </div>
                                     </Accordion.Body>
                                 </Accordion.Item>
