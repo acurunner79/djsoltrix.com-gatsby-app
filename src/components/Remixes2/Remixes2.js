@@ -22,7 +22,7 @@ const Remixes2 = () => {
             setRemixData2(data)
         }
      
-        useEffect(() => {
+        useEffect(() => {            
             getremixData2()
         }, [])
     
@@ -38,7 +38,7 @@ const Remixes2 = () => {
                             <ReactPlayer className="videoplayer"
                                 url={`"https://www.youtube.com/embed/${item2.snippet.resourceId.videoId}"`}
                                 // light={}
-                                controls="true"/>
+                                controls={true}/>
                             <h4 className="youtube-titles"><FaYoutube color="red" size="25"/> {item2.snippet.title}</h4>
                         </div>
                     </div>

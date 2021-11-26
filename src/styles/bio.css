@@ -2,6 +2,12 @@
     width: 70px !important;   
 }
 
+#bio-header{
+    margin-top: 220px;
+    margin-bottom: -160px;
+    font-size: 40px;
+}
+
 #bio-body{
     background-color: rgba(0, 0, 0, 0.924);
     /* height: 100vh !important; */
@@ -70,7 +76,7 @@ h4#calendar-year{
     width: 95vw;
     margin: 0 auto;
     color: white;
-    text-align: left;
+    text-align: justify !important;
     text-indent: 15px;
 }
 

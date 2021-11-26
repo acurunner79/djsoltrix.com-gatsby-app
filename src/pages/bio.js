@@ -19,7 +19,7 @@ const Bio = (props) => {
             <Hamburger />
             <ScrollButton />
             <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png" alt="soltrix"/>
-            {/* <h1 id="gig-header">Bio</h1> */}
+            <h1 id="bio-header">BIOGRAPHY</h1>
             <div id="bio-container">
                 <div id="bio-upper">
                     <Img className="bio-images" fluid={props.data.slideImage1.childImageSharp.fluid} alt="soltrix-1"/>

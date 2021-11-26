@@ -17,7 +17,7 @@ const PaginatedBlogPage = ({pageContext}) => {
             <TopNav />
             <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png" alt="soltrix"/>
             <Content>
-                <h2 id="blog-header">SOLTRIX NEWS</h2>
+                <h2 id="blog-header">NEWS</h2>
                 {pageContext.posts.map((post, index) => (
                     <Post key={post.contentful_id}>
                         <div id="single-post">

@@ -25,14 +25,14 @@ const Music = (props) => {
             <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png" alt="soltrix"/>
             <h1 id="page-header">MUSIC</h1>
             <div id="music-select-container">
-                <Tabs activeKey={key} onSelect={(k) => setKey(k)} unmountOnExit="false" id="noanim-tab-example" className="mb-3">
+                <Tabs activeKey={key} onSelect={(k) => setKey(k)} unmountOnExit="true" mountOnEnter="true" id="noanim-tab-example" className="mb-3">
                     <Tab className="subnav-links" eventKey="home" title="Singles">
                         <div id="singles-display">
                             <Singles />
                         </div>
                     </Tab>
                     <Tab className="subnav-links" eventKey="remixes" title="Remixes">
-                            <Accordion id="remix-accordion"defaultActiveKey="3">
+                            <Accordion id="remix-accordion"defaultActiveKey="4" unmountOnExit="true" mountOnEnter="true">
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>2020-Present</Accordion.Header>
                                     <Accordion.Body className="accordion-main-body">
