@@ -3,6 +3,8 @@ import { graphql, Link } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 import { IoIosArrowForward } from 'react-icons/io'
+import ReactPlayer from 'react-player'
+import '../RichText/richtext.css'
 import { Wrapper } from './style'
 
 
@@ -24,7 +26,7 @@ const RichText = ({ assetRef, raw }) => {
                 // console.log(node)
                 if ((node.data.uri).includes('youtube.com/embed')){
                     return(
-                        <iframe src={node.data.uri}></iframe>
+                        <ReactPlayer id="blog-embedded-video" url={node.data.uri} controls={true}/>
                     )
                 }
             }

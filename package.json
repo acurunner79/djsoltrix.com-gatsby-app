@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "description": "DJ Soltrix",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "IE 10",
+    "Chrome 96"
+  ],
   "keywords": [
     "gatsby"
   ],
@@ -45,5 +51,5 @@
     "react-player": "^2.9.0",
     "styled-components": "^5.3.1",
     "youtube-playlist-info": "^1.1.2"
-  }
+  }   
 }

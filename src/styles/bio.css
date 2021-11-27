@@ -3,8 +3,8 @@
 }
 
 #bio-header{
-    margin-top: 220px;
-    margin-bottom: -160px;
+    margin-top: 120px;
+    /* margin-bottom: -160px; */
     font-size: 40px;
 }
 
@@ -109,6 +109,13 @@ h4#calendar-year{
     }
 }
 
+@media(min-width: 1023px){
+    #bio-header{
+        margin-top: 220px;
+        margin-bottom: -60px;
+    }
+}
+
 @media(min-width: 1439px){
 
     #bio-container{
@@ -116,13 +123,18 @@ h4#calendar-year{
         width: 80vw;
         align-self: center;
     }
+
+    #bio-header{
+        margin-top: 220px;
+        margin-bottom: -160px;
+        font-size: 40px;
+    }
   
     #bio-upper{
         display: flex;
         justify-content: space-around;
         align-items: center !important;
         margin: 170px auto !important;
-
     }
 
     .bio-paragraph{
@@ -148,5 +160,13 @@ h4#calendar-year{
     #lower-paragraph{
         margin: 0 auto !important;
         align-items: center !important;
+    }
+}
+
+@media(min-width:2559px){
+    #bio-header{
+        margin-top: 280px;
+        /* margin-bottom: -160px; */
+        font-size: 40px;
     }
 }

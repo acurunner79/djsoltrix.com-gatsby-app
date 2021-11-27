@@ -2,6 +2,8 @@
     margin: 10px auto;
     display: flex !important;
     /* width: 95vw !important; */
+    /* align-content: center !important; */
+    /* justify-content: center; */
 }
 
 h4.youtube-titles{
@@ -14,16 +16,16 @@ h4.youtube-titles{
 }
 
 div.youtube-card{
-    width: 340px;
+    width: 80vw;
     background-color: black;
-    margin: 0 auto;
+    margin: 0 auto !important;
     height: 321px;
 }
 
 div.videoplayer{
     max-width: 540px !important;
     max-height: 260px !important;
-    width: 340px !important;
+    width: 300px !important;
     margin: 0 auto !important;
 }
 

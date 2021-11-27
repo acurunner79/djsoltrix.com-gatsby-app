@@ -19,17 +19,17 @@
     /* text-decoration: underline; */
 }
 
-#singles-display{
+div#singles-display{
     background-color: white;
     border-radius: 4px;
-    width: 92vw !important;
+    width: 88vw !important;
     height: 100% !important;
     display: flex !important;
     flex-direction: row !important;
     justify-content: flex-start !important;
     flex-wrap: wrap !important;
     margin: 0 auto !important;
-    align-items: center !important;
+    /* align-items: center !important; */
 }
 
 .accordion-main-body{
@@ -94,6 +94,10 @@ ul.mb-3.nav.nav-tabs{
     #music-select-container{
         margin: 360px auto 0 auto !important;
     }
+    button.accordion-button{
+        width: 230px;
+        margin: 0 auto;
+    }
 }
 
 @media(min-width: 1023px){
@@ -120,6 +124,11 @@ ul.mb-3.nav.nav-tabs{
         margin: 480px auto -300px auto; 
     }
 
+    div#singles-display{
+        width: 85vw !important;
+        margin: 0 auto !important;
+    }
+
     button.accordion-button{
         width: 200px;
         align-self: center !important;
@@ -129,12 +138,16 @@ ul.mb-3.nav.nav-tabs{
     #remix-tab{
         width: 80vw !important;
     }
+
+    #remix-accordion{
+        width: 90vw;
+    }
 }
 
 @media(min-width: 2559px){
-    #singles-display{
-        max-width: 1400px;
-        margin: 0 auto;
+    div#singles-display{
+        width: 50vw!important;
+        margin: 0 auto !important;
     }
 
     nav.mb-3.nav.nav-tabs{
@@ -149,5 +162,9 @@ ul.mb-3.nav.nav-tabs{
     #page-header{
         margin: 640px auto -370px auto; 
         font-size: 50px;
+    }
+
+    #remix-accordion{
+        width: 1348px;
     }
 }
