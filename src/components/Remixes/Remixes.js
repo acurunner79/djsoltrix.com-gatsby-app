@@ -31,13 +31,14 @@ const Remixes = () => {
         return (
 
             remixData.items.map((item, index )=> {
+                console.log('test-data', item)
     
                 return (
                     <div id="youtube-container">
                         <div className="youtube-card" key={index}>
                             <ReactPlayer className="videoplayer"
                                 url={`"https://www.youtube.com/embed/${item.snippet.resourceId.videoId}"`}
-                                // light={}
+                                light={item?.snippet?.thumbnails?.high?.url}
                                 controls={true}/>
                             <h4 className="youtube-titles"><FaYoutube color="red" size="25"/> {item.snippet.title}</h4>
                         </div>

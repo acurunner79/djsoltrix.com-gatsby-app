@@ -37,7 +37,7 @@ const Remixes2 = () => {
                         <div className="youtube-card" key={index}>
                             <ReactPlayer className="videoplayer"
                                 url={`"https://www.youtube.com/embed/${item2.snippet.resourceId.videoId}"`}
-                                // light={}
+                                light={item2?.snippet?.thumbnails?.high?.url}
                                 controls={true}/>
                             <h4 className="youtube-titles"><FaYoutube color="red" size="25"/> {item2.snippet.title}</h4>
                         </div>

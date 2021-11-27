@@ -20,6 +20,7 @@ const Singles = () => {
             const response =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=${playlistId}&maxResults=50&key=${apiKey}`)
             const data = await response.json()
             setYoutubeData(data)
+            // console.log('test-data', data)
         }
         
         useEffect(() => {
@@ -31,13 +32,15 @@ const Singles = () => {
             
             return(
                 youtubeData?.items?.map((item, index )=> {
+                    // console.log('test-data', item)
   
                    return(
                         <div id="youtube-container">
                             <div className="youtube-card" key={index}>
                                 <ReactPlayer className="videoplayer"
                                 url={`"https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`}
-                                controls={true}/>
+                                controls={true}
+                                light={item?.snippet?.thumbnails?.high?.url}/>
                                 <h4 className="youtube-titles"><FaYoutube color="red" size="25"/> {item.snippet.title}</h4>
                             </div>
                         </div>
