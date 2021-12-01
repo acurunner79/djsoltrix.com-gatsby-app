@@ -4,7 +4,7 @@
 }
 
 div.news-card{
-    text-align: left;
+    /* text-align: left !important; */
     width: 90vw !important;
     margin: 10px auto;
     padding: 5px;
@@ -13,18 +13,34 @@ div.news-card{
     border-radius: 8px;
 }
 
-.newsblog-title{
+
+h2.newsblog-title{
     color: red;
     font-family: 'Play';
+    align-self: center !important;
+    /* text-align: left !important; */
 }
 
 .newsblog-descr{
     font-family: 'Play';
+    
 }
 
 .newsblog-date{
+    margin-top: 80px;
     font-size: 15px;
     font-family: 'Play';
+}
+
+#image-card{
+    display: flex;
+}
+
+#thumbnail{
+    width: 85vw;
+    /* flex-direction: column; */
+    align-self: center !important;
+    /* margin: auto !important; */
 }
 
 div.slider{
@@ -37,6 +53,27 @@ div.slider{
   }
 
 @media(min-width: 767px){
+    div.news-card{
+        display: flex ;
+        flex-direction: row !important;
+        width: 900px !important
+    }
+
+    div#main-text-container{
+        /* width: 350px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+    }
+    
+    h2.newsblog-title{
+        margin: 10px auto;
+        align-items: center !important;
+    }
+
+    #thumbnail{
+        max-width: 250px;
+    }
 
 }
 
@@ -50,7 +87,7 @@ div.slider{
 
 @media(min-width: 1439px){
     div.news-card{
-        max-width: 1000px !important;
+        max-width: 900px !important;
     }
 
     div#news-container{

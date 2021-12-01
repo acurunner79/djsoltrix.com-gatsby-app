@@ -21,21 +21,21 @@ const PaginatedBlogPage = ({pageContext}) => {
                 {pageContext.posts.map((post, index) => (
                     <Post key={post.contentful_id}>
                         <div id="single-post">
-                            <div>
+                            <div id="text-container">
                                 <div key={index}>
                                     <Link to={`/${pageContext.blogSlug}/${post.slug}`}><p id="blog-title">{post.title}</p></Link>
                                 </div>
+                                <div id="blog-description">{post.description}</div>
                             </div>
                             <div id="thumbnail-container">
                                 <img id ="blogpost-thumbnail" src={post?.blogPostThumbnail?.fixed?.src} alt={post?.blogPostThumbnail?.description}/>
                             </div>
                         </div>
-                                <div>{post.description}</div>
-                                <div>
-                                    <small>
-                                        {post.publishedDate}
-                                    </small>
-                                </div>
+                        <div>
+                            <small>
+                                {post.publishedDate}
+                            </small>
+                        </div>
                     </Post>
                 
                 ))}

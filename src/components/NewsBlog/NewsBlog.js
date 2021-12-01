@@ -9,10 +9,15 @@ const NewsBlog = () => {
         query news {
             allContentfulBlogPost {
                 edges {
-                    node {
-                        title
-                        description
-                        publishedDate(formatString: "MMM DD YYYY")
+                node {
+                    title
+                    description
+                    publishedDate(formatString: "MMM DD YYYY")
+                        blogPostThumbnail {
+                            fixed {
+                                src
+                            }
+                        }
                     }
                 }
             }
@@ -25,22 +30,31 @@ const NewsBlog = () => {
             <div className="slider">
         <Carousel className="rounded">
           <Carousel.Item >
-            <div className="news-card">
-                <h2 className="newsblog-title">{query.allContentfulBlogPost.edges[0].node.title}</h2>
-                <h4>{query.allContentfulBlogPost.edges[0].node.description}</h4>
-                <h4 className="newsblog-date">{query.allContentfulBlogPost.edges[0].node.publishedDate}</h4>
-            </div>
+                    <div className="news-card">
+                        <div id="main-text-container">
+                            <h2 className="newsblog-title">{query.allContentfulBlogPost.edges[0].node.title}</h2>
+                            <h4 className="newsblog-descr">{query.allContentfulBlogPost.edges[0].node.description}</h4>
+                        </div>
+                        <div id="image-card">
+                            <img id="thumbnail" src={query.allContentfulBlogPost.edges[0].node.blogPostThumbnail.fixed.src} alt=""/>
+                        </div>
+                    </div>
+                {/* <h4 className="newsblog-date">{query.allContentfulBlogPost.edges[0].node.publishedDate}</h4> */}
             <Carousel.Caption>
-
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <div className="news-card">
-                <h2 className="newsblog-title">{query.allContentfulBlogPost.edges[1].node.title}</h2>
-                <h4 className="newsblog-descr">{query.allContentfulBlogPost.edges[1].node.description}</h4>
-                <h4 className="newsblog-date">{query.allContentfulBlogPost.edges[1].node.publishedDate}</h4>
+                <div id="main-text-container">
+                    <h2 className="newsblog-title">{query.allContentfulBlogPost.edges[1].node.title}</h2>
+                    <h4 className="newsblog-descr">{query.allContentfulBlogPost.edges[1].node.description}</h4>
+                </div>
+                <div id="image-card">
+                    <img id="thumbnail" src={query.allContentfulBlogPost.edges[1].node.blogPostThumbnail.fixed.src} alt=""/>
+                </div>
             </div>
             <Carousel.Caption>
+                {/* <h4 className="newsblog-date">{query.allContentfulBlogPost.edges[1].node.publishedDate}</h4> */}
 
             </Carousel.Caption>
           </Carousel.Item>

@@ -23,6 +23,18 @@ export const Content = styled.div`
             width: auto;
             text-align: center !important;
         }
+
+        #blog-title{
+            text-align: left !important;
+        }
+
+        #single-post{
+            display: flex;
+            flex-direction: row;
+        }
+        #blog-description{
+            /* width: 350px; */
+        }
     }
 
     @media(min-width: 1023px){

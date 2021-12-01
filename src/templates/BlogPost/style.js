@@ -11,7 +11,19 @@ export const BlogContent = styled.div`
     }
 
     h1{
-        /* margin-top: 220px; */
+        /* margin: 220px; */
         color: red;
+    }
+
+    @media(min-width: 767px){
+        margin: 240px auto;
+       p{
+           /* width: 740px; */
+           /* margin: 50px auto !important; */
+       }
+        h1{
+            width: 745px;
+            margin: 80px auto;
+        }
     }
 `
