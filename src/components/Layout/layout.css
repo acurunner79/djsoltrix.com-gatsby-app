@@ -60,8 +60,9 @@ img#mobile-logo{
 
 @media(min-width: 1439px){
   body{
-    background-size: 50vw;
+    background-size: 45vw;
     padding-bottom: -80px;
+    padding-top: -80px;
   }
 }
 

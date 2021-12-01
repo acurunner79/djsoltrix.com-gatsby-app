@@ -4,13 +4,15 @@
 
 #bio-header{
     margin-top: 120px;
+    /* height: 100px; */
     /* margin-bottom: -160px; */
     font-size: 40px;
+    /* background-color: black; */
 }
 
 #bio-body{
     background-color: rgba(0, 0, 0, 0.924);
-    /* height: 100vh !important; */
+    /* height: 100% !important; */
 }
 
 #event-calendar-template{
@@ -111,7 +113,7 @@ h4#calendar-year{
 
 @media(min-width: 1023px){
     #bio-header{
-        margin-top: 220px;
+        margin-top: 150px;
         margin-bottom: -60px;
     }
 }
@@ -125,7 +127,7 @@ h4#calendar-year{
     }
 
     #bio-header{
-        margin-top: 220px;
+        margin-top: 150px;
         margin-bottom: -160px;
         font-size: 40px;
     }
@@ -160,6 +162,12 @@ h4#calendar-year{
     #lower-paragraph{
         margin: 0 auto !important;
         align-items: center !important;
+    }
+}
+
+@media(min-width: 1919px){
+    #bio-header{
+        margin-top: 220px;
     }
 }
 
