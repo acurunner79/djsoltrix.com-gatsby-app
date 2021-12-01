@@ -18,7 +18,7 @@ const RichText = ({ assetRef, raw }) => {
             [BLOCKS.EMBEDDED_ASSET]: (node) => {
                 // console.log('node', node)
               const asset = assetRef.fixed;
-              if ((asset.src)){
+              if ((asset)){
               return (
                 <img id="asset-image" src={asset.src} alt={asset.title} />
               );
