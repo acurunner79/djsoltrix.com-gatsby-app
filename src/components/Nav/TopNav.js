@@ -8,6 +8,9 @@ const TopNav = () => {
         <div id="nav-container">
             <nav id="navbar">
                 <ul id="nav-links">
+                <Link to="/">
+                <img id="navlogo-2" src="https://res.cloudinary.com/acurunner79/image/upload/v1633740784/cropped-soltrix-logo_uu5wpm.png" alt="soltrix-logo"/>
+                </Link>
                 <Link to="/" className="topnav-link" activeClassName="active" iscurrent="true">
                     <li className="nav-item">
                     Home
@@ -22,9 +25,6 @@ const TopNav = () => {
                     <li className="nav-item">
                     Music
                     </li>
-                </Link>
-                <Link to="/">
-                <img id="navlogo-2" src="https://res.cloudinary.com/acurunner79/image/upload/v1633740784/cropped-soltrix-logo_uu5wpm.png" alt="soltrix-logo"/>
                 </Link>
                 <Link to="/blog-page" className="topnav-link" activeClassName="active" iscurrent="true">
                     <li className="nav-item">
@@ -41,6 +41,11 @@ const TopNav = () => {
                     Contact
                     </li>
                 </Link>
+                <a className="topnav-link" target="_blank" rel="noreferrer" href="https://dj-soltrix-apparel.creator-spring.com/">
+                    <li className="nav-item">
+                    Merch
+                    </li>
+                </a>
                 </ul>
             </nav>
         </div>

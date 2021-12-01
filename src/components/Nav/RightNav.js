@@ -37,6 +37,11 @@ const RightNav = () => {
                     Contact
                     </li>
                 </Link>
+                <a className="links" target="_blank" rel="noreferrer" href="https://dj-soltrix-apparel.creator-spring.com/">
+                    <li className="nav-item">
+                    Merch
+                    </li>
+                </a>
             </ul>
         </div>
     )

@@ -41,7 +41,7 @@ module.exports = {
         start_url: '/',
         background_color: '#000000',
         display: 'standalone',
-        icon: 'src/images/Soltrix-s.png',
+        icon: 'src/images/Soltrix Logo 2018 White  Black S.png',
       }
     },
     // {
