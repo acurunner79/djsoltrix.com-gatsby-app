@@ -4,6 +4,7 @@ import Hamburger from '../components/Nav/Hamburger'
 import UpcomingGigs from '../components/UpcomingGigs/UpcomingGigs'
 import Footer from '../components/Footer/Footer'
 import ScrollButton from '../components/ScrollButton/ScrollButton'
+import Seo from '../components/Seo'
 import '../styles/gigspreview.css'
 
 
@@ -11,6 +12,7 @@ const Events = () => {
 
     return (
         <div>
+            <Seo />
             <TopNav />
             <Hamburger />
             <ScrollButton />

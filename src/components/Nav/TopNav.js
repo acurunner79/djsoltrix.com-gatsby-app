@@ -8,36 +8,36 @@ const TopNav = () => {
         <div id="nav-container">
             <nav id="navbar">
                 <ul id="nav-links">
-                <Link to="/" className="topnav-link" activeclassname="active" iscurrent="true">
-                    <li>
+                <Link to="/" className="topnav-link" activeClassName="active" iscurrent="true">
+                    <li className="nav-item">
                     Home
                     </li>
                 </Link>
-                <Link to="/events" className="topnav-link" activeclassname="active" iscurrent="true">
-                    <li>
+                <Link to="/events" className="topnav-link" activeClassName="active" iscurrent="true">
+                    <li className="nav-item">
                     Events
                     </li>
                 </Link>
-                <Link to="/music" className="topnav-link" activeclassname="active" iscurrent="true">
-                    <li>
+                <Link to="/music" className="topnav-link" activeClassName="active" iscurrent="true">
+                    <li className="nav-item">
                     Music
                     </li>
                 </Link>
                 <Link to="/">
                 <img id="navlogo-2" src="https://res.cloudinary.com/acurunner79/image/upload/v1633740784/cropped-soltrix-logo_uu5wpm.png" alt="soltrix-logo"/>
                 </Link>
-                <Link to="/blog-page" className="topnav-link" activeclassname="active" iscurrent="true">
-                    <li>
+                <Link to="/blog-page" className="topnav-link" activeClassName="active" iscurrent="true">
+                    <li className="nav-item">
                     News
                     </li>
                 </Link>
-                <Link to="/bio" className="topnav-link" activeclassname="active" iscurrent="true">
-                    <li>
+                <Link to="/bio" className="topnav-link" activeClassName="active" iscurrent="true">
+                    <li className="nav-item">
                     Bio
                     </li>
                 </Link>
-                <Link to="/contact" className="topnav-link" activeclassname="active" iscurrent="true">
-                    <li>
+                <Link to="/contact" className="topnav-link" activeClassName="active" iscurrent="true">
+                    <li className="nav-item">
                     Contact
                     </li>
                 </Link>

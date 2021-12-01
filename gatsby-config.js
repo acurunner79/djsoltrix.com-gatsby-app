@@ -13,8 +13,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.djsoltrix.com",
     title: "DJ Soltrix",
+    description: "David Rodriguez, known professionally as DJ Soltrix, is a Latin-American DJ and music producer from Tampa, FL."
   },
   plugins: [
     {
@@ -31,6 +32,17 @@ module.exports = {
         spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
         host: process.env.GATSBY_HOST,
       },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'DJ Soltrix',
+        short_name: 'Soltrix',
+        start_url: '/',
+        background_color: '#000000',
+        display: 'standalone',
+        icon: 'src/images/Soltrix-s.png',
+      }
     },
     // {
     //   resolve: `gatsby-source-instagram-all`,

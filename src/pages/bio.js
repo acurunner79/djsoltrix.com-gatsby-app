@@ -6,7 +6,7 @@ import ScrollButton from '../components/ScrollButton/ScrollButton'
 import Footer from '../components/Footer/Footer'
 import { Carousel } from 'react-bootstrap'
 import Img from 'gatsby-image'
-// import { Sol100721_007 } from '../images/Sol100721_007.jpg'
+import Seo from '../components/Seo'
 import '../styles/bio.css'
 
 
@@ -15,6 +15,7 @@ const Bio = (props) => {
 
     return (
         <div id="bio-body">
+          <Seo />
             <TopNav />
             <Hamburger />
             <ScrollButton />

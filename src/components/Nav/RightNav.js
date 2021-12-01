@@ -7,33 +7,33 @@ const RightNav = () => {
     return(
         <div id="rightnav-main">
             <ul>
-                <Link to="/" className="links" activeclassname="active" iscurrent="true">
-                    <li >
+                <Link to="/" className="links" activeClassName="active" iscurrent="true">
+                    <li className="rightnav-item">
                     Home
                     </li>
                 </Link>
-                <Link to="/events" className="links" activeclassname="active" iscurrent="true">
-                    <li >
+                <Link to="/events" className="links" activeClassName="active" iscurrent="true">
+                    <li className="rightnav-item">
                     Events
                     </li>
                 </Link>
-                <Link to="/music" className="links" activeclassname="active" iscurrent="true">
-                    <li>
+                <Link to="/music" className="links" activeClassName="active" iscurrent="true">
+                    <li className="rightnav-item">
                     Music
                     </li>
                 </Link>
-                <Link to="/blog-page" className="links" activeclassname="active" iscurrent="true">
-                    <li>
+                <Link to="/blog-page" className="links" activeClassName="active" iscurrent="true">
+                    <li className="rightnav-item">
                     News
                     </li>
                 </Link>
-                <Link to="/bio" className="links" activeclassname="active" iscurrent="true">
-                    <li>
+                <Link to="/bio" className="links" activeClassName="active" iscurrent="true">
+                    <li className="rightnav-item">
                     Bio
                     </li>
                 </Link>
-                <Link to="/contact" className="links" activeclassname="active" iscurrent="true">
-                    <li>
+                <Link to="/contact" className="links" activeClassName="active" iscurrent="true">
+                    <li className="rightnav-item">
                     Contact
                     </li>
                 </Link>

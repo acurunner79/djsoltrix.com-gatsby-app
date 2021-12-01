@@ -28,15 +28,16 @@ div.links-container{
     text-align: left !important;
 }
 
+li.rightnav-item{
+    color: white;
+}
 
 .links{
-    text-decoration: none;
-    list-style: none;
     font-size: 25px;
     line-height: 2em;
 }
 
-.active{
+.active li.rightnav-item{
     color: red !important;
 }
 

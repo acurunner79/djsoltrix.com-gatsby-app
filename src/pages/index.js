@@ -10,6 +10,7 @@ import Footer from "../components/Footer/Footer"
 import NewsBlog from "../components/NewsBlog/NewsBlog"
 import GigsPreview from "../components/GigsPreview/GigsPreview"
 import ScrollButton from "../components/ScrollButton/ScrollButton";
+import Seo from '../components/Seo'
 import ReactPlayer from "react-player";
 import '../styles/home.css'
 import '../components/Layout/layout.css'
@@ -20,6 +21,7 @@ const IndexPage = (props) => {
   return (
     // <Layout>
     <>
+    <Seo />
     <TopNav />
     <Hamburger />
     <img id="upper-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png" alt="soltrix"/>

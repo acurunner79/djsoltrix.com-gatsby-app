@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import TopNav from '../components/Nav/TopNav'
 import Hamburger from '../components/Nav/Hamburger'
 import Footer from '../components/Footer/Footer'
+import Seo from '../components/Seo'
 import ScrollButton from '../components/ScrollButton/ScrollButton'
 import { ValidationError, useForm } from '@formspree/react'
 import '../styles/contact.css'
@@ -30,6 +31,7 @@ const Contact = () => {
 
     return (
         <>
+        <Seo />
         <TopNav />
         <Hamburger />
         <ScrollButton />

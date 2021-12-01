@@ -10,6 +10,7 @@ import Accordion from 'react-bootstrap/Accordion'
 import Mixcloud from '../components/Mixcloud/Mixcloud'
 import Singles from '../components/Singles/Singles'
 import Footer from '../components/Footer/Footer'
+import Seo from '../components/Seo'
 import ScrollButton from '../components/ScrollButton/ScrollButton'
 import '../styles/music.css'
 
@@ -19,6 +20,7 @@ const Music = (props) => {
 
     return (
         <div>
+            <Seo />
             <TopNav />
             <Hamburger />
             <ScrollButton />
