@@ -53,48 +53,48 @@ const RichText = ({ assetRef, raw }) => {
 
 export default RichText
 
-export const query = graphql`
-    query blogData {
-        allContentfulBlogPost {
-            edges {
-                node {
-                    id
-                    pageContent {
-                    raw
-                        references {
-                            ... on ContentfulAsset{
-                                __typename
-                                contentful_id
-                                fixed (width: 1600) {
-                                    width
-                                    height
-                                    src
-                                    srcSet
-                                }
-                            }
-                            description
-                            title
-                        }
-                    }
-                    description
-                    title           
-                    pageContent {
-                    raw
-                        references {
-                            ... on ContentfulAsset{
-                                __typename
-                                contentful_id
-                                fixed (width: 1600) {
-                                    width
-                                    height
-                                    src
-                                    srcSet
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    } 
-`
+// export const query = graphql`
+//     query blogData {
+//         allContentfulBlogPost {
+//             edges {
+//                 node {
+//                     id
+//                     pageContent {
+//                     raw
+//                         references {
+//                             ... on ContentfulAsset{
+//                                 __typename
+//                                 contentful_id
+//                                 fixed (width: 1600) {
+//                                     width
+//                                     height
+//                                     src
+//                                     srcSet
+//                                 }
+//                             }
+//                             description
+//                             title
+//                         }
+//                     }
+//                     description
+//                     title           
+//                     pageContent {
+//                     raw
+//                         references {
+//                             ... on ContentfulAsset{
+//                                 __typename
+//                                 contentful_id
+//                                 fixed (width: 1600) {
+//                                     width
+//                                     height
+//                                     src
+//                                     srcSet
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     } 
+// `
