@@ -19,7 +19,7 @@ const RichText = ({ assetRef, raw }) => {
                 const asset = assetRef.fixed;
                 // console.log('asset', assetRef.fixed.src)
 
-              if ((assetRef.fixed.src)){
+              if ((assetRef.fixed.src).includes('//images')){
               return (
                 <img id="asset-image" src={asset.src} alt={asset.title} />
               );
