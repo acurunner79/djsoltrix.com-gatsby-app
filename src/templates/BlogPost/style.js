@@ -11,7 +11,7 @@ export const BlogContent = styled.div`
     }
 
     h1{
-        margin-top: 220px;
+        /* margin-top: 220px; */
         color: red;
     }
 `
