@@ -42,7 +42,7 @@ const RichText = ({ assetRef, raw }) => {
     return (
         <Wrapper>
             {/* <img id="blog-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/> */}
-            <h1 id="blog-header">SOLTRIX NEWS</h1>
+            <h1 id="blog-header">NEWS</h1>
             {documentToReactComponents(JSON.parse(raw), renderOptions)}
             <Link to="/blog-page">
                   <button className="button">Go Back <IoIosArrowForward size="15"/></button>
