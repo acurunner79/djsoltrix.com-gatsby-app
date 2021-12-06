@@ -39,9 +39,9 @@ module.exports = {
         name: 'DJ Soltrix',
         short_name: 'Soltrix',
         start_url: '/',
-        background_color: '#000000',
+        background_color: '#fff',
         display: 'standalone',
-        icon: 'src/images/Soltrix Logo 2018 White  Black S.png',
+        icon: 'src/images/SOLTRIX SMALL s.jpg',
       }
     },
     // {
