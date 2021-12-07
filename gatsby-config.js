@@ -41,7 +41,7 @@ module.exports = {
         start_url: '/',
         background_color: '#fff',
         display: 'standalone',
-        icon: 'src/images/SOLTRIX SMALL s.jpg',
+        icon: 'src/images/SOLTRIX S cropped.jpg',
       }
     },
     // {

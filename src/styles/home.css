@@ -103,6 +103,7 @@
     max-height: 260px !important;
     width: 340px !important;
     margin: 0 auto !important;
+    border-top-right-radius: 18px !important;
 }
 
 .button{
