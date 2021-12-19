@@ -19,7 +19,7 @@ const Seo = ({title, keywords, description, image}) => {
 
     const metaTitle = title || site.siteMetadata?.title
     const metaDescription = description || site.siteMetadata?.description
-    const metaImage = "src/images/soltrix-logo.png"
+    const metaImage = "https://res.cloudinary.com/acurunner79/image/upload/v1631938925/xuTv__lU_400x400_aubaaf.jpg"
     const metaKeywords = keywords || ['DJ Soltrix','soltrix','bachata']
     return (
         

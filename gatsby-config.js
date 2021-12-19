@@ -15,7 +15,8 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.djsoltrix.com",
     title: "DJ Soltrix",
-    description: "David Rodriguez, known professionally as DJ Soltrix, is a Latin-American DJ and music producer from Tampa, FL."
+    description: "David Rodriguez, known professionally as DJ Soltrix, is a Latin-American DJ and music producer from Tampa, FL.",
+    image: "https://res.cloudinary.com/acurunner79/image/upload/v1631938925/xuTv__lU_400x400_aubaaf.jpg"
   },
   plugins: [
     {
