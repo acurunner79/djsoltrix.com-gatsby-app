@@ -19,7 +19,7 @@ const Seo = ({title, keywords, description, image}) => {
 
     const metaTitle = title || site.siteMetadata?.title
     const metaDescription = description || site.siteMetadata?.description
-    const metaImage = image || "src/images/soltrix-logo.png"
+    const metaImage = "src/images/soltrix-logo.png"
     const metaKeywords = keywords || ['DJ Soltrix','soltrix','bachata']
     return (
         
@@ -40,6 +40,10 @@ const Seo = ({title, keywords, description, image}) => {
                 {
                     property: `og:description`,
                     content: metaDescription,
+                },
+                {
+                    property: `og:image`,
+                    content: metaImage
                 },
                 {
                     property: `og:type`,

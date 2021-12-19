@@ -17,16 +17,12 @@ const RichText = ({ assetRef, raw }) => {
         renderNode: { 
             [BLOCKS.EMBEDDED_ASSET]: (node) => {
                 const asset = assetRef.fixed;
-                // console.log('asset', assetRef.fixed.src)
 
-            //   if ((assetRef.fixed.src).includes('//images')){
               return (
                 <img id="asset-image" src={asset.src} alt={asset.title} />
               );
-            //   }
             },
             [INLINES.HYPERLINK]: (node) => {
-                // console.log(node)
                 if ((node.data.uri).includes('youtube.com/embed')){
                     return(
                         <ReactPlayer id="blog-embedded-video" url={node.data.uri} controls={true}/>
@@ -35,13 +31,9 @@ const RichText = ({ assetRef, raw }) => {
             }
         },
     }
-      
- 
-    // const post = assetRef
     
     return (
         <Wrapper>
-            {/* <img id="blog-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1632361562/DJSoltrixWhite_ojfett.png"/> */}
             <h1 id="blog-header">NEWS</h1>
             {documentToReactComponents(JSON.parse(raw), renderOptions)}
             <Link to="/blog-page">
