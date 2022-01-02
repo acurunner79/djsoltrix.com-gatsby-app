@@ -27,9 +27,14 @@ body {
   text-decoration: none;
 }
 
+ol{
+  margin: 0 auto !important;
+}
+
 li{
   margin: 0 auto;
-  list-style: none !important;
+  color: white;
+  /* list-style: none !important; */
   text-decoration: none !important;
 }
 

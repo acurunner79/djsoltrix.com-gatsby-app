@@ -8,6 +8,17 @@ export const Wrapper = styled.div`
         backdrop-filter: blur(3px);
     }
 
+    ol{
+       text-align: center !important;
+       margin: 50px auto !important;
+       display: table;
+    }
+    
+    li p{
+        margin: 0 auto !important;
+        max-width: 600px;
+    }
+
     #asset-image{
         width: 95vw;
         margin: 0 auto;

@@ -8,11 +8,15 @@ export const BlogContent = styled.div`
         margin: 20px auto;
         color: white;
         text-align: justify;
+        /* list-style: auto !important; */
     }
 
     h1{
         /* margin: 220px; */
         color: red;
+    }
+
+    ol{
     }
 
     @media(min-width: 767px){

@@ -1,5 +1,6 @@
 #calendar-container{
-    width: 70px !important;   
+    width: 70px !important;
+    list-style: s;
 }
 
 #bio-header{
