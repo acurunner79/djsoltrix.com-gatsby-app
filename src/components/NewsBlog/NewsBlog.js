@@ -7,7 +7,7 @@ import '../../styles/newsblog.css'
 const NewsBlog = () => {
     const query = useStaticQuery(graphql`
         query news {
-            allContentfulBlogPost {
+            allContentfulBlogPost (sort: {fields: publishedDate, order: DESC}){
                 edges {
                 node {
                     title
@@ -58,17 +58,21 @@ const NewsBlog = () => {
 
             </Carousel.Caption>
           </Carousel.Item>
-          {/* <Carousel.Item>
-            <div className="news-card">
-                <h2 className="newsblog-title">{query.allContentfulBlogPost.edges[2].node.title}</h2>
-                <h4 className="newsblog-descr">{query.allContentfulBlogPost.edges[2].node.description}</h4>
-                <h4 className="newsblog-date">{query.allContentfulBlogPost.edges[2].node.publishedDate}</h4>
+          <Carousel.Item>
+          <div className="news-card">
+                <div id="main-text-container">
+                    <h2 className="newsblog-title">{query.allContentfulBlogPost.edges[2].node.title}</h2>
+                    <h4 className="newsblog-descr">{query.allContentfulBlogPost.edges[2].node.description}</h4>
+                </div>
+                <div id="image-card">
+                    <img id="thumbnail" src={query.allContentfulBlogPost.edges[2].node.blogPostThumbnail.fixed.src} alt=""/>
+                </div>
             </div>
             <Carousel.Caption>
 
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          {/* <Carousel.Item>
             <div className="news-card">
                 <h2 className="newsblog-title">{query.allContentfulBlogPost.edges[3].node.title}</h2>
                 <h4 className="newsblog-descr">{query.allContentfulBlogPost.edges[3].node.description}</h4>
