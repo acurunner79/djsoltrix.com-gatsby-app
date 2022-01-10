@@ -102,7 +102,7 @@ export default IndexPage
 
 export const query = graphql`
     query homeVideos {
-      allContentfulLatestVideo {
+      allContentfulLatestVideo (sort: {fields: createdAt, order: DESC}){
         edges {
           node {
             videoId
