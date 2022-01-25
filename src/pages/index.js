@@ -10,6 +10,7 @@ import Footer from "../components/Footer/Footer"
 import NewsBlog from "../components/NewsBlog/NewsBlog"
 import GigsPreview from "../components/GigsPreview/GigsPreview"
 import ScrollButton from "../components/ScrollButton/ScrollButton";
+import FlyerCarousel from "../components/FlyerCarousel/FlyerCarousel";
 import Seo from '../components/Seo'
 import ReactPlayer from "react-player";
 import '../styles/home.css'
@@ -42,6 +43,7 @@ const IndexPage = (props) => {
                 <button className="button">More Events <IoIosArrowForward size="15"/></button>
               </Link>
           </div><br/>
+          <FlyerCarousel />
           <h2 id="latest-music-header">LATEST MUSIC</h2>
         <div id="latest-music-container">
           <div className="latest-music-card">
