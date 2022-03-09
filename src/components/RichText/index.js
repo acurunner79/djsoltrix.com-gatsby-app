@@ -10,8 +10,8 @@ import { Wrapper } from './style'
 
 
 const RichText = ({ assetRef, raw }) => {
-    // console.log('richtext prop', assetRef)
-    // console.log('raw', raw)
+    console.log('richtext prop', assetRef)
+    console.log('raw', raw)
     
     const renderOptions = { 
         renderNode: { 
@@ -27,6 +27,9 @@ const RichText = ({ assetRef, raw }) => {
                     return(
                         <ReactPlayer id="blog-embedded-video" url={node.data.uri} controls={true}/>
                     )
+                } else {
+                    // console.log(node)
+                    return <a href={node.data.uri}>{node.content[0].value}</a>
                 }
             }
         },
