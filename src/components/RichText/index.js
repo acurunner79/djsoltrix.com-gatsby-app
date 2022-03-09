@@ -29,7 +29,7 @@ const RichText = ({ assetRef, raw }) => {
                     )
                 } else {
                     // console.log(node)
-                    return <a href={node.data.uri}>{node.content[0].value}</a>
+                    return <a target="_blank" rel="noreferrer" href={node.data.uri}>{node.content[0].value}</a>
                 }
             }
         },
