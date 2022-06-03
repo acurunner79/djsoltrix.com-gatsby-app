@@ -12,13 +12,23 @@
   "keywords": [
     "gatsby"
   ],
+  "_cmd-update-all-modules": "npm run update-all-modules",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "reinstall": "reinstall-node-modules"
+    "reinstall": "reinstall-node-modules",
+    "create-global-node-modules-folder": "if not exist \"%appdata%\\npm\\node_modules\" mkdir %appdata%\\npm\\node_modules",
+    "npm-i-g": "npm i npm@latest -g",
+    "npm-check-i-g": "npm i npm-check@latest -g",
+    "npm-check-u-l": "npm-check \"C:\\Program Files\\nodejs\\node_modules\\npm\" -y",
+    "npm-check-u-g": "npm-check \"C:\\Program Files\\nodejs\\node_modules\\npm\" -y -g",
+    "npm-deep-update-l": "npm update --depth 9999 --dev",
+    "npm-deep-update-g": "npm update --depth 9999 --dev -g",
+    "npm-cache-clear": "npm cache clear --force",
+    "update-all-modules": "npm run create-global-node-modules-folder && npm run npm-i-g && npm run npm-check-i-g && npm run npm-check-u-l && npm run npm-check-u-g && npm run npm-deep-update-l && npm run npm-deep-update-g && npm run npm-cache-clear"
   },
   "dependencies": {
     "@formspree/react": "^2.2.5",
@@ -51,7 +61,6 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.4.0",
     "react-player": "^2.10.1",
-    "react-ticker": "^1.3.2",
     "styled-components": "^5.3.5",
     "youtube-playlist-info": "^1.1.2"
   },

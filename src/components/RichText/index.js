@@ -16,10 +16,10 @@ const RichText = ({ assetRef, raw }) => {
     const renderOptions = { 
         renderNode: { 
             [BLOCKS.EMBEDDED_ASSET]: (node) => {
-                const asset = assetRef.fixed;
+                const asset = assetRef.url;
 
               return (
-                <img id="asset-image" src={asset.src} alt={asset.title} />
+                <img id="asset-image" src={asset} alt={asset.title} />
               );
             },
             [INLINES.HYPERLINK]: (node) => {
