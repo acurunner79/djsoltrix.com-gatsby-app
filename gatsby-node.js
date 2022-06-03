@@ -26,9 +26,7 @@ exports.createPages = async ({ actions, graphql }) => {
               slug
               publishedDate(formatString: "MMM DD YYYY")
               blogPostThumbnail {
-                fixed {
-                  src
-                }
+                url
                 description
               }
               pageContent {
@@ -37,12 +35,7 @@ exports.createPages = async ({ actions, graphql }) => {
                     ... on ContentfulAsset{
                         __typename
                         contentful_id
-                        fixed (width: 1600) {
-                            width
-                            height
-                            src
-                            srcSet
-                            }
+                        url
                         }
                     }
                 }
@@ -55,12 +48,7 @@ exports.createPages = async ({ actions, graphql }) => {
                             ... on ContentfulAsset{
                                 __typename
                                 contentful_id
-                                fixed (width: 1600) {
-                                    width
-                                    height
-                                    src
-                                    srcSet
-                                }
+                               url
                             }
                         }
                     }

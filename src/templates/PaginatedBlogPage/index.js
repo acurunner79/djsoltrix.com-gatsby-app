@@ -28,7 +28,7 @@ const PaginatedBlogPage = ({pageContext}) => {
                                 <div id="blog-description">{post.description}</div>
                             </div>
                             <div id="thumbnail-container">
-                                <img id ="blogpost-thumbnail" src={post?.blogPostThumbnail?.fixed?.src} alt={post?.blogPostThumbnail?.description}/>
+                                <img id ="blogpost-thumbnail" src={post?.blogPostThumbnail?.url} alt={post?.blogPostThumbnail?.description}/>
                             </div>
                         </div>
                         <div>

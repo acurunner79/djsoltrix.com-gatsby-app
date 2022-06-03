@@ -15,9 +15,7 @@ const NewsBlog = () => {
                     slug
                     publishedDate(formatString: "MMM DD YYYY")
                         blogPostThumbnail {
-                            fixed {
-                                src
-                            }
+                            url
                         }
                     }
                 }
@@ -29,7 +27,7 @@ const NewsBlog = () => {
     const link2 = `/blog-page/${query.allContentfulBlogPost.edges[1].node.slug}`
     const link3 = `/blog-page/${query.allContentfulBlogPost.edges[2].node.slug}`
     const link4 = `/blog-page/${query.allContentfulBlogPost.edges[3].node.slug}`
-    // console.log('newsblog', query.allContentfulBlogPost.edges[0].node.title)
+    console.log('thumbnail url', query.allContentfulBlogPost.edges[0].node.blogPostThumbnail.url)
     return (
         <div id="news-container">
             <h1 id="gig-header">NEWS</h1>
@@ -44,7 +42,7 @@ const NewsBlog = () => {
                                 </Link>
                             </div>
                             <div id="image-card">
-                                <img id="thumbnail" src={query.allContentfulBlogPost.edges[0].node.blogPostThumbnail.fixed.src} alt=""/>
+                                <img id="thumbnail" src={query.allContentfulBlogPost.edges[0].node.blogPostThumbnail.url} alt=""/>
                             </div>
                         </div>
                 {/* <h4 className="newsblog-date">{query.allContentfulBlogPost.edges[0].node.publishedDate}</h4> */}
@@ -60,7 +58,7 @@ const NewsBlog = () => {
                                 </Link>
                             </div>
                             <div id="image-card">
-                                <img id="thumbnail" src={query.allContentfulBlogPost.edges[1].node.blogPostThumbnail.fixed.src} alt=""/>
+                                <img id="thumbnail" src={query.allContentfulBlogPost.edges[1].node.blogPostThumbnail.url} alt=""/>
                             </div>
                         </div>
                     <Carousel.Caption>
@@ -77,7 +75,7 @@ const NewsBlog = () => {
                                 </Link>
                             </div>
                             <div id="image-card">
-                                <img id="thumbnail" src={query.allContentfulBlogPost.edges[2].node.blogPostThumbnail.fixed.src} alt=""/>
+                                <img id="thumbnail" src={query.allContentfulBlogPost.edges[2].node.blogPostThumbnail.url} alt=""/>
                             </div>
                         </div>
                     <Carousel.Caption>
@@ -93,7 +91,7 @@ const NewsBlog = () => {
                                 </Link>
                             </div>
                             <div id="image-card">
-                                <img id="thumbnail" src={query.allContentfulBlogPost.edges[3].node.blogPostThumbnail.fixed.src} alt=""/>
+                                <img id="thumbnail" src={query.allContentfulBlogPost.edges[3].node.blogPostThumbnail.url} alt=""/>
                             </div>
                         </div>
                     <Carousel.Caption>

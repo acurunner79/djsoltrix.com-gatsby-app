@@ -12,27 +12,28 @@ const FlyerCarousel = () => {
                     id
                     flyerTitle
                     imageLink {
-                        fixed {
-                            src
-                        }
+                        id
+                        publicUrl
+                            url
                     }
                 }
             }
         }
     `)
-
     const flyerData = query.allContentfulFlyer.nodes
-
+    console.log('image link', flyerData)
+    
     const loaded = () => {
-
+        
         return (
             <div>
                 <Carousel>
                     {    
                         query.allContentfulFlyer.nodes.map(flyer => {
+                            console.log('mapped image', flyer)
                             return (
                                 <Carousel.Item key={flyer.id}>
-                                    <img id="flyer-image" src={flyer.imageLink.fixed.src} alt={flyer.flyerTitle}/>
+                                    <img id="flyer-image" src={flyer.imageLink.url} alt={flyer.flyerTitle}/>
                                 </Carousel.Item>
                             )
                         })
@@ -47,6 +48,6 @@ const FlyerCarousel = () => {
     }
 
     return flyerData.length > 0 ? loaded() : loading()
-}
+ }
 
 export default FlyerCarousel

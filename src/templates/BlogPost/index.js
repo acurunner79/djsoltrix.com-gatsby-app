@@ -41,12 +41,7 @@ export const query = graphql`
                     ... on ContentfulAsset{
                         __typename
                         contentful_id
-                        fixed (width: 1600) {
-                            width
-                            height
-                            src
-                            srcSet
-                        }
+                        url
                     }
                     description
                     title
@@ -62,12 +57,7 @@ export const query = graphql`
                     ... on ContentfulAsset{
                         __typename
                         contentful_id
-                        fixed (width: 1600) {
-                            width
-                        height
-                            src
-                            srcSet
-                        }
+                         url
                     }
                 }
             }
