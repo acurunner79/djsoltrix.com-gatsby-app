@@ -16,7 +16,6 @@ import ReactPlayer from "react-player";
 import '../styles/home.css'
 import '../components/Layout/layout.css'
 
-
 const IndexPage = (props) => {
   // console.log('home page prop', props)
   return (
