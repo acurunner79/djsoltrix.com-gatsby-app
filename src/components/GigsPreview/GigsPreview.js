@@ -86,18 +86,18 @@ const GigsPreview = () => {
         <div id="gig-preview-card">
         <div id="calendar-container">
                 <div id="event-calendar-template">
-                    <h5 id="calendar-month">{query.allContentfulUpcomingGigs.edges[3].node.gigMonth}</h5>
+                    {/* <h5 id="calendar-month">{query.allContentfulUpcomingGigs.edges[3].node.gigMonth}</h5>
                     <h4 id="calendar-day">{query.allContentfulUpcomingGigs.edges[3].node.gigDay}</h4>
-                    <h4 id="calendar-year">{query.allContentfulUpcomingGigs.edges[3].node.gigYear}</h4>
+                    <h4 id="calendar-year">{query.allContentfulUpcomingGigs.edges[3].node.gigYear}</h4> */}
                 </div>
             </div>
             {/* <div className="dates">
             <h4>{query.allContentfulUpcomingGigs.edges[3].node.gigDate}</h4>
             </div> */}
             <div className="event-details">
-                <h4>{query.allContentfulUpcomingGigs.edges[3].node.eventName}</h4>
-                <h4>{query.allContentfulUpcomingGigs.edges[3].node.eventLocation}</h4>
-                <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[3].node.eventPage}>View</a></h4>
+                {/* <h4>{query.allContentfulUpcomingGigs.edges[3].node.eventName}</h4> */}
+                {/* <h4>{query.allContentfulUpcomingGigs.edges[3].node.eventLocation}</h4> */}
+                {/* <h4 className="eventpage-link"><a target="_blank" rel="noreferrer" href={query.allContentfulUpcomingGigs.edges[3].node.eventPage}>View</a></h4> */}
             </div>
         </div>
         </>
